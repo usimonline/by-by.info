@@ -33,20 +33,21 @@
 									<div id="vk_groups"></div>
 									<script type="text/javascript">
 										 VK.Widgets.Group("vk_groups", {mode: 3, width: "240"}, 150640109);
-										
+
 									</script>
 								</li>
 							</ul>
+							<!--
 							<ul>
-								<!--
+
 								<li><a class="twitter-timeline" href="https://twitter.com/by-by"   width="240" height="700"
 									   data-chrome="nofooter" lang="ru">Tweets by By-By</a>
-									   -->
-								<li><a class="twitter-timeline" href="https://twitter.com/by-by.info"   width="240" height="700"
-									   data-chrome="nofooter" lang="ru">Tweets by-by.info </a>
+
+
 									<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 								</li>
 							</ul>
+							-->
 
                         </div>
 
