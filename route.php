@@ -16,10 +16,15 @@ if (empty($row)) {
 	switch($REQUEST_URI){
 		case '/news':
 		case '/':
+	    case '/pastnews/empty/50':
+		case '/pastnews/empty/100': //все числа кратные 50 далее
+		case '/admin':
+		case '/searchnews/vvedite-slovo/10': //vvedite-slovo - тут любое слово, нужно доработать, числа кратные 10 или 50?
+		case '/pastnews/belarus/50': //	 belarus - другие ключевые слова, число 10, 50, 100 и все кратные 50.
 			break;
 		default:
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
-			//header( "Location: https://by-by.info/news" );
+			header( "Location: https://by-by.info/news" );
 			break;
 	}
 	$route = true;

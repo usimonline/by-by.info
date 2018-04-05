@@ -18,7 +18,7 @@
 		 name='searchnews' value='Введите слово'  />
 			</form>
 				
-				<a class="header__top-item send-news" href="<?php echo $main_name; ?>/prepare-news/">Прислать новость</a>
+				<a class="header__top-item send-news" href="<?php echo $main_name; ?>/news/2018/04/05/1522951650/prislat-novost/">Прислать новость</a>
                 <a class="icon-search js-search-show"></a>
 			</div>
 			
