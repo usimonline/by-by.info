@@ -32,7 +32,7 @@ if (empty($row)) {
 			break;
 		default:
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
-			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
+			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
 			break;
 	}
 	$route = true;
