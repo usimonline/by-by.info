@@ -23,8 +23,9 @@ if (empty($row)) {
 	    case '/pastnews/empty/50':
 		case '/pastnews/empty/100': //все числа кратные 50
 		case '/admin':
+		case '/admin/empty/10':
 		case '/admin/empty/50':
-		case '/admin/empty/100':  //все числа кратные 50
+		case '/admin/empty/100':  //все числа кратные 10, 50 кратные 50
 		case '/searchnews/vvedite-slovo/10': //vvedite-slovo - тут любое слово, нужно доработать, числа кратные 10 или 50?
 		case '/pastnews/belarus/10':
 		case '/pastnews/belarus/50':
