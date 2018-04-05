@@ -26,7 +26,9 @@ if (empty($row)) {
 		case '/admin/empty/50':
 		case '/admin/empty/100':  //все числа кратные 50
 		case '/searchnews/vvedite-slovo/10': //vvedite-slovo - тут любое слово, нужно доработать, числа кратные 10 или 50?
-		case '/pastnews/belarus/50': //	 belarus - другие ключевые слова, число 10, 50, 100 и все кратные 50.
+		case '/pastnews/belarus/10':
+		case '/pastnews/belarus/50':
+		case '/pastnews/belarus/100': //	 belarus - другие ключевые слова, число 10, 50, 100 и все кратные 50.
 			break;
 		default:
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
