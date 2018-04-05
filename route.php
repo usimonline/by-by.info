@@ -16,6 +16,10 @@ if (empty($row)) {
 	switch($REQUEST_URI){
 		case '/news':
 		case '/':
+		case 'robots.txt':
+		case 'sitemap.xml':
+		case 'parse':
+		case 'parse_2':
 	    case '/pastnews/empty/50':
 		case '/pastnews/empty/100': //все числа кратные 50
 		case '/admin':
