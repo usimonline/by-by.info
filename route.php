@@ -19,7 +19,7 @@ if (empty($row)) {
 			break;
 		default:
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
-			header( "Location: https://by-by.info/news" );
+			//header( "Location: https://by-by.info/news" );
 			break;
 	}
 	$route = true;
