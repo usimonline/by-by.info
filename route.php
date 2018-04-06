@@ -20,21 +20,24 @@ if (empty($row)) {
 		case '/sitemap.xml':
 		case '/parse':
 		case '/parse_2':
-	    case '/pastnews/empty/50':
-		case '/pastnews/empty/100': //все числа кратные 50
+		case '/parse_3':
 		case '/admin':
 		case '/admin/empty/10':
-		case '/admin/empty/50':
-		case '/admin/empty/100':  //все числа кратные 10, 50 кратные 50
+		case '/pastnews/empty/10':
 		case '/searchnews/vvedite-slovo/10': //vvedite-slovo - тут любое слово, нужно доработать, числа кратные 10 или 50?
 		case '/pastnews/belarus/10':
 		case '/pastnews/belarus/50':
 		case '/pastnews/belarus/100': //	 belarus - другие ключевые слова, число 10, 50, 100 и все кратные 50.
 			break;
 		default:
+			$rubrika_2 = $nomer_url_mass[2];
+			$rubrika_3 = $nomer_url_mass[3];
+			if( ($rubrika == 'admin' or $rubrika == 'pastnews') and $rubrika_2 == 'empty' and is_int($rubrika_3) and $rubrika_3 > 49 and $rubrika_3 % 50 == 0) break;
+			// $rubrika_2 из массива, как сравнивать с массивом?
+			// нужно как-то ограничить сверху
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
-			break;
+			break; //не сработает
 	}
 	$route = true;
 } else {
