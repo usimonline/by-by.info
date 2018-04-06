@@ -165,8 +165,7 @@ $row = mysqli_fetch_row($res);
 $all_count = $row[0]; // всего записей по выборке
 
 
-//if ($route){
-if(false){
+if ($route){
 	switch($REQUEST_URI){
 		case '/news':
 		case '/':
