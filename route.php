@@ -181,8 +181,8 @@ if ($route){
 			$rubrika_1 = $nomer_url_mass[1];
 			$rubrika_2 = $nomer_url_mass[2];
 			$rubrika_3 = $nomer_url_mass[3];
-			if( ($rubrika_1 == 'admin' or $rubrika_1 == 'pastnews' or $rubrika_1 == 'searchnews') and ($rubrika_2 == 'empty' or $rubrika_1 == 'searchnews') and is_int((int)$rubrika_3) and $rubrika_3 > 9 and ($rubrika_3 % 50 == 0 or $rubrika_3 == 10)) break;
-			// $rubrika_2 из массива, как сравнивать с массивом?
+			if( (($rubrika_1 == 'topic' and ($rubrika_2 == 'l-sidebar' or $rubrika_2 == 'toplist')) or (($rubrika_1 == 'admin' or $rubrika_1 == 'pastnews') and $rubrika_2 == 'empty') or $rubrika_1 == 'searchnews') and is_int((int)$rubrika_3) and $rubrika_3 > 9 and $rubrika_3 < ($all_count + 50) and ($rubrika_3 % 50 == 0 or $rubrika_3 == 10)) break;
+			// $rubrika_2 из массива, как сравнивать с массивом? $rubrika_2 == 'empty'
 			// нужно как-то ограничить сверху
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );

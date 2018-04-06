@@ -4,7 +4,7 @@
 				    <div ></div>
 				</div>
 				<div class="b opinion">
-				    <h3 class="title">Рупор правды</h3>
+				    <h3 class="title"><a href="<?php echo $main_name; ?>/topic/l-sidebar/10">Рупор правды</a></h3>
 
 
 
