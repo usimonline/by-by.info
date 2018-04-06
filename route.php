@@ -22,17 +22,12 @@ if (empty($row)) {
 		case '/parse_2':
 		case '/parse_3':
 		case '/admin':
-		case '/admin/empty/10':
-		case '/pastnews/empty/10':
-		case '/searchnews/vvedite-slovo/10': //vvedite-slovo - тут любое слово, нужно доработать, числа кратные 10 или 50?
-		case '/pastnews/belarus/10':
-		case '/pastnews/belarus/50':
-		case '/pastnews/belarus/100': //	 belarus - другие ключевые слова, число 10, 50, 100 и все кратные 50.
 			break;
 		default:
+			$rubrika_1 = $nomer_url_mass[1];
 			$rubrika_2 = $nomer_url_mass[2];
 			$rubrika_3 = $nomer_url_mass[3];
-			if( ($rubrika == 'admin' or $rubrika == 'pastnews') and $rubrika_2 == 'empty' and is_int((int)$rubrika_3) and $rubrika_3 > 49 and $rubrika_3 % 50 == 0) break;
+			if( ($rubrika_1 == 'admin' or $rubrika_1 == 'pastnews' or $rubrika_1 == 'searchnews') and ($rubrika_2 == 'empty' or $rubrika_1 == 'searchnews') and is_int((int)$rubrika_3) and $rubrika_3 > 9 and ($rubrika_3 % 50 == 0 or $rubrika_3 == 10)) break;
 			// $rubrika_2 из массива, как сравнивать с массивом?
 			// нужно как-то ограничить сверху
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
