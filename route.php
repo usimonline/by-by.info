@@ -32,7 +32,7 @@ if (empty($row)) {
 		default:
 			$rubrika_2 = $nomer_url_mass[2];
 			$rubrika_3 = $nomer_url_mass[3];
-			if( ($rubrika == 'admin' or $rubrika == 'pastnews') and $rubrika_2 == 'empty' and is_int($rubrika_3) and $rubrika_3 > 49 and $rubrika_3 % 50 == 0) break;
+			if( ($rubrika == 'admin' or $rubrika == 'pastnews') and $rubrika_2 == 'empty' and is_int((int)$rubrika_3) and $rubrika_3 > 49 and $rubrika_3 % 50 == 0) break;
 			// $rubrika_2 из массива, как сравнивать с массивом?
 			// нужно как-то ограничить сверху
 			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
