@@ -13,27 +13,6 @@ $i = 0;
 	$row = mysqli_fetch_array($res);
 $route = false;
 if (empty($row)) {
-	switch($REQUEST_URI){
-		case '/news':
-		case '/':
-		case '/robots.txt':
-		case '/sitemap.xml':
-		case '/parse':
-		case '/parse_2':
-		case '/parse_3':
-		case '/admin':
-			break;
-		default:
-			$rubrika_1 = $nomer_url_mass[1];
-			$rubrika_2 = $nomer_url_mass[2];
-			$rubrika_3 = $nomer_url_mass[3];
-			if( ($rubrika_1 == 'admin' or $rubrika_1 == 'pastnews' or $rubrika_1 == 'searchnews') and ($rubrika_2 == 'empty' or $rubrika_1 == 'searchnews') and is_int((int)$rubrika_3) and $rubrika_3 > 9 and ($rubrika_3 % 50 == 0 or $rubrika_3 == 10)) break;
-			// $rubrika_2 из массива, как сравнивать с массивом?
-			// нужно как-то ограничить сверху
-			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
-			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
-			break; //не сработает
-	}
 	$route = true;
 } else {
 	$page['datetime'] = $row['datetime'];
@@ -184,6 +163,31 @@ else $select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime > '201
 $res = mysqli_query($link, $select);
 $row = mysqli_fetch_row($res);
 $all_count = $row[0]; // всего записей по выборке
+
+
+if ($route){
+	switch($REQUEST_URI){
+		case '/news':
+		case '/':
+		case '/robots.txt':
+		case '/sitemap.xml':
+		case '/parse':
+		case '/parse_2':
+		case '/parse_3':
+		case '/admin':
+			break;
+		default:
+			$rubrika_1 = $nomer_url_mass[1];
+			$rubrika_2 = $nomer_url_mass[2];
+			$rubrika_3 = $nomer_url_mass[3];
+			if( ($rubrika_1 == 'admin' or $rubrika_1 == 'pastnews' or $rubrika_1 == 'searchnews') and ($rubrika_2 == 'empty' or $rubrika_1 == 'searchnews') and is_int((int)$rubrika_3) and $rubrika_3 > 9 and ($rubrika_3 % 50 == 0 or $rubrika_3 == 10)) break;
+			// $rubrika_2 из массива, как сравнивать с массивом?
+			// нужно как-то ограничить сверху
+			header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
+			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
+			break; //не сработает
+	}
+}
 
 
 if ($admin) $select = "SELECT * FROM $Name_database.$table WHERE `$keys_name` LIKE '%$keys%' ORDER BY datetime DESC LIMIT $nomer_url_2, $nomer";
