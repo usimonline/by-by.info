@@ -181,7 +181,9 @@ if ($route){
 			$rubrika_1 = $nomer_url_mass[1];
 			$rubrika_2 = $nomer_url_mass[2];
 			$rubrika_3 = $nomer_url_mass[3];
-			$rubrika_2_array = Array('empty');
+			$rubrika_2_array = Array('empty','belarus','russia','ukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
+				'world','army','rusbel','history','religion','science','language','agent','nweapon','CSTO','site');
+
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;
 			//$rubrika_2_key = array_search($rubrika_2, $rubrika_2_array);
