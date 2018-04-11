@@ -22,5 +22,5 @@ $rss_file = $rss_file.'
 $rss_file = $rss_file.'
 </urlset>';
 
-file_put_contents('rss.xml', $rss_file);
+file_put_contents('sitemap.xml', $rss_file);
 
