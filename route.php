@@ -86,8 +86,14 @@ switch($rubrika){
         exit;
         break;
 		
-        case 'sitemap.xml': require("sitemap.xml");
-        exit;
+        case 'sitemap.xml': $sitemap = 1; //require("sitemap.xml");
+
+			$nomer = 2*$number_of_pages;
+			$rubrika = 'news';
+			$keys_value = 'empty';
+			$keys = '';
+			$nomer_url = $number_of_pages;
+        //exit;
         break;
 		
 	case 'admin': if(empty($_POST['pass']) and !isset($_SESSION['pass'])) {
@@ -223,6 +229,14 @@ $total = $i;
 if($rss == 1) {
 	require("rss.php");
 	header('Location: '.$main_name.'/rss.xml');
+	//require("rss.xml");
+	//echo $rss_file;
+	exit;
+}
+
+if($sitemap == 1) {
+	require("sitemap.php");
+	header('Location: '.$main_name.'/sitemap.xml');
 	//require("rss.xml");
 	//echo $rss_file;
 	exit;
