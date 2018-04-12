@@ -202,6 +202,21 @@ if ($route){
 			//
 			//header("HTTP/1.0 404 Not Found");
 			header("Status: 404 Not Found");
+			$route = false;
+			$page['datetime'] = 0;
+			$page['teme'] = 'Страница ошибки';
+			$page['description'] = "Вы ввели неверный адрес страницы. Попробуйте ввести нужный вам адрес либо просто читайте новые статьи.";
+			$page['comments'] = 0;
+			$page['url'] = "/news/2018/04/05/1522938060/stranica-oshibki/";
+			$page['text'] = "Вы ввели неверный адрес страницы. Попробуйте ввести нужный вам адрес либо просто читайте новые статьи. 
+			
+			Мы будем рады подарить вам хорошую информацию.";
+			$page['keys'] = "404-страница";
+			$page['id'] = '1522938060';
+			$page['url_ext'] = "https://by-by.info";
+			$page['url_frame'] = '';
+			$page['url_int'] = '/news/2018/04/04/1522848137/sayt-by-byinfo-i-ego-rol-v-mirovom-processe/';
+			$page['teme_int'] = 'Международная инициатива «Центр защиты национальных меньшинств»';
 			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
 			break; //не сработает
 	}
