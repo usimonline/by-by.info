@@ -25,8 +25,10 @@
 	   <div class="pluso" data-background="#ebebeb" data-options="medium,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,livejournal,email">
 
 	   </div><br>
-	   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><br>
-		<?php
+	   <?php  if ($page['url_ext'] != 'https://by-by.info') { ?>
+		   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><br>
+		   <?php
+	   }
 			if($news_year_2 == 0) echo '<p>'.nl2br($page['text']).'</p>';
 			else echo $page['text'];
 			?>
