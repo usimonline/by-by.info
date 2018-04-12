@@ -1,5 +1,7 @@
 User-Agent: *
 Disallow: /
+Allow: /sitemap.xml
+Allow: /rss
 Allow: /news
 Disallow: /news/2017-2/
 Disallow: /news/2018-2/
