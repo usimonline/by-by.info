@@ -199,8 +199,9 @@ if ($route){
 			// $rubrika_2 из массива, как сравнивать с массивом? $rubrika_2 == 'empty'
 			// нужно как-то ограничить сверху
 			//header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
-			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
+			//
 			header("Status: 404 Not Found");
+			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
 			break; //не сработает
 	}
 }
