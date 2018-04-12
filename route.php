@@ -15,7 +15,7 @@ $route = false;
 if (empty($row)) {
 	$route = true;
 } else {
-	if( $REQUEST_URI == '/news/2018/04/05/1522938060/stranica-oshibki/') header("HTTP/1.0 404 Not Found");
+	if( $REQUEST_URI == '/news/2018/04/05/1522938060/stranica-oshibki/') header("Status: 404 Not Found");
 	$page['datetime'] = $row['datetime'];
 	$page['teme'] = $row['teme'];
 	$page['description'] = $row['description'];
