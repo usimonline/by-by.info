@@ -7,4 +7,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 
 
+ErrorDocument 404 https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/
+
 DirectoryIndex index.php

@@ -200,8 +200,9 @@ if ($route){
 			// нужно как-то ограничить сверху
 			//header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 			//
-			header("Status: 404 Not Found");
-			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
+			header("HTTP/1.0 404 Not Found");
+			//header("Status: 404 Not Found");
+			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
 			break; //не сработает
 	}
 }
