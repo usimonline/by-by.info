@@ -28,6 +28,9 @@
 	   <?php  if ($page['url_ext'] != 'https://by-by.info') { ?>
 		   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><br>
 		   <?php
+	   } else { ?>
+		   <br>
+		   <?php
 	   }
 			if($news_year_2 == 0) echo '<p>'.nl2br($page['text']).'</p>';
 			else echo $page['text'];
