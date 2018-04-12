@@ -218,7 +218,7 @@ if ($route){
 			$page['url_int'] = '/news/2018/04/04/1522848137/sayt-by-byinfo-i-ego-rol-v-mirovom-processe/';
 			$page['teme_int'] = 'Международная инициатива «Центр защиты национальных меньшинств»';
 			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
-			break; //не сработает
+			break;
 	}
 }
 
