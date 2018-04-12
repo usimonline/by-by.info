@@ -15,7 +15,6 @@ $route = false;
 if (empty($row)) {
 	$route = true;
 } else {
-	if( $REQUEST_URI == '/news/2018/04/05/1522938060/stranica-oshibki/') {echo "dfdfdfd"; header("Status: 404 Not Found");}
 	$page['datetime'] = $row['datetime'];
 	$page['teme'] = $row['teme'];
 	$page['description'] = $row['description'];
@@ -202,8 +201,8 @@ if ($route){
 			//header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 			//
 			//header("HTTP/1.0 404 Not Found");
-			//header("Status: 404 Not Found");
-			header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
+			header("Status: 404 Not Found");
+			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
 			break; //не сработает
 	}
 }
