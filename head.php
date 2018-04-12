@@ -13,8 +13,8 @@ if ($route) {//Переключатель заголовков
     $url_og_picture = str_replace('news', 'pictures', $page['url'])."img_1.jpg";
 }
 ?>
-<meta name="yandex-verification" content="08c2ed06216b74b4" />
-<meta name="google-site-verification" content="BanPMnlL6EOfbZFxmgL7xlBX3WIZbiVDK2D49li-f0M" />
+<meta name="yandex-verification" content="1a44c3037c640d63" />
+<meta name="google-site-verification" content="wUwLaGLrSvEUwUO380Lw1wTJ1mSMSy5aloNlqG7Eg80" />
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -63,18 +63,17 @@ if ($route) {//Переключатель заголовков
 <script type="text/javascript" src="<?php echo $main_name; ?>/index_files/watch.js"></script>
 <script type="text/javascript" src="<?php echo $main_name; ?>/index_files/www-embed-player.js"></script>
 
-
-
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
+<script type="text/javascript" >
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
-                w.yaCounter45281994 = new Ya.Metrika({
-                    id:45281994,
+                w.yaCounter48457331 = new Ya.Metrika({
+                    id:48457331,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true
+                    accurateTrackBounce:true,
+                    webvisor:true
                 });
             } catch(e) { }
         });
@@ -91,5 +90,5 @@ if ($route) {//Переключатель заголовков
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/45281994" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/48457331" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
