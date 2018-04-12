@@ -203,20 +203,44 @@ if ($route){
 			//header("HTTP/1.0 404 Not Found");
 			header("Status: 404 Not Found");
 			$route = false;
-			$page['datetime'] = 0;
-			$page['teme'] = 'Страница ошибки';
-			$page['description'] = "Вы ввели неверный адрес страницы. Попробуйте ввести нужный вам адрес либо просто читайте новые статьи.";
-			$page['comments'] = 0;
-			$page['url'] = "/news/2018/04/05/1522938060/stranica-oshibki/";
-			$page['text'] = "Вы ввели неверный адрес страницы. Попробуйте ввести нужный вам адрес либо просто читайте новые статьи. 
-			
-			Мы будем рады подарить вам хорошую информацию.";
-			$page['keys'] = "404-страница";
-			$page['id'] = '1522938060';
-			$page['url_ext'] = "https://by-by.info";
-			$page['url_frame'] = '';
-			$page['url_int'] = '/news/2018/04/04/1522848137/sayt-by-byinfo-i-ego-rol-v-mirovom-processe/';
-			$page['teme_int'] = 'Международная инициатива «Центр защиты национальных меньшинств»';
+			$REQUEST_URI = '/news/2018/04/05/1522938060/stranica-oshibki/';
+			$select = "SELECT * FROM $Name_database.$table WHERE url = '$REQUEST_URI' ";
+			$res = mysqli_query($link, $select);
+			$row = mysqli_fetch_array($res);
+			if (empty($row)) {
+				$page['datetime'] = '2016-04-05 14:21:00';
+				$page['teme'] = 'Страница ошибки (базовая версия)';
+				$page['description'] = "Вы ввели неверный адрес страницы. Попробуйте ввести нужный вам адрес либо просто читайте новые статьи.";
+				$page['comments'] = 0;
+				$page['url'] = "/news/2018/04/05/1522938060/stranica-oshibki/";
+				$page['text'] = "Вы ввели неверный адрес страницы. Попробуйте ввести нужный вам адрес либо просто читайте новые статьи.
+
+				Мы будем рады подарить вам хорошую информацию.";
+				$page['keys'] = "404-страница";
+				$page['id'] = '1522938060';
+				$page['url_ext'] = "https://by-by.info";
+				$page['url_frame'] = '';
+				$page['url_int'] = '/news/2018/04/04/1522848137/sayt-by-byinfo-i-ego-rol-v-mirovom-processe/';
+				$page['teme_int'] = 'Международная инициатива «Центр защиты национальных меньшинств»';
+			} else {
+				$page['datetime'] = $row['datetime'];
+				$page['teme'] = $row['teme'];
+				$page['description'] = $row['description'];
+				$page['comments'] = $row['comments'];
+				$page['url'] = $row['url'];
+				$page['text'] = $row['text'];
+				$page['keys'] = $row['keys'];
+				$page['id'] = $row['id'];
+				if ($row['url_ext'] == NULL) $page['url_ext'] = 'https://ria.ru/';
+				else $page['url_ext'] = $row['url_ext'];
+				if ($row['url_frame'] == NULL) $page['url_frame'] = '';
+				else $page['url_frame'] = '<p><iframe width="100%" height="360" src="' . $row['url_frame'] . '" frameborder="0" allowfullscreen></iframe></p>';
+				if ($row['url_int'] == NULL) $page['url_int'] = '/news/';
+				else $page['url_int'] = $row['url_int'];
+				if ($row['teme_int'] == NULL) $page['teme_int'] = 'Смотрите другие новости по этой теме.';
+				else $page['teme_int'] = $row['teme_int'];
+			}
+
 			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
 			break;
 	}
