@@ -81,12 +81,11 @@
 									}(document, 'script', 'facebook-jssdk'));</script>
 
 
-								<!--
-								<div class="fb-follow" data-href="https://www.facebook.com/by-by.info"
+
+								<div class="fb-follow" data-href="https://www.facebook.com/profile.php?id=100025369361064"
 								data-layout="button_count" data-size="large" data-show-faces="true">
-								-->
-								<div class="fb-follow" data-href="https://www.facebook.com/"
-									 data-layout="button_count" data-size="large" data-show-faces="true">
+
+
 
 
 								</div>
