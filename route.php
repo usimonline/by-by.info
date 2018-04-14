@@ -4,7 +4,7 @@ $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
-$head_nomer_url_mass = $nomer_url_mass[2];
+$head_nomer_url_mass = $nomer_url_mass[3];
 
 $rubrika = $nomer_url_mass[1];
 
