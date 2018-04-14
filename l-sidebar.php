@@ -72,8 +72,8 @@
 
 						<ul>
 							<li>
-								<div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100025369361064" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-							</li>
+								<div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100025369361064" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+								</li>
 						</ul>
 
 
