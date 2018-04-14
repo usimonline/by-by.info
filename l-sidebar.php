@@ -96,7 +96,7 @@
 
 
 					<ul>
-						<li><h1><a class="icon-rss" href="<?php echo $main_name; ?>/rss">RSS</a></h1></li>
+						<li><h1><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></h1></li>
 					</ul>
 					
 				</div>
