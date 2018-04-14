@@ -63,6 +63,7 @@ if ($route) {//Переключатель заголовков
 <script type="text/javascript" src="<?php echo $main_name; ?>/index_files/remote.js"></script>
 <script type="text/javascript" src="<?php echo $main_name; ?>/index_files/watch.js"></script>
 <script type="text/javascript" src="<?php echo $main_name; ?>/index_files/www-embed-player.js"></script>
+<script src="https://vk.com/js/api/openapi.js?153" type="text/javascript"></script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
