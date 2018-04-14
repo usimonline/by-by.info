@@ -1,8 +1,9 @@
 <?php
 if ($route) {//Переключатель заголовков
-	$title = 'Новости Беларуси - Белорусские новости - Новости Белоруссии';
-	$description = 'Новости Беларуси - Белорусские новости - Новости Белоруссии - Республика Беларусь - Минск';
-	$keys = 'Новости Беларуси - Белорусские новости - Новости Белоруссии - Республика Беларусь - Минск';
+    if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '';
+	$title = 'Новости Мира '.$head_nomer_url_mass.' - Новости России '.$head_nomer_url_mass.' - Новости Белоруссии и Беларуси';
+	$description = $site_name.': Новости Мира '.$head_nomer_url_mass.' - Новости России '.$head_nomer_url_mass.' - Новости Белоруссии и Беларуси';
+	$keys = 'Новости Мира '.$head_nomer_url_mass.', Новости России'.$head_nomer_url_mass.', Новости Белоруссии и Беларуси '.$head_nomer_url_mass;
     $url_og = $site_name;
     $url_og_picture = $site_name."/img/metro.jpg";
 } else {
