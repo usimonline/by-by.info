@@ -1,8 +1,8 @@
 <?php
 if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '';
-	$title = 'Новости Мира '.$head_nomer_url_mass.' - Новости России '.$head_nomer_url_mass.' - Новости Белоруссии и Беларуси';
-	$description = $site_name.': Новости Мира '.$head_nomer_url_mass.' - Новости России '.$head_nomer_url_mass.' - Новости Белоруссии и Беларуси';
+	$title = 'Новости Мира '.$head_nomer_url_mass.'- Новости России '.$head_nomer_url_mass.'- Новости Белоруссии и Беларуси';
+	$description = $site_name.': Новости Мира '.$head_nomer_url_mass.'- Новости России '.$head_nomer_url_mass.'- Новости Белоруссии и Беларуси';
 	$keys = 'Новости Мира '.$head_nomer_url_mass.', Новости России'.$head_nomer_url_mass.', Новости Белоруссии и Беларуси '.$head_nomer_url_mass;
     $url_og = $site_name;
     $url_og_picture = $site_name."/img/metro.jpg";
