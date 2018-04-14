@@ -28,14 +28,14 @@
 
 							<ul>
 								<li>
+
 									<script type="text/javascript" src="//vk.com/js/api/openapi.js?153"></script>
 
 									<!-- VK Widget -->
 									<div id="vk_subscribe"></div>
 									<script type="text/javascript">
-										VK.Widgets.Subscribe("vk_subscribe", {}, 438721554);
+										VK.Widgets.Subscribe("vk_subscribe", {mode: 3, width: "240"}, 438721554);
 									</script>
-
 								</li>
 							</ul>
 							<!--
