@@ -1,4 +1,5 @@
 User-Agent: *
+Allow: /
 Disallow: /
 Allow: /sitemap.xml
 Allow: /rss.xml
