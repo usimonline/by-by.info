@@ -3,6 +3,6 @@ Disallow: /
 Allow: /sitemap.xml
 Allow: /rss.xml
 Allow: /news
-https: /pastnews/empty
+Allow: /pastnews/empty
 Host: http://by-by.info/
 Sitemap: https://by-by.info/sitemap.xml
