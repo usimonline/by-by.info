@@ -1,7 +1,6 @@
 User-Agent: *
 Disallow: /
 Allow: /sitemap.xml
-Allow: /rss
 Allow: /rss.xml
 Allow: /news
 Host: http://by-by.info/
