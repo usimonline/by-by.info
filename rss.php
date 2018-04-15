@@ -29,7 +29,7 @@
             $n_l_date = DateTime::createFromFormat('Y-m-d H:i:s', $news_latest[$i]['datetime'])->format(DateTime::RSS);
             $n_l_des = $news_latest[$i]['description'];
 $rss_file = $rss_file.'
-<item>
+<item turbo="true">
             <title>'.$n_l_t.'</title>
             <link>'.$main_name.$n_l_u.'</link>
             <category>news</category>
