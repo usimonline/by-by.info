@@ -186,7 +186,6 @@ if ($route){
 		case '/parse':
 		case '/parse_2':
 		case '/parse_3':
-		case '/admin':
 			break;
 		default:
 			$rubrika_1 = $nomer_url_mass[1];
