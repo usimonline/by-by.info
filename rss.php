@@ -32,7 +32,7 @@ $rss_file = $rss_file.'
 <item turbo="true">
             <title>'.$n_l_t.'</title>
             <link>'.$main_name.$n_l_u.'</link>
-            <category>news</category>
+            <category>news</category>   
             <pubDate>'.$n_l_date.'</pubDate>
             <description>'.$n_l_des.'</description> 
 </item>';
