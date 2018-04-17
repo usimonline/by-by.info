@@ -1,6 +1,7 @@
 User-Agent: *
 Disallow: /
 Allow: /sitemap.xml
+Allow: /sitemap
 Allow: /rss
 Allow: /favicon.ico
 Allow: /news

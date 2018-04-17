@@ -90,7 +90,7 @@ switch($rubrika){
         exit;
         break;
 		
-        case 'sitemap.xml': $sitemap = 1; //require("sitemap.xml");
+        case 'sitemap': $sitemap = 1; //require("sitemap.xml");
 
 			$nomer = 2*$number_of_pages;
 			$rubrika = 'news';
@@ -181,7 +181,7 @@ if ($route){
 		case '/':
 		case '/delete':
 		case '/robots.txt':
-		case '/sitemap.xml':
+		case '/sitemap':
 		case '/rss':
 		case '/parse':
 		case '/parse_2':
