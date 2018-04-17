@@ -90,7 +90,7 @@ switch($rubrika){
         exit;
         break;
 		
-        case 'sitemap': $sitemap = 1; //require("sitemap.xml");
+        case 'sitemap.xml': $sitemap = 1; //require("sitemap.xml");
 
 			$nomer = 2*$number_of_pages;
 			$rubrika = 'news';
