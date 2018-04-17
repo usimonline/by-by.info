@@ -73,7 +73,7 @@ switch($rubrika){
 		break;
 	case '': header('Location: '.$main_name.'/news');
 		break;
-	case 'rss.xml': $rss = 1;
+	case 'rss': $rss = 1;
 		// //создаем файл rss.xml
 		$nomer = 2*$number_of_pages;
 		$rubrika = 'news';
@@ -90,7 +90,7 @@ switch($rubrika){
         exit;
         break;
 		
-        case 'sitemap.xml': $sitemap = 1; //require("sitemap.xml");
+        case 'sitemap': $sitemap = 1; //require("sitemap.xml");
 
 			$nomer = 2*$number_of_pages;
 			$rubrika = 'news';
