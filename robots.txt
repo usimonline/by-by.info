@@ -2,6 +2,7 @@ User-Agent: *
 Disallow: /
 Allow: /sitemap.xml
 Allow: /rss.xml
+Allow: /images.ico
 Allow: /news
 Allow: /pastnews/empty
 Disallow: /news/2018-2
