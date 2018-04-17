@@ -9,13 +9,14 @@
             '.$site_name.' :: Новости Беларуси, Белорусские новости, Новости Белоруссии, News from Belarus
         </description>
         <image>
-        <url>'.$main_name.'/img/metro.jpg
-        </url>
+            <url>'.$main_name.'/img/metro.jpg
+            </url>
             <title>
                 '.$site_name.' :: Новости Беларуси - Белорусские новости - Новости Белоруссии - Республика Беларусь - Минск
             </title>
-            <link>'.$main_name.'</link>
-
+            <link>'.$main_name.'
+            </link>
+        </image>
         <pubDate>Tue, 17 Apr 2018 16:02:25 +0300</pubDate>
 	<lastBuildDate>Tue, 17 Apr 2018 16:01:21 +0300</lastBuildDate>
 	<ttl>10</ttl>
