@@ -1,4 +1,6 @@
-<?php $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
+<?php
+$datetime_site_rss_format = DateTime::createFromFormat('Y-m-d H:i:s', $datetime_site)->format(DateTime::RSS);
+$rss_file = '<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
         <title>
@@ -17,8 +19,8 @@
             <link>'.$main_name.'
             </link>
         </image>
-        <pubDate>Tue, 17 Apr 2018 16:02:25 +0300</pubDate>
-	<lastBuildDate>Tue, 17 Apr 2018 16:01:21 +0300</lastBuildDate>
+        <pubDate>'.$datetime_site_rss_format.'</pubDate>
+	<lastBuildDate>'.$datetime_site_rss_format.'</lastBuildDate>
 	<ttl>10</ttl>
 	<atom:link href="https://by-by.info/rss.xml" rel="self" type="application/rss+xml" />
         ';
