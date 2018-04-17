@@ -17,7 +17,7 @@
                 <url>
                 <loc>' . $main_name . $n_l_u . '</loc>
                 <lastmod>' . $n_l_date . '</lastmod>
-                <priority>0.8</priority>
+                <priority>0.9</priority>
                 </url>';
             }
 }
