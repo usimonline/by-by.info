@@ -181,7 +181,7 @@ if ($route){
 		case '/':
 		case '/delete':
 		case '/robots.txt':
-		case '/sitemap':
+		case '/sitemap.xml':
 		case '/rss':
 		case '/parse':
 		case '/parse_2':
