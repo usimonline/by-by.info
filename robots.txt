@@ -7,4 +7,4 @@ Allow: /news
 Allow: /pastnews/empty
 Disallow: /news/2018-2
 Host: http://by-by.info/
-Sitemap: https://by-by.info/sitemap.xml
+Sitemap: https://by-by.info/sitemap
