@@ -28,7 +28,7 @@ if ($route) {//Переключатель заголовков
 	<meta http-equiv="cache-control" content="no-cache">
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:site" content="@by-by.info"/>
+<meta name="twitter:site" content="@byby_info"/>
 <meta name="twitter:title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
 <meta name="twitter:description" content="<?php echo $site_name; ?> :: <?php echo $description ?>" />
 <meta property="og:url" content="<?php echo $main_name; ?><?php echo $url_og; ?>" />
@@ -49,11 +49,11 @@ if ($route) {//Переключатель заголовков
 <meta name="title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
 <link rel="image_src" href="<?php echo $site_name; ?><?php echo $url_og_picture; ?>" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php echo $site_name; ?>/rss" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php echo $site_name; ?>/rss.xml" />
 
 
 
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $main_name; ?>/images.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $main_name; ?>/favicon.ico">
 
 	<link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/screen.css">
 	<link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/screen-fix.css">
