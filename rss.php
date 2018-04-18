@@ -33,21 +33,24 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $n_l_u_pict = str_replace('news','pictures',$n_l_u).'/img_1.jpg';
             $n_l_date = DateTime::createFromFormat('Y-m-d H:i:s', $news_latest[$i]['datetime'])->format(DateTime::RSS);
             $n_l_des = $news_latest[$i]['description'];
-$rss_file = $rss_file.'
+            $n_l_u_mass = explode( '/', $n_l_u);
+            if($n_l_u_mass[2] == '2018' or $n_l_u_mass[2] == '2019' ) {
+                $rss_file = $rss_file . '
 <item turbo="true">
-            <title>'.$n_l_t.'</title>
-            <link>'.$main_name.$n_l_u.'</link>
-            <description>'.$n_l_des.'</description> 
+            <title>' . $n_l_t . '</title>
+            <link>' . $main_name . $n_l_u . '</link>
+            <description>' . $n_l_des . '</description> 
             <atom:author>
 			<atom:name>By-by.info</atom:name>
 			<atom:uri>https://by-by.info/news</atom:uri>
 			</atom:author>    
             <category domain="https://by-by.info/news">news</category>
-            <enclosure url="'.$main_name.$n_l_u_pict.'" type="image/jpeg" length="309999" />
-            <guid isPermaLink="true">'.$main_name.$n_l_u.'</guid>
-            <pubDate>'.$n_l_date.'</pubDate>
-            <media:content url="'.$main_name.$n_l_u_pict.'" type="image/jpeg" medium="image" height="785" width="1200" fileSize="309999" />         
+            <enclosure url="' . $main_name . $n_l_u_pict . '" type="image/jpeg" length="309999" />
+            <guid isPermaLink="true">' . $main_name . $n_l_u . '</guid>
+            <pubDate>' . $n_l_date . '</pubDate>
+            <media:content url="' . $main_name . $n_l_u_pict . '" type="image/jpeg" medium="image" height="785" width="1200" fileSize="309999" />         
 </item>';
+            }
 }
 
 $rss_file = $rss_file.'
