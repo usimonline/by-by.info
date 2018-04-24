@@ -62,17 +62,17 @@ switch($rubrika){
 	//case 'save': require("save_picture.php");
 	//	exit;
 	//	break;
-	case 'parse_3': require("parser_3.php");
-		exit;
-		break;
-	case 'parse_2': require("parser_2.php");
-		exit;
-		break;
+	//case 'parse_3': require("parser_3.php");
+	//	exit;
+	//	break;
+	//case 'parse_2': require("parser_2.php");
+	//	exit;
+	//	break;
 	case 'parse': require("parser.php");
 		exit;
 		break;
-	case '': header('Location: '.$main_name.'/news');
-		break;
+	//case '': header('Location: '.$main_name.'/news');
+	//	break;
 	case 'rss': $rss = 1;
 		// //создаем файл rss.xml
 		$nomer = 2*$number_of_pages;
