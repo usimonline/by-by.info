@@ -72,8 +72,8 @@ switch($rubrika){
 		require("parser.php");
 		exit;
 		break;
-	//case '': header('Location: '.$main_name.'/news');
-	//	break;
+	case '': header('Location: '.$main_name.'/news');
+		break;
 	case 'rss': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 		$rss = 1;
 		// //создаем файл rss.xml
