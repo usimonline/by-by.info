@@ -1,5 +1,4 @@
 RewriteEngine On
-Redirect 301 / https://by-by.info/news
 Redirect 301 /pastnews/empty/50 https://by-by.info/news
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.
