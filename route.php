@@ -68,7 +68,8 @@ switch($rubrika){
 	//case 'parse_2': require("parser_2.php");
 	//	exit;
 	//	break;
-	case 'parse': require("parser.php");
+	case 'parse': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
+		require("parser.php");
 		exit;
 		break;
 	//case '': header('Location: '.$main_name.'/news');
@@ -100,7 +101,8 @@ switch($rubrika){
         //exit;
         break;
 		
-	case 'admin': if(empty($_POST['pass']) and !isset($_SESSION['pass'])) {
+	case 'admin': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
+		if(empty($_POST['pass']) and !isset($_SESSION['pass'])) {
 		require("chek_form.php");
 		exit;
 	} else {
