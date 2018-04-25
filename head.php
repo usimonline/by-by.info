@@ -21,7 +21,7 @@ if ($route) {//Переключатель заголовков
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 	<meta charset="utf-8">
-	<title><?php echo $site_name; ?> :: <?php echo $title; ?></title>
+	<title><?php echo $title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="expires" content="0">
@@ -29,14 +29,14 @@ if ($route) {//Переключатель заголовков
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@byby_info"/>
-<meta name="twitter:title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
-<meta name="twitter:description" content="<?php echo $site_name; ?> :: <?php echo $description ?>" />
+<meta name="twitter:title" content="<?php echo $title; ?>" />
+<meta name="twitter:description" content="<?php echo $description ?>" />
 <meta property="og:url" content="<?php echo $main_name; ?><?php echo $url_og; ?>" />
 <meta name="twitter:image:src" content="<?php echo $main_name; ?><?php echo $url_og_picture; ?>" />
 
 
-	<meta name="description" content="<?php echo $site_name; ?> :: <?php echo $description ?>" >
-	<meta name="keywords" content="<?php echo $site_name; ?> :: <?php echo $keys; ?>">
+	<meta name="description" content="<?php echo $description ?>" >
+	<meta name="keywords" content="<?php echo $keys; ?>">
 <meta property="og:type" content="website" />
 <meta property="og:title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
 <meta property="og:description" content="<?php echo $site_name; ?> :: <?php echo $description ?>" />
@@ -46,7 +46,7 @@ if ($route) {//Переключатель заголовков
 <meta property="og:image:width" content="299" />
 <meta property="og:image:height" content="249" />
 
-<meta name="title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
+<meta name="title" content="<?php echo $title; ?>" />
 <link rel="image_src" href="<?php echo $site_name; ?><?php echo $url_og_picture; ?>" />
 
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php echo $site_name; ?>/rss.xml" />
