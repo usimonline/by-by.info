@@ -17,6 +17,16 @@ if ($route) {//Переключатель заголовков
 
 <meta name="yandex-verification" content="1a44c3037c640d63" />
 <meta name="google-site-verification" content="wUwLaGLrSvEUwUO380Lw1wTJ1mSMSy5aloNlqG7Eg80" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296803-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118296803-1');
+</script>
+
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
