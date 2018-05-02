@@ -1,9 +1,6 @@
 RewriteEngine On
 Redirect 301 /pastnews/empty/50/ https://by-by.info
 Redirect 301 /pastnews/empty/50 https://by-by.info
-Redirect 301 /news/ https://by-by.info
-Redirect 301 /news https://by-by.info
-
 
 
 RewriteCond %{HTTPS} off [OR]
