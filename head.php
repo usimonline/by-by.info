@@ -13,6 +13,7 @@ if ($route) {//Переключатель заголовков
     $url_og = $page['url'];
     $url_og_picture = str_replace('news', 'pictures', $page['url'])."img_1.jpg";
 }
+if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noindex" />';
 ?>
 
 <meta name="yandex-verification" content="1a44c3037c640d63" />
