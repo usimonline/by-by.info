@@ -28,16 +28,16 @@
 
 							<ul>
 								<li>
-
-									<script type="text/javascript" src="//vk.com/js/api/openapi.js?153"></script>
+									<script type="text/javascript" src="//vk.com/js/api/openapi.js?154"></script>
 
 									<!-- VK Widget -->
-									<div id="vk_subscribe"></div>
+									<div id="vk_groups"></div>
 									<script type="text/javascript">
-										VK.Widgets.Subscribe("vk_subscribe", {mode: 3, width: "300"}, 438721554);
+										VK.Widgets.Group("vk_groups", {mode: 3}, 150640109);
 									</script>
 								</li>
 							</ul>
+
 							<!--
 							<ul>
 
