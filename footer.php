@@ -1,29 +1,29 @@
 <footer class="footer">
     <div class="footer__topics">
 		<ul>
-		<li><a href="<?php echo $main_name; ?>/pastnews/belarus/10">Белоруссия</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/russia/10">Россия</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/ukri/10">Украина</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/poland/10">Польша</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/west/10">Запад</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/ussr/10">Советский Союз</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/cis/10">СНГ</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/economy/10">Экономика</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/policy/10">Политика</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/syria/10">Сирия</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/novoros/10">Новороссия</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/baltic/10">Прибалтика</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/world/10">Мир</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/army/10">Армия</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/rusbel/10">Союзное государство России и Белоруссии</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/history/10">История</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/religion/10">Религия</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/science/10">Наука</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/language/10">Русский язык</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/agent/10">Агенты Запада</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/nweapon/10">Ядерное оружие</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/CSTO/10">ОДКБ</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/site/10"><?php echo $site_name; ?></a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50">Белоруссия</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/russia/50">Россия</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/ukri/50">Украина</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/poland/50">Польша</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/west/50">Запад</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/ussr/50">Советский Союз</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/cis/50">СНГ</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/economy/50">Экономика</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/policy/50">Политика</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/syria/50">Сирия</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/novoros/50">Новороссия</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/baltic/50">Прибалтика</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/world/50">Мир</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/army/50">Армия</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/rusbel/50">Союзное государство России и Белоруссии</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/history/50">История</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/religion/50">Религия</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/science/50">Наука</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/language/50">Русский язык</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/agent/50">Агенты Запада</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/nweapon/50">Ядерное оружие</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/CSTO/50">ОДКБ</a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/site/50"><?php echo $site_name; ?></a></li>
 		</ul>
 	</div>
 
