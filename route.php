@@ -137,8 +137,9 @@ switch($rubrika){
 		//echo $nomer_url_mass[2];
 		$keys_value = $_POST['searchnews'];
 		$keys_value = translate_into_english($keys_value);
-		echo $keys_value;
+		//echo $keys_value;
 		if($nomer_url_mass[2] == 'empty') header("Location: ".$main_name."/searchnews/".$keys_value."/50/");
+		exit;
 	}
 	else {
 		$keys_value = $nomer_url_mass[2];
