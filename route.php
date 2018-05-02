@@ -133,7 +133,8 @@ switch($rubrika){
 	case 'searchnews':
 	$keys_name = 'text'; //echo $_POST['searchnews'];
 	if (!empty($_POST['searchnews'])) {
-		echo $_POST['searchnews'];
+		//echo $_POST['searchnews'];
+		echo $nomer_url_mass[2];
 		$keys_value = $_POST['searchnews'];
 		//$keys_value = translate_into_english($keys_value);
 		if($nomer_url_mass[2] == 'empty') header("Location: ".$main_name."/searchnews/".$keys_value."/50/");
