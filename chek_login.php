@@ -16,10 +16,10 @@ $row_users = mysqli_fetch_array($res_users);
 
 if (empty($row_users[2]) and $row_users[2] != 1) {//проверяем права доступа в $row_users[2]
 	session_destroy();
-	header('Location: '.$main_name.'/admin');
+	header('Location: '.$main_name.'/admin/');
 }
 else {
-	echo "<a href='/delete'>Выйти из учетной записи $login</a>";
+	echo "<a href='/delete/'>Выйти из учетной записи $login</a>";
 	$_SESSION['pass'] = $pass;
 	$_SESSION['login'] = $login;
 }
