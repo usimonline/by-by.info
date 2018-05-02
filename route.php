@@ -202,15 +202,15 @@ if ($route){
 			$rubrika_1 = $nomer_url_mass[1];
 			$rubrika_2 = $nomer_url_mass[2];
 			$rubrika_3 = $nomer_url_mass[3];
-			if (isset($nomer_url_mass[4])) $rubrika_4_bool = false;
-			else $rubrika_4_bool = true;
+			//if (isset($nomer_url_mass[4])) $rubrika_4_bool = false;
+			//else $rubrika_4_bool = true;
 			$rubrika_2_array = Array('empty','belarus','russia','ukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
 				'world','army','rusbel','history','religion','science','language','agent','nweapon','CSTO','site');
 
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;
 			//$rubrika_2_key = array_search($rubrika_2, $rubrika_2_array);
-			if( $rubrika_1 == 'admin' or ((($rubrika_1 == 'topic' and ($rubrika_2 == 'l-sidebar' or $rubrika_2 == 'toplist')) or ($rubrika_1 == 'pastnews' and $rubrika_2_key) or $rubrika_1 == 'searchnews') and $rubrika_4_bool and (string)((int)$rubrika_3) == $rubrika_3 and is_int((int)$rubrika_3) and $rubrika_3 > 9 and $rubrika_3 < ($all_count + 50) and ($rubrika_3 % 50 == 0 or $rubrika_3 == 10))) break;
+			if( $rubrika_1 == 'admin' or ((($rubrika_1 == 'topic' and ($rubrika_2 == 'l-sidebar' or $rubrika_2 == 'toplist')) or ($rubrika_1 == 'pastnews' and $rubrika_2_key) or $rubrika_1 == 'searchnews') and (string)((int)$rubrika_3) == $rubrika_3 and is_int((int)$rubrika_3) and $rubrika_3 > 9 and $rubrika_3 < ($all_count + 50) and ($rubrika_3 % 50 == 0 or $rubrika_3 == 10))) break;
 			// $rubrika_2 из массива, как сравнивать с массивом? $rubrika_2 == 'empty'
 			// нужно как-то ограничить сверху
 			//header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
