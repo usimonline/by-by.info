@@ -90,7 +90,7 @@ $teme_int = $_POST["teme_int"];
 		//echo $filename2;
 		$image_smoll_sq =  imagecreatefromjpeg($filename1_sq);
 		imagejpeg($image_smoll_sq, $filename2_sq, 10);
-    }
+    } else echo "хуйхуйхуйхуйхуйхуйхуйхуйхуй!!!";
 	if(is_uploaded_file($_FILES["filename_2"]["tmp_name"]))
 	{
 		move_uploaded_file($_FILES["filename_2"]["tmp_name"], $url_pic."/img_2.jpg");
@@ -108,7 +108,7 @@ $teme_int = $_POST["teme_int"];
 		move_uploaded_file($_FILES["filename_5"]["tmp_name"], $url_pic."/img_5.jpg");
 	}
 }
-if(@$_POST["post_vk"] == 1) require_once('vk.php');
+//if(@$_POST["post_vk"] == 1) require_once('vk.php');
 
 ?>
 
