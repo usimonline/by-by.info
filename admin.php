@@ -183,7 +183,7 @@ $res = mysqli_query($link, $select);
 ?>
 
 <h1>Панель администратора для добавления статей</h1>
-<form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/admin/<?php echo $keys_value; ?>/<?php echo $nomer_url; ?>">
+<form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/admin/<?php echo $keys_value; ?>/<?php echo $nomer_url; ?>/">
         <textarea style="width:500px; height:50px; border: 1px solid #cccccc;" name="teme" type="text" ><?php echo $teme; ?></textarea><br>
 		<textarea style="width:600px; height:50px; border: 1px solid #cccccc;" 
 		name="description" type="text" ><?php echo $description; ?></textarea><br>
