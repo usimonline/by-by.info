@@ -1,6 +1,7 @@
 RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.(php|css|js|htc|png|gif|jpeg|jpg|ico)$
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*[^/])$ $1/ [L,R=301]
 Redirect 301 /pastnews/empty/50/ https://by-by.info
