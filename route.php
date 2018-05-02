@@ -131,10 +131,10 @@ switch($rubrika){
 	break;
 	
 	case 'searchnews':
-	$keys_name = 'text'; echo 'ffdfdfdfdfdff'.$_POST['searchnews'];
+	$keys_name = 'text';
 	if (!empty($_POST['searchnews'])) {
 		$keys_value = $_POST['searchnews'];
-		$keys_value = translate_into_english($keys_value);
+		//$keys_value = translate_into_english($keys_value);
 		if($nomer_url_mass[2] == 'empty') header("Location: ".$main_name."/searchnews/".$keys_value."/50/");
 	}
 	else {
@@ -144,7 +144,7 @@ switch($rubrika){
 	else $nomer_url = $number_of_pages;
 	if ($keys_value == 'empty') $keys = '';
 	else $keys = $keys_value;
-	$keys = translate_into_russian($keys);
+	//$keys = translate_into_russian($keys);
 	break;
 	case 'topic': $keys_name = 'razdel';
 	$keys_value = $nomer_url_mass[2];
