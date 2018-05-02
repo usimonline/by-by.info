@@ -130,12 +130,11 @@ switch($rubrika){
 	$keys = translate_into_russian_pastnews($keys);
 	break;
 	
-	case 'searchnews':
+	case 'searchnews': header("Location: ".$main_name);
 	$keys_name = 'text';
 	if (!empty($_POST['searchnews'])) {
 		$keys_value = $_POST['searchnews'];
 		$keys_value = translate_into_english($keys_value);
-		$keys_value = 'dfdfdfd';
 		if($nomer_url_mass[2] == 'empty') header("Location: ".$main_name."/searchnews/".$keys_value."/50/");
 	}
 	else {
