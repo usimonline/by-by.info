@@ -73,8 +73,8 @@ switch($rubrika){
 		require("parser.php");
 		exit;
 		break;
-	case '': header('Location: '.$main_name.'/news');
-		break;
+	//case '': header('Location: '.$main_name.'/news');
+	//	break;
 	case 'rss': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 		$rss = 1;
 		// //создаем файл rss.xml
@@ -183,7 +183,9 @@ $all_count = $row[0]; // всего записей по выборке
 if ($route){
 	switch($REQUEST_URI){
 		case '/news':
+		case '/news/':
 		case '/':
+		case '':
 		case '/delete':
 		case '/robots.txt':
 		case '/sitemap':
