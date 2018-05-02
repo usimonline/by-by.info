@@ -4,10 +4,7 @@ Redirect 301 /pastnews/empty/50 https://by-by.info
 Redirect 301 /news/ https://by-by.info
 Redirect 301 /news https://by-by.info
 
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+
 
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.
