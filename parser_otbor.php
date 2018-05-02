@@ -2,7 +2,7 @@
 
 if (empty($_POST['hours'])) {
     ?>
-    <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/<?php echo $name_parse; ?>">
+    <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/<?php echo $name_parse; ?>/">
         <input type="text" name="hours" value="1"><br>
         <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить парсинг c задержкой (ввести интервал задержки в часах)"/>
     </form>
@@ -86,7 +86,7 @@ if(empty($_POST['post_1'])) {
     }
 
     ?>
-    <form method="POST" action="<?php echo $main_name; ?>/<?php echo $name_parse; ?>">
+    <form method="POST" action="<?php echo $main_name; ?>/<?php echo $name_parse; ?>/">
         <?php for ($i = 0; $i < $k; $i++): ?>
             <input type="checkbox" name="checkbox_<?php echo $i; ?>"><?php echo $content_title[$i]; ?><br>
 

@@ -114,7 +114,7 @@ imagejpeg($image_smoll_sq, $filename2_sq, 10);
 }
     $hours = $hours + $total_parse;
     ?>
-    <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/<?php echo $name_parse; ?>">
+    <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/<?php echo $name_parse; ?>/">
         <input type="text" name="hours" value="<?php echo $hours; ?>"><br>
         <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить парсинг"/>
     </form>
