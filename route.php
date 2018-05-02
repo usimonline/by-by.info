@@ -190,8 +190,11 @@ if ($route){
 		case '/delete/':
 		case '/robots.txt':
 		case '/sitemap':
+		case '/sitemap/':
 		case '/rss':
+		case '/rss/':
 		case '/parse':
+		case '/parse/':
 		case '/parse_2':
 		case '/parse_3':
 			break;
