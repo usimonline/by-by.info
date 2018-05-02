@@ -131,13 +131,12 @@ switch($rubrika){
 	break;
 	
 	case 'searchnews':
-	$keys_name = 'text'; //echo $_POST['searchnews'];
+	$keys_name = 'text';
 	if (!empty($_POST['searchnews'])) {
-		//echo $_POST['searchnews'];
-		//echo $nomer_url_mass[2];
+
 		$keys_value = $_POST['searchnews'];
 		$keys_value = translate_into_english($keys_value);
-		//echo $keys_value;
+
 		if($nomer_url_mass[2] == 'empty') header("Location: ".$main_name."/searchnews/".$keys_value."/50/");
 		exit;
 	}
@@ -176,11 +175,16 @@ switch($rubrika){
 $nomer_url_2 = $nomer_url - $number_of_pages;
 $nomer_url_3 = $nomer_url + $number_of_pages;
 
+echo $keys;
+echo $keys_name;
+
 if ($admin) $select = "SELECT COUNT(*) FROM $Name_database.$table WHERE `$keys_name` LIKE '%$keys%'";
 else $select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime > '2017-01-25 20:12:53' AND datetime < '$datetime_site' AND `$keys_name` LIKE '%$keys%'";
 $res = mysqli_query($link, $select);
 $row = mysqli_fetch_row($res);
 $all_count = $row[0]; // всего записей по выборке
+
+echo $all_count;
 
 
 if ($route){
