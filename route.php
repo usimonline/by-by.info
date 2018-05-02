@@ -135,6 +135,7 @@ switch($rubrika){
 	if (!empty($_POST['searchnews'])) {
 		$keys_value = $_POST['searchnews'];
 		$keys_value = translate_into_english($keys_value);
+		$keys_value = 'dfdfdfd';
 		if($nomer_url_mass[2] == 'empty') header("Location: ".$main_name."/searchnews/".$keys_value."/50/");
 	}
 	else {
@@ -145,7 +146,6 @@ switch($rubrika){
 	if ($keys_value == 'empty') $keys = '';
 	else $keys = $keys_value;
 	$keys = translate_into_russian($keys);
-		
 	break;
 	case 'topic': $keys_name = 'razdel';
 	$keys_value = $nomer_url_mass[2];
