@@ -131,7 +131,7 @@ switch($rubrika){
 	break;
 	
 	case 'searchnews':
-	$keys_name = 'text'; echo $_POST['searchnews'];
+	$keys_name = 'text';
 	if (!empty($_POST['searchnews'])) {
 		$keys_value = $_POST['searchnews'];
 		$keys_value = translate_into_english($keys_value);
