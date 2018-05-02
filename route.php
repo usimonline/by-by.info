@@ -147,7 +147,7 @@ switch($rubrika){
 	else $nomer_url = $number_of_pages;
 	if ($keys_value == 'empty') $keys = '';
 	else $keys = $keys_value;
-	//$keys = translate_into_russian($keys);
+	$keys = translate_into_russian($keys);
 	break;
 	case 'topic': $keys_name = 'razdel';
 	$keys_value = $nomer_url_mass[2];
