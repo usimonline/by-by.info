@@ -10,10 +10,10 @@
 		<div class="header__main">
 			<div class="header__top">
 			
-				<form action="<?php echo $main_name; ?>/searchnews/empty/50/" method="post">
+				<form action="<?php echo $main_name; ?>/searchnews/empty/50/" method="POST" name="searchnews">
 			
 			<input class="header__top-item pda"  style=" background: #f6d654;" 
-			value='Поиск' type="submit" />
+			value='Поиск' name='searchnews' type="submit" />
 			<input class="header__top-item pda" style="width:200px; height:15px; border: 1px solid #cccccc;" 
 		 name='searchnews' value='Введите слово'  />
 			</form>
