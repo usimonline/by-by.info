@@ -183,7 +183,6 @@ $all_count = $row[0]; // всего записей по выборке
 if ($route){
 	switch($REQUEST_URI){
 		case '/news':
-		case '/news/':
 		case '/':
 		case '':
 		case '/delete':
