@@ -1,8 +1,8 @@
 User-Agent: *
 Allow: /
-Disallow: /news/2018-2
 Disallow: /searchnews
 Disallow: /topic
+Disallow: /news/2018-2
 Disallow: /pastnews
 Allow: /pastnews/empty
 Host: https://by-by.info

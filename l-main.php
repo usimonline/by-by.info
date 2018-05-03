@@ -6,7 +6,11 @@
 		<ul>
 		  <?php for($count = 0 ; $count <$total; $count++): ?>
 		    <li>
-			    <a href="<?php echo $main_name; ?><?php echo $news_latest[$count]['url']; ?>">
+			    <a href="<?php echo $main_name; ?><?php
+				$temp_news_latest_url_main = $news_latest[$count]['url'];
+				echo $temp_news_latest_url_main; ?>" <?php
+				$proverka_url_main = strpos($temp_news_latest_url_main, '2018-2');
+				if ($proverka_url_main !== false) echo 'rel="nofollow"';?> >
 				<br>
 					
 				    <div class="news__pic">
