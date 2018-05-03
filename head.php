@@ -4,8 +4,8 @@ if ($route) {//Переключатель заголовков
 	$title = 'Новости Мира '.$head_nomer_url_mass.'- Новости России '.$head_nomer_url_mass.'- Новости Белоруссии и Беларуси';
 	$description = $site_name.': Новости Мира '.$head_nomer_url_mass.'- Новости России '.$head_nomer_url_mass.'- Новости Белоруссии и Беларуси';
 	$keys = 'Новости Мира '.$head_nomer_url_mass.', Новости России'.$head_nomer_url_mass.', Новости Белоруссии и Беларуси '.$head_nomer_url_mass;
-    $url_og = $site_name;
-    $url_og_picture = $site_name."/img/metro.jpg";
+    $url_og = '';
+    $url_og_picture = "/img/metro.jpg";
 } else {
 	$title = htmlspecialchars($page['teme']);
 	$description = htmlspecialchars($page['description']);
