@@ -41,7 +41,7 @@
 
 							<ul>
 
-								<li><a class="twitter-timeline" href="https://twitter.com/byby_info"   width="300" height="400"
+								<li><a class="twitter-timeline" href="https://twitter.com/byby_info"   width="240" height="400"
 									   data-chrome="nofooter" lang="ru">Твиттер By-By.info</a>
 
 
