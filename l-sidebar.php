@@ -38,17 +38,17 @@
 								</li>
 							</ul>
 
-							<!--
+
 							<ul>
 
-								<li><a class="twitter-timeline" href="https://twitter.com/by-by"   width="240" height="700"
-									   data-chrome="nofooter" lang="ru">Tweets by By-By</a>
+								<li><a class="twitter-timeline" href="https://twitter.com/byby_info"   width="240" height="400"
+									   data-chrome="nofooter" lang="ru">Твиттер By-By.info</a>
 
 
 									<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 								</li>
 							</ul>
-							-->
+
 
                         </div>
 
