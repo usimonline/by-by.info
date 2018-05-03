@@ -41,16 +41,23 @@
 
 							<ul>
 
-								<li><a class="twitter-timeline" href="https://twitter.com/byby_info"   width="240" height="400"
+								<li>
+									<!--<a class="twitter-timeline" href="https://twitter.com/byby_info"   width="240" height="400"
 									   data-chrome="nofooter" lang="ru">Твиттер By-By.info</a>
 
 
-									<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+									<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+									<a class="twitter-timeline"  href="https://twitter.com/search?q=%40byby_info" data-widget-id="991931261655617537" width="240" height="400" data-chrome="nofooter" lang="ru">Твиты про @byby_info</a>
+									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 								</li>
 							</ul>
 
 
-                        </div>
+
+
+						</div>
 
 				<div class="b opinion">
 
