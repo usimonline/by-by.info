@@ -28,12 +28,20 @@
 
 							<ul>
 								<li>
+									<!--
 									<script type="text/javascript" src="//vk.com/js/api/openapi.js?154"></script>
 
-									<!-- VK Widget -->
+
 									<div id="vk_groups"></div>
 									<script type="text/javascript">
 										VK.Widgets.Group("vk_groups", {mode: 3}, 150640109);
+									</script> -->
+									<script type="text/javascript" src="//vk.com/js/api/openapi.js?154"></script>
+
+									<div id="vk_groups"></div>
+									<script type="text/javascript">
+										VK.Widgets.Group("vk_groups", {mode: 1, width: "285", height: "300", color1: 'FFFFFF',
+											color2: '2B587A', color3: '5B7FA6'}, 150640109);
 									</script>
 								</li>
 							</ul>
@@ -48,8 +56,9 @@
 
 									<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
-									<a class="twitter-timeline"  href="https://twitter.com/search?q=%40byby_info" data-widget-id="991931261655617537" width="240" height="400" data-chrome="nofooter" lang="ru">Твиты про @byby_info</a>
+									<a class="twitter-timeline"  href="https://twitter.com/search?q=%40byby_info" data-widget-id="991931261655617537" data-chrome="nofooter" lang="ru">Твиты про @byby_info</a>
 									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 								</li>
 							</ul>
