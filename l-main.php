@@ -1,6 +1,6 @@
 <div class="l-main">
 <br>
-    <h1 class="title">Основные события (<?php if ($all_count != 0) echo ($nomer_url_2+1).'-'.$nomer_url.' всего '.$all_count; else echo 'Не обнаружено'; ?>)
+    <h1 class="title">Политические новости (<?php if ($all_count != 0) echo ($nomer_url_2+1).'-'.$nomer_url.' всего '.$all_count; else echo 'Не обнаружено'; ?>)
 	<?php if ($keys_value != 'empty') echo '<br>Поиск по ключу: '.$keys_l_main?></h1>
 	<div class="news news_latest">
 		<ul>
