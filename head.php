@@ -1,9 +1,9 @@
 <?php
 if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
-	$title = 'Политические новости ('.$head_nomer_url_mass-49).'-'.$head_nomer_url_mass.')';
-	$description = 'Портал '.$site_name.' публикует самые важные политические новости. 
-	Читайте страницы ('.$head_nomer_url_mass-49).'-'.$head_nomer_url_mass.')';
+	$title = '';//Политические новости ('.$head_nomer_url_mass-49).'-'.$head_nomer_url_mass.')';
+	$description = '';//'Портал '.$site_name.' публикует самые важные политические новости.
+	//Читайте страницы ('.$head_nomer_url_mass-49).'-'.$head_nomer_url_mass.')';
 	$keys = 'Политические новости';
     $url_og = '';
     $url_og_picture = "/img/metro.jpg";
