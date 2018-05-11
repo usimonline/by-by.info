@@ -42,7 +42,7 @@ transition:all 0.2s linear;}
 .l .l-sidebar__inner{width:300px;}
 .main-wrap{*zoom:1;position:relative;}
 .main-wrap:after{content:" ";display:table;clear:both;}
-.header{margin:20px 0;position:relative;border-bottom:1px solid gainsboro;}
+.header{margin:20px 0 0 0;position:relative;border-bottom:1px solid gainsboro;}
 .header__right{width:360px;text-align:center;display:inline-block;float:left;}
 .logo{background:url('../img/metro.jpg') no-repeat;background-size:cover;width:260px;height:70px;font:0/0 a;text-shadow:none;
 color:transparent;margin:37px 0 20px 0;display:inline-block;}
