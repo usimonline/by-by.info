@@ -32,10 +32,15 @@
 		   <br>
 		   <?php
 	   }
-			if($news_year_2 == 0) echo '<p>'.nl2br($page['text']).'</p>';
-			else echo $page['text'];
+			if($news_year_2 == 0) {
+				$string_page_temp = '<p>'.str_replace("\n\n", '</p><p>', $page['text']).'</p>';
+				$string_page_temp = str_replace("\n", '<br>', $string_page_temp);
+				echo $string_page_temp;
+				//echo '<p>'.nl2br($page['text']).'</p>';
+
+			} else echo $page['text'];
 			?>
-<p><center></p>
+<p></p>
 <?php echo $page['url_frame']; ?>
 
 		<p><a target="_blank" href="<?php echo $main_name; ?><?php echo $page['url_int']; ?>"><?php echo $page['teme_int']; ?></a></p>
