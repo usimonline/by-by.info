@@ -34,7 +34,7 @@ require_once("head.php");
 		
 		require_once("l-sidebar.php");
 		
-		if ($route) //require_once("l-main.php");
+		//if ($route) require_once("l-main.php");
 		else require_once("page.php");
 		?>
 	</div>
