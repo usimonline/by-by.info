@@ -28,7 +28,6 @@ require_once("head.php");
 
 
   <div class="main-wrap">
-      проверка
     <div class="l-top">
         проверка_2<br><br>
 	    <?php
