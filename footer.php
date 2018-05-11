@@ -1,4 +1,4 @@
-
+<footer>
     <div class="footer__topics">
 		<ul>
 		<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50" rel="nofollow">Белоруссия</a></li>
@@ -119,3 +119,4 @@
 		
 	</div>
 </div>
+</footer>
