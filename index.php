@@ -28,7 +28,7 @@ require_once("head.php");
 
 
   <div class="main-wrap">
-    <div class="l-top"> <!-- можно бурать, красная линия сдвигается вниз -->
+    <div class="l-top">
 	    <?php
 		if ($route) require_once("toplist.php");
 		
@@ -39,7 +39,7 @@ require_once("head.php");
 		?>
 	</div>
     <?php
-    //require_once("footer.php");
+    require_once("footer.php");
     ?>
   </div>
 </div>
