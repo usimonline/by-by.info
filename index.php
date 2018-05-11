@@ -28,7 +28,7 @@ require_once("head.php");
 
 
   <div class="main-wrap">
-    <div class="l-top">
+   
         <br><br>проверка_2<br><br><br><br>
 	    <?php
 		if ($route) require_once("toplist.php");
@@ -38,7 +38,7 @@ require_once("head.php");
 		if ($route) require_once("l-main.php");
 		else require_once("page.php");
 		?>
-	</div>
+
     <?php
     require_once("footer.php");
     ?>
