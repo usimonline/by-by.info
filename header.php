@@ -36,33 +36,4 @@
 	</header>
 	<!-- END header -->
 
-	<div id="header_categories">
-		<div class="button icon-down-open"><span>Рубрики</span></div>
-		<ul>
-			<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50" rel="nofollow">Белоруссия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/russia/50" rel="nofollow">Россия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/ukri/50" rel="nofollow">Украина</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/poland/50" rel="nofollow">Польша</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/west/50" rel="nofollow">Запад</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/agent/50" rel="nofollow">Агенты Запада</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/ussr/50" rel="nofollow">СССР</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/cis/50" rel="nofollow">СНГ</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/economy/50" rel="nofollow">Экономика</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50" rel="nofollow">Политика</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/syria/50" rel="nofollow">Сирия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/novoros/50" rel="nofollow">Новороссия</a></li>
-
-			<li><a href="<?php echo $main_name; ?>/pastnews/world/50" rel="nofollow">Мир</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/baltic/50" rel="nofollow">Прибалтика</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/army/50" rel="nofollow">Армия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/rusbel/50" rel="nofollow">Союзное государство России и Белоруссии</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/history/50" rel="nofollow">История</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/religion/50" rel="nofollow">Религия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/science/50" rel="nofollow">Наука</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/language/50" rel="nofollow">Русский язык</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/nweapon/50" rel="nofollow">Ядерное оружие</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/CSTO/50" rel="nofollow">ОДКБ</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/site/50" rel="nofollow"><?php echo $site_name; ?></a></li>
-
-		</ul>
-	</div>
+	
