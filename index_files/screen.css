@@ -105,14 +105,6 @@ font-size:1.1rem;font-family:"ProximaNova-Semibold",Arial,sans-serif;font-weight
 .footer__topics li:before{content:"";position:absolute;top:11px;left:-11px;width:3px;height:3px;border-radius:50%;background:gainsboro;}
 .footer__topics li a{text-decoration:none;color:black;}
 .footer__topics li a:hover{color:#ed1c24;}
-
-.header__topics ul{font-size:0;margin-right:-20px;}
-.header__topics li{display:inline-block;position:relative;margin-right:20px;line-height:2.4;font-size:11px;
-	font-size:1.1rem;font-family:"ProximaNova-Semibold",Arial,sans-serif;font-weight:normal;letter-spacing:0.08em;text-transform:uppercase;}
-.header__topics li:before{content:"";position:absolute;top:11px;left:-11px;width:3px;height:3px;border-radius:50%;background:gainsboro;}
-.header__topics li a{text-decoration:none;color:black;}
-.header__topics li a:hover{color:#ed1c24;}
-
 .sponsors{*zoom:1;font-size:0;margin-top:23px;}
 .sponsors:after{content:" ";display:table;clear:both;}
 .sponsors .sponsors__item:last-child{margin-right:0;}
