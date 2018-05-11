@@ -97,7 +97,14 @@ font-size:1rem;line-height:40px;text-decoration:none;text-transform:uppercase;co
 .search .search__btn{margin-left:20px;vertical-align:top;}
 .search__main .search__btn{float:right;margin-top:-50px;}
 .search__main .search__input{margin-right:130px;margin-bottom:10px;}
-
+.footer{margin-top:70px;border-top:2px solid #ed1c24;padding-bottom:30px;}
+.footer__topics{margin-top:12px;padding-bottom:30px;border-bottom:1px solid gainsboro;}
+.footer__topics ul{font-size:0;margin-right:-20px;}
+.footer__topics li{display:inline-block;position:relative;margin-right:20px;line-height:2.4;font-size:11px;
+font-size:1.1rem;font-family:"ProximaNova-Semibold",Arial,sans-serif;font-weight:normal;letter-spacing:0.08em;text-transform:uppercase;}
+.footer__topics li:before{content:"";position:absolute;top:11px;left:-11px;width:3px;height:3px;border-radius:50%;background:gainsboro;}
+.footer__topics li a{text-decoration:none;color:black;}
+.footer__topics li a:hover{color:#ed1c24;}
 .sponsors{*zoom:1;font-size:0;margin-top:23px;}
 .sponsors:after{content:" ";display:table;clear:both;}
 .sponsors .sponsors__item:last-child{margin-right:0;}
