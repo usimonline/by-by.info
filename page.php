@@ -42,10 +42,10 @@
 
 			} else echo $page['text'];
 			?>
-<p><center></p>
+<p></p>
 <?php echo $page['url_frame']; ?>
 
-		<p><a target="_blank" href="<?php echo $main_name; ?><?php echo $page['url_int']; ?>"><?php echo $page['teme_int']; ?></a></p>
+		<p><center><a target="_blank" href="<?php echo $main_name; ?><?php echo $page['url_int']; ?>"><?php echo $page['teme_int']; ?></a></center></p>
 
 
 <div class="comments" id="comments" style="text-align: left;">
