@@ -34,12 +34,12 @@ require_once("head.php");
 		
 		require_once("l-sidebar.php");
 		
-		//if ($route) require_once("l-main.php");
-		//else require_once("page.php");
+		if ($route) require_once("l-main.php");
+		else require_once("page.php");
 		?>
 	</div>
     <?php
-    require_once("footer.php");
+    //require_once("footer.php");
     ?>
   </div>
 </div>
