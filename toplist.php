@@ -1,4 +1,5 @@
 <div class="topnews">
+	Проверка_3
 			<div class="topnews__pic">
 			    <a href="<?php echo $main_name; ?><?php echo $topnews[0]['url']; ?>">
 				    <img src="<?php echo str_replace('news', 'pictures', $topnews[0]['url']); ?>/img_1.jpg" 
