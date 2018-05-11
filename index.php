@@ -30,6 +30,7 @@ require_once("head.php");
   <div class="main-wrap">
       проверка
     <div class="l-top">
+        проверка_2
 	    <?php
 		if ($route) require_once("toplist.php");
 		
