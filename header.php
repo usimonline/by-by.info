@@ -36,7 +36,7 @@
 	</header>
 	<!-- END header -->
 
-	<div>
+	<div class="footer__topics">
 		<ul>
 			<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50" rel="nofollow">Беларусь</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/russia/50" rel="nofollow">Россия</a></li>
