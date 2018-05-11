@@ -28,9 +28,7 @@ require_once("head.php");
 
 
   <div class="main-wrap">
-      Политические
     <div class="l-top">
-        новости
 	    <?php
 		if ($route) require_once("toplist.php");
 		
