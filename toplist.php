@@ -28,7 +28,11 @@
 					  <?php for($count = 0 ; $count <4; $count++): ?>
 					    <li>
 						    <a href="<?php echo $main_name; ?><?php echo $toplist[$count]['url']; ?>">
-							    <div class="news__pic"><img src="<?php echo str_replace('news', 'pictures', $toplist[$count]['url']); ?>/img_1_2.jpg"></div>
+							    <div class="news__pic"><img src="<?php
+									$url_pic_news_latest = str_replace('coldwar', 'pictures', $toplist[$count]['url']);
+									$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
+									$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+									echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg"></div>
 								<span class="news__time"><?php echo $toplist[$count]['datetime']; ?></span>
 								<strong class="news__title"><?php echo $toplist[$count]['teme']; ?></strong>
 							</a>
