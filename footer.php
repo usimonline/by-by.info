@@ -39,57 +39,57 @@
 
 				<div class="owl-item" style="width: 232px;">
 					<div class="spons-item">
-						<img src="<?php echo $main_name; ?>/img/friend_4.jpg">
+						<img src="<?php echo $main_name; ?>/img/friend_4.jpg" alt="pic1"/>
 					</div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 					<div class="spons-item">
-						<img src="<?php echo $main_name; ?>/img/friend_4.jpg">
+						<img src="<?php echo $main_name; ?>/img/friend_4.jpg" alt="pic2"/>
 					</div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_4.jpg">
+                        <img src="<?php echo $main_name; ?>/img/friend_4.jpg" alt="pic3"/>
                     </div>
 		        </div>
 				<div class="owl-item" style="width: 232px;">
 				    <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_5.jpg">
+                        <img src="<?php echo $main_name; ?>/img/friend_5.jpg" alt="pic4"/>
                     </div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_6.jpg">
+                        <img src="<?php echo $main_name; ?>/img/friend_6.jpg" alt="pic5"/>
 					</div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_7.jpg">
+                        <img src="<?php echo $main_name; ?>/img/friend_7.jpg" alt="pic6"/>
                     </div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_4.jpg">
+                        <img src="<?php echo $main_name; ?>/img/friend_4.jpg" alt="pic7"/>
 					</div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_5.png">
+                        <img src="<?php echo $main_name; ?>/img/friend_5.png" alt="pic8"/>
                     </div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_6.png">
+                        <img src="<?php echo $main_name; ?>/img/friend_6.png" alt="pic9"/>
 					</div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_7.jpg">
+                        <img src="<?php echo $main_name; ?>/img/friend_7.jpg" alt="pic10"/>
 					</div>
 				</div>
 				<div class="owl-item" style="width: 232px;">
 		            <div class="spons-item">
-                        <img src="<?php echo $main_name; ?>/img/friend_8.png">
+                        <img src="<?php echo $main_name; ?>/img/friend_8.png" alt="pic11"/>
                     </div>
 				</div>
 			</div>
