@@ -60,7 +60,6 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 	<link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/screen-fix.css" />
 	<!--[if IE]><script src="/js/html5shiv.js"></script><![endif]-->
 
-<link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/classic-081711.css" />
 <script  src="<?php echo $main_name; ?>/index_files/mUjileCiCX-zdqBJO6mmFaJtiV4m78ixEoiEZmr9IDM.js"></script>
 <script src="<?php echo $main_name; ?>/index_files/remote.js"></script>
 <script  src="<?php echo $main_name; ?>/index_files/watch.js"></script>
