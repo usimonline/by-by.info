@@ -9,7 +9,7 @@ if (!$route) require_once("login_users.php");
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <?php
 require_once("head.php");
