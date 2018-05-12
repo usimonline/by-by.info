@@ -68,7 +68,7 @@
 			<p class="comment__content"><?php echo nl2br(strip_tags($comments[$k]['text_com'])); ?></p>
 		        </div>
 		</div>
-		<div id="endcomments" style="margin: 0 0 30px 0;">&nbsp;</div>
+		<div style="margin: 0 0 30px 0;">&nbsp;</div>
       <?php endfor; ?>
 
 
