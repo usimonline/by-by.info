@@ -32,11 +32,11 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 </script>
 
 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
 
 	<title><?php echo $title; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
 
 
