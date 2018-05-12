@@ -111,7 +111,7 @@
 						<input type="text" name="login" id="in_author" maxlength="20">
 					    </div>
 					    <div class="comments__input">
-						<label for="in_email">Пароль</label>
+						<label>Пароль</label>
 						<input type="password" name="pass" maxlength="20">
 						<span class="comments__info-text">Запомните логин и пароль для последующего входа</span>
 						<span class="comments__info-text"><b></b></span>
