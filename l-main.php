@@ -14,7 +14,11 @@
 				<br>
 					
 				    <div class="news__pic">
-					    <img src="<?php echo str_replace('news', 'pictures', $news_latest[$count]['url']); ?>/img_1_2.jpg"
+					    <img src="<?php
+						$url_pic_news_latest = str_replace('coldwar', 'pictures', $news_latest[$count]['url']);
+						$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
+						$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+						echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg"
 						alt="<?php echo $news_latest[$count]['teme']; ?>" width="360" />
 					</div>
 
