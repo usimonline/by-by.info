@@ -63,7 +63,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta name="title" content="<?php echo $title; ?>" />
 <link rel="image_src" href="<?php echo $site_name; ?><?php echo $url_og_picture; ?>" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php echo $site_name; ?>/rss.xml" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/rss.xml" />
 
 
 
