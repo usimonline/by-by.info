@@ -50,7 +50,7 @@ function transform_img($string,$url) {
 	$url = str_replace('belnews', 'pictures', $url);
 	$url = str_replace('news', 'pictures', $url);
 	$url = str_replace('polithumor', 'pictures', $url);
-	$img=array('<img src="'.$url.'img_','.jpg" />');
+	$img=array('<img src="'.$url.'img_','.jpg" alt="picture" />');
 	$zamena=array('<img_','img>');
 	$string = str_replace($zamena, $img, $string);
 	return $string;

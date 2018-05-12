@@ -9,7 +9,8 @@
 			</ul>
 		</header>
 		<figure class="article__left article__photo">
-			<img src="<?php echo str_replace($rubrika_izmenenie, 'pictures', $page['url']); ?>/img_1.jpg" width="360"  />
+			<img src="<?php echo str_replace($rubrika_izmenenie, 'pictures', $page['url']); ?>/img_1.jpg" width="360"
+				 alt="<?php echo str_replace('"','',$page['teme']); ?>"/>
 		</figure>
 		<p class="lead"><?php echo $page['description']; ?></p>
 
