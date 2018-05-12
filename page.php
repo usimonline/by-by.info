@@ -36,7 +36,7 @@
 				$string_page_temp = nl2br($page['text']);
 				$string_page_temp = '<p>'.str_replace("<br />\r\n<br />", '</p><p>', $string_page_temp).'</p>';
 				$string_page_temp =  str_replace("<br />\n\r<br />", '</p><p>', $string_page_temp);
-				//$string_page_temp = str_replace("\n", '<br>', $string_page_temp);
+				$string_page_temp = str_replace("<br />", '</p><p>', $string_page_temp);
 				echo $string_page_temp;
 				//echo '<p>'.nl2br($page['text']).'</p>';
 
