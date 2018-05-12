@@ -24,7 +24,7 @@
 			   }})();</script>
 	   <div class="pluso" data-background="#ebebeb" data-options="medium,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,livejournal,email">
 
-	   </div><br>
+	   </div><p></p>
 	   <?php  if ($page['url_ext'] != 'https://by-by.info/news') { ?>
 		   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><p></p>
 		   <?php
