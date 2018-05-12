@@ -78,7 +78,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <script src="<?php echo $main_name; ?>/index_files/remote.js"></script>
 <script  src="<?php echo $main_name; ?>/index_files/watch.js"></script>
 <script  src="<?php echo $main_name; ?>/index_files/www-embed-player.js"></script>
-<script src="https://vk.com/js/api/openapi.js?153" "></script>
+<script src="https://vk.com/js/api/openapi.js?153"></script>
 
 <!-- Yandex.Metrika counter -->
 <script>
