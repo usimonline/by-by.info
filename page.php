@@ -46,7 +46,7 @@
 <p></p>
 <?php echo $page['url_frame']; ?>
 
-		<p><center><a target="_blank" href="<?php echo $main_name; ?><?php echo $page['url_int']; ?>"><?php echo $page['teme_int']; ?></a></center></p>
+		<p style="text-align: center;"><a target="_blank" href="<?php echo $main_name; ?><?php echo $page['url_int']; ?>"><?php echo $page['teme_int']; ?></a></p>
 
 
 <div class="comments" id="comments" style="text-align: left;">
