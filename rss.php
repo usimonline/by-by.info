@@ -4,17 +4,17 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
         <title>
-            '.$site_name.' :: Новости Беларуси - Белорусские новости - Новости Белоруссии - Республика Беларусь - Минск
+            '.$site_name.' :: Политические новости
         </title>
         <link>'.$main_name.'</link>
         <description>
-            '.$site_name.' :: Новости Беларуси, Белорусские новости, Новости Белоруссии, News from Belarus
+            '.$site_name.' :: Политические новости
         </description>
         <image>
             <url>'.$main_name.'/img/metro.jpg
             </url>
             <title>
-                '.$site_name.' :: Новости Беларуси - Белорусские новости - Новости Белоруссии - Республика Беларусь - Минск
+                '.$site_name.' :: Политические новости
             </title>
             <link>'.$main_name.'
             </link>
@@ -30,7 +30,10 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
         for($i = 0; $i < $total; $i++) {
             $n_l_t =  $news_latest[$i]['teme'];
             $n_l_u = $news_latest[$i]['url'];
-            $n_l_u_pict = str_replace('news','pictures',$n_l_u).'/img_1.jpg';
+            $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
+            $url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
+            $url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+            $n_l_u_pict = str_replace('news','pictures',$url_pic_news_latest).'/img_1.jpg';
             $n_l_date = DateTime::createFromFormat('Y-m-d H:i:s', $news_latest[$i]['datetime'])->format(DateTime::RSS);
             $n_l_des = $news_latest[$i]['description'];
             $n_l_u_mass = explode( '/', $n_l_u);
@@ -42,9 +45,9 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             <description>' . $n_l_des . '</description> 
             <atom:author>
 			<atom:name>By-by.info</atom:name>
-			<atom:uri>https://by-by.info/news</atom:uri>
+			<atom:uri>https://by-by.info</atom:uri>
 			</atom:author>    
-            <category domain="https://by-by.info/news">news</category>
+            <category domain="https://by-by.info">news</category>
             <enclosure url="' . $main_name . $n_l_u_pict . '" type="image/jpeg" length="309999" />
             <guid isPermaLink="true">' . $main_name . $n_l_u . '</guid>
             <pubDate>' . $n_l_date . '</pubDate>
