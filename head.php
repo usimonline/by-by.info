@@ -45,21 +45,16 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta name="twitter:site" content="@byby_info"/>
 <meta name="twitter:title" content="<?php echo $title; ?>" />
 <meta name="twitter:description" content="<?php echo $description ?>" />
-<meta property="og:url" content="<?php echo $main_name; ?><?php echo $url_og; ?>" />
 <meta name="twitter:image:src" content="<?php echo $main_name; ?><?php echo $url_og_picture; ?>" />
-
-
-	<meta name="description" content="<?php echo $description ?>" >
-	<meta name="keywords" content="<?php echo $keys; ?>">
+<meta name="description" content="<?php echo $description ?>" >
+<meta name="keywords" content="<?php echo $keys; ?>">
 <meta property="og:type" content="website" />
+<meta property="og:url" content="<?php echo $main_name; ?><?php echo $url_og; ?>" />
 <meta property="og:title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
 <meta property="og:description" content="<?php echo $site_name; ?> :: <?php echo $description ?>" />
-
-
 <meta property="og:image" content="<?php echo $main_name; ?><?php echo $url_og_picture; ?>" />
 <meta property="og:image:width" content="299" />
 <meta property="og:image:height" content="249" />
-
 <meta name="title" content="<?php echo $title; ?>" />
 
 	<link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/screen.css">
