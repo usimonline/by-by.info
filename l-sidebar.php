@@ -11,7 +11,11 @@
 					<?php for($count = 0 ; $count <4; $count++): ?>
 					<a href="<?php echo $main_name; ?><?php echo $lsidebar[$count]['url']; ?>" class="opinion__item">
 					    <div class="opinion__pic">
-						    <img src="<?php echo str_replace('news', 'pictures', $lsidebar[$count]['url']); ?>/img_1_2.jpg"
+						    <img src="<?php
+							$url_pic_news_latest = str_replace('coldwar', 'pictures', $lsidebar[$count]['url']);
+							$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
+							$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+							echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg"
 								 alt="<?php echo $lsidebar[$count]['teme']; ?>" width="120" height="76">
 						</div>
 						<div class="opinion__content"><strong class="news__title"><?php echo $lsidebar[$count]['teme']; ?></strong>
