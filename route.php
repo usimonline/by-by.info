@@ -34,7 +34,7 @@ if (empty($row)) {
 if ($row['url_ext'] == NULL) $page['url_ext'] = 'https://ria.ru/';
 else $page['url_ext'] = $row['url_ext'];
 if ($row['url_frame'] == NULL) $page['url_frame'] = '';
-else $page['url_frame'] = '<p><iframe width="100" height="360" src="'.$row['url_frame'].'" frameborder="0" allowfullscreen></iframe></p>';
+else $page['url_frame'] = '<p><iframe height="360" src="'.$row['url_frame'].'" frameborder="0" allowfullscreen></iframe></p>';
 if ($row['url_int'] == NULL) $page['url_int'] = '/news';
 else $page['url_int'] = $row['url_int'];
 if ($row['teme_int'] == NULL) $page['teme_int'] = 'Смотрите другие новости по этой теме.';
