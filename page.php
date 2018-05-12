@@ -90,7 +90,7 @@
 					        <textarea name="text_com"  cols="" rows="10" maxlength="1000"></textarea>
 					        <button class="comments__submit" id="commentFormSubmit">Отправить</button>
 					        <span class="comments__info-text"><b></b></span>
-						<form>
+						</form>
 
 				</div>
 			</div>
@@ -119,7 +119,7 @@
 							<div class="comments__input">
 							<button class="comments__submit" id="commentFormSubmit">Войти или зарегистрироваться</button>
 								</div>
-						<form>
+						</form>
 
 				</div>
 			</div>
