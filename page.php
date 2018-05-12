@@ -26,10 +26,10 @@
 
 	   </div><br>
 	   <?php  if ($page['url_ext'] != 'https://by-by.info/news') { ?>
-		   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><br>
+		   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><p></p>
 		   <?php
 	   } else { ?>
-		   <br>
+		   <p></p>
 		   <?php
 	   }
 			if($news_year_2 == 0) {
