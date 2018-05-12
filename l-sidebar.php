@@ -97,7 +97,6 @@
 
 
 					<ul>
-						<li><strong><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></strong></li>
 						<h3 class="title">подписка</h3>
 							<li><a class="icon-facebook-1" href="https://www.facebook.com/bybyinform/">facebook</a></li>
 							<li><a class="icon-video" href="https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg">youtube</a></li>
