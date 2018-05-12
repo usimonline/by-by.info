@@ -74,14 +74,14 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 	<!--[if IE]><script src="/js/html5shiv.js"></script><![endif]-->
 
 <link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/classic-081711.css">
-<script type="text/javascript" src="<?php echo $main_name; ?>/index_files/mUjileCiCX-zdqBJO6mmFaJtiV4m78ixEoiEZmr9IDM.js"></script>
-<script type="text/javascript" src="<?php echo $main_name; ?>/index_files/remote.js"></script>
-<script type="text/javascript" src="<?php echo $main_name; ?>/index_files/watch.js"></script>
-<script type="text/javascript" src="<?php echo $main_name; ?>/index_files/www-embed-player.js"></script>
-<script src="https://vk.com/js/api/openapi.js?153" type="text/javascript"></script>
+<script  src="<?php echo $main_name; ?>/index_files/mUjileCiCX-zdqBJO6mmFaJtiV4m78ixEoiEZmr9IDM.js"></script>
+<script src="<?php echo $main_name; ?>/index_files/remote.js"></script>
+<script  src="<?php echo $main_name; ?>/index_files/watch.js"></script>
+<script  src="<?php echo $main_name; ?>/index_files/www-embed-player.js"></script>
+<script src="https://vk.com/js/api/openapi.js?153" "></script>
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script>
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {

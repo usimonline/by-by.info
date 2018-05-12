@@ -16,7 +16,7 @@
 							$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
 							$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
 							echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg"
-								 alt="<?php echo $lsidebar[$count]['teme']; ?>" width="120" height="76">
+								 alt="<?php echo str_replace('"','',$lsidebar[$count]['teme']); ?>" width="120" height="76">
 						</div>
 						<div class="opinion__content"><strong class="news__title"><?php echo $lsidebar[$count]['teme']; ?></strong>
 						    <span class="opinion__author"><?php echo $lsidebar[$count]['description']; ?></span>
@@ -40,10 +40,10 @@
 									<script type="text/javascript">
 										VK.Widgets.Group("vk_groups", {mode: 3}, 150640109);
 									</script> -->
-									<script type="text/javascript" src="//vk.com/js/api/openapi.js?154"></script>
+									<script  src="//vk.com/js/api/openapi.js?154"></script>
 
 									<div id="vk_groups"></div>
-									<script type="text/javascript">
+									<script>
 										VK.Widgets.Group("vk_groups", {mode: 1, width: "190", height: "300", color1: 'FFFFFF',
 											color2: '2B587A', color3: '5B7FA6'}, 150640109);
 									</script>
