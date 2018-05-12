@@ -34,12 +34,12 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-	
+
 	<title><?php echo $title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="expires" content="0">
-	<meta http-equiv="cache-control" content="no-cache">
+
+
+
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@byby_info"/>
@@ -80,32 +80,3 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <script  src="<?php echo $main_name; ?>/index_files/www-embed-player.js"></script>
 <script src="https://vk.com/js/api/openapi.js?153"></script>
 
-<!-- Yandex.Metrika counter -->
-<script>
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter48457331 = new Ya.Metrika({
-                    id:48457331,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/48457331" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
