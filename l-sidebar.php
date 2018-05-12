@@ -98,6 +98,17 @@
 
 					<ul>
 						<li><strong><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></strong></li>
+						<h3 class="title">подписка</h3>
+							<li><a class="icon-facebook-1" href="https://www.facebook.com/bybyinform/">facebook</a></li>
+							<li><a class="icon-video" href="https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg">youtube</a></li>
+							<li><a class="icon-twitter" href="https://twitter.com/byby_info">twitter</a></li>
+							<li><a class="icon-vk" href="https://vk.com/bybyinfo">vkontakte</a></li>
+							<li><a class="icon-odnoklassniki" href="https://ok.ru/group/59043407855648">ok.ru</a></li>
+						    <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/">instagram</a></li>
+						    <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/">https://bybyinfo.livejournal.com/</a></li>
+						    <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/">https://ru.pinterest.com/byby_info/</a></li>
+							<!-- <li><a class="icon-gplus" href="https://google.com/+charter97org_news/">gplus</a></li>-->
+							<li><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></li>
 					</ul>
 					
 				</div>
