@@ -19,7 +19,7 @@
 						$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
 						$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
 						echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg"
-						alt="<?php echo $news_latest[$count]['teme']; ?>" width="360" />
+						alt="<?php echo str_replace('"','',$news_latest[$count]['teme']); ?>" width="360" />
 					</div>
 
 					<span class="news__time"><?php echo $news_latest[$count]['datetime']; ?></span>
