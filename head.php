@@ -22,7 +22,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta name="google-site-verification" content="wUwLaGLrSvEUwUO380Lw1wTJ1mSMSy5aloNlqG7Eg80" />
 <meta name="p:domain_verify" content="528be2d34b6e17fe888a1fd12e3b9cea"/>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296803-1"></script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296803-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
