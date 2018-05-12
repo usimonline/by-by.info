@@ -48,7 +48,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta name="twitter:image:src" content="<?php echo $main_name; ?><?php echo $url_og_picture; ?>" />
 <meta name="description" content="<?php echo $description ?>" />
 <meta name="keywords" content="<?php echo $keys; ?>" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="<?php echo $main_name; ?><?php echo $url_og; ?>" />
 <meta property="og:title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
 <meta property="og:description" content="<?php echo $site_name; ?> :: <?php echo $description ?>" />
