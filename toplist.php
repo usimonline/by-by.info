@@ -1,7 +1,11 @@
 <div class="topnews">
 			<div class="topnews__pic">
 			    <a href="<?php echo $main_name; ?><?php echo $topnews[0]['url']; ?>">
-				    <img src="<?php echo str_replace('news', 'pictures', $topnews[0]['url']); ?>/img_1.jpg" 
+				    <img src="<?php
+					$url_pic_news_latest = str_replace('coldwar', 'pictures', $topnews[0]['url']);
+					$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
+					$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+					echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1.jpg"
 					alt="<?php echo $topnews[0]['teme']; ?>" width="355"  />
 			    </a>
 			</div>
