@@ -5,8 +5,9 @@ $REQUEST_URI = $_SERVER['REQUEST_URI'];
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
 if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'){
+	$rubrika_izmenenie = $nomer_url_mass[1];
 	$nomer_url_mass[1] = 'news';
-}
+} else $rubrika_izmenenie = 'news';
 
 $head_nomer_url_mass = $nomer_url_mass[3];
 $head_nomer_url_mass_2 = $nomer_url_mass[2];
@@ -218,7 +219,7 @@ if ($route){
 			$count_slash = substr_count($REQUEST_URI, '/');
 			if ($count_slash > 4) $rubrika_4_bool = false;
 			else $rubrika_4_bool = true;
-			$rubrika_2_array = Array('empty','belarus','russia','ukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
+			$rubrika_2_array = Array('belnews','coldwar','polithumor','empty','belarus','russia','ukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
 				'world','army','rusbel','history','religion','science','language','agent','nweapon','CSTO','site');
 
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
