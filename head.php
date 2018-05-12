@@ -61,13 +61,6 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta property="og:image:height" content="249" />
 
 <meta name="title" content="<?php echo $title; ?>" />
-<link rel="image_src" href="<?php echo $site_name; ?><?php echo $url_og_picture; ?>" />
-
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/rss.xml" />
-
-
-
-	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $main_name; ?>/favicon.ico">
 
 	<link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/screen.css">
 	<link rel="stylesheet" media="screen" href="<?php echo $main_name; ?>/index_files/screen-fix.css">
