@@ -4,6 +4,10 @@ $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
+if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'){
+	$nomer_url_mass[1] = 'news';
+}
+
 $head_nomer_url_mass = $nomer_url_mass[3];
 $head_nomer_url_mass_2 = $nomer_url_mass[2];
 
