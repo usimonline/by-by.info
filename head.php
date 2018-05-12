@@ -22,7 +22,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta name="google-site-verification" content="wUwLaGLrSvEUwUO380Lw1wTJ1mSMSy5aloNlqG7Eg80" />
 <meta name="p:domain_verify" content="528be2d34b6e17fe888a1fd12e3b9cea"/>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296803-1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296803-1"></script> -->
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -49,7 +49,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta name="description" content="<?php echo $description ?>" />
 <meta name="keywords" content="<?php echo $keys; ?>" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://by-by.info/rss.xml" />
+<meta property="og:url" content="<?php echo $main_name; ?><?php echo $url_og; ?>" />
 <meta property="og:title" content="<?php echo $site_name; ?> :: <?php echo $title; ?>" />
 <meta property="og:description" content="<?php echo $site_name; ?> :: <?php echo $description ?>" />
 <meta property="og:image" content="<?php echo $main_name; ?><?php echo $url_og_picture; ?>" />
