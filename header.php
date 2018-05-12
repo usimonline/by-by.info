@@ -58,7 +58,8 @@
 							$url_pic_news_latest = str_replace('coldwar', 'pictures', $header[$count]['url']);
 							$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
 							$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
-							echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg" width="228" height="76" />
+							echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg" width="228" height="76"
+								 alt="<?php echo str_replace('"','',$header[$count]['teme']); ?>" />
 							<span><?php echo $header[$count]['teme']; ?></span>
                         </a>
                     </li>
