@@ -254,7 +254,7 @@ echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;';?><br>
 <textarea style="width:200px; height:30px; border: 1px solid #cccccc;" 
 		name="datetime" type="text" ><?php echo $datetime; ?></textarea><br>
 		<textarea 	 name="id" type="text" ><?php echo $id; ?></textarea><br>
-	<p>coldwar belnews polithumor</p><br>
+	<p>belnews coldwar polithumor</p><br>
 		<textarea style="width:600px; height:25px; border: 1px solid #cccccc;" name="url" type="text" ><?php echo $url; ?></textarea><br>
         <p>Добавить картинки (360х230, jpg, Главная)</p>
 		<input type="hidden" name="MAX_FILE_SIZE" value="600000">
