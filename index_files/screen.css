@@ -14,6 +14,7 @@ textarea{overflow:auto;}
 input,button{margin:0;padding:0;border:0;}
 div,input,textarea,select,button,h1,h2,h3,h4,h5,h6,a,span,a:focus{outline:none;}
 ul,ol{list-style-type:none;}
+
 table{
 	border-spacing:0;border-collapse:collapse;width:100%;
 	}
@@ -33,6 +34,10 @@ transition:all 0.2s linear;}
 	box-sizing:border-box;background:white;border:1px solid #a6a6a6;font-family:'ProximaNova-Semibold',Arial,sans-serif;font-weight:normal;
 	font-size:15px;font-size:1.5rem;text-transform:uppercase;text-align:center;letter-spacing:0.1em;vertical-align:top;}
 .oz .date_article_search:hover{color:#ed1c24;}
+.spiski {
+	font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
+	font-size: 250%;
+}
 .l{max-width:1160px;padding:0 60px;margin:auto;*zoom:1;}
 .l:after{content:" ";display:table;clear:both;}
 .l .l-top{float:left;margin-right:30px;margin-bottom:20px;*zoom:1;}
