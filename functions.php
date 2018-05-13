@@ -64,7 +64,7 @@ function transform_img($string,$url) {
 	$url = str_replace('belnews', 'pictures', $url);
 	$url = str_replace('news', 'pictures', $url);
 	$url = str_replace('polithumor', 'pictures', $url);
-	$img=array('<img src="'.$url.'img_','.jpg" alt="picture" />');
+	$img=array('<figure class="article__video"><div class="article__video-container"><img src="'.$url.'img_','.jpg" alt="Альтернатива" /></div><figcaption>Подпись под фото</figcaption></figure><p></p><p>');
 	$zamena=array('<img_','img>');
 	$string = str_replace($zamena, $img, $string);
 	return $string;

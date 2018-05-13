@@ -20,6 +20,7 @@ if (!empty($_POST['teme'])){
 	$description = $_POST["description"];
 	$razdel = $_POST["razdel"];
 	$text = $_POST["text"];
+	$picture_text = $_POST["picture_text"];
 	$text = transform_img($text,$url);
 	$keys = $_POST["keys"];
 $url_ext = $_POST["url_ext"];
