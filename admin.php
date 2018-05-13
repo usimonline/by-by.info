@@ -21,7 +21,17 @@ if (!empty($_POST['teme'])){
 	$razdel = $_POST["razdel"];
 	$text = $_POST["text"];
 	$picture_text = $_POST["picture_text"];
-	$text = transform_img($text,$url);
+	$pic_alt_2 = $_POST["pic_alt_2"];
+	$pic_alt_3 = $_POST["pic_alt_3"];
+	$pic_alt_4 = $_POST["pic_alt_4"];
+	$pic_alt_5 = $_POST["pic_alt_5"];
+	$pic_alt = array(
+		2 => $pic_alt_2,
+		$pic_alt_3,
+		$pic_alt_4,
+		$pic_alt_5
+	);
+	$text = transform_img($text,$url,$pic_alt);
 	$keys = $_POST["keys"];
 $url_ext = $_POST["url_ext"];
 $url_frame = $_POST["url_frame"];
@@ -245,10 +255,15 @@ echo '&lt;img_2img&gt;';?><br>
         <p>Добавить картинки (360х230, jpg, Главная)</p>
 		<input type="hidden" name="MAX_FILE_SIZE" value="600000">
         <input type="file" name="filename"><br><br>
-		<input type="file" name="filename_2"><br><br>
-		<input type="file" name="filename_3"><br><br>
-		<input type="file" name="filename_4"><br><br>
-	<input type="file" name="filename_5"><br><br>
+
+		<input type="file" name="filename_2"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_2" type="text" >пусто</textarea><br><br>
+		<input type="file" name="filename_3"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_3" type="text" >пусто</textarea><br><br>
+		<input type="file" name="filename_4"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_4" type="text" >пусто</textarea><br><br>
+	<input type="file" name="filename_5"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_5" type="text" >пусто</textarea><br><br>
 	<input type="hidden" name="post_vk" value="<?php echo $post_vk; ?>">
 		<input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить статью"/>
 		<br><br>
