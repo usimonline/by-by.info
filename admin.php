@@ -229,9 +229,13 @@ $res = mysqli_query($link, $select);
 		<textarea style="width:600px; height:50px; border: 1px solid #cccccc;" 
 		name="description" type="text" ><?php echo $description; ?></textarea><br>
 <textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="url_ext" type="text" ><?php echo $url_ext ?></textarea><br><br>
-<p>&lt;a target="_blank" href="\news\...\"&gt;&lt;/a&gt;</p><br>
+<p>&lt;a target="_blank" href="\news\...\"&gt;&lt;/a&gt;</p>
 <?php 
-echo '&lt;img_2img&gt;';?><br>
+echo '&lt;/p&gt;&lt;img_2img&gt;&lt;p&gt;';?><br>
+<?php
+echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;img_2img&gt;&lt;p&gt;';?><br>
+<?php
+echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;';?><br>
 
 		<textarea style="width:800px; height:300px; border: 1px solid #cccccc;" name="text" type="text" ><?php echo $text ?></textarea><br>
 <textarea style="width:600px; height:25px; border: 1px solid #cccccc;" name="url_frame" type="text" ><?php echo $url_frame ?></textarea><br>
