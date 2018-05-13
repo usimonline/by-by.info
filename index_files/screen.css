@@ -36,7 +36,7 @@ transition:all 0.2s linear;}
 .oz .date_article_search:hover{color:#ed1c24;}
 .spiski {
 	font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */
-	font-size: 250%;
+	font-size: 150%;
 }
 .l{max-width:1160px;padding:0 60px;margin:auto;*zoom:1;}
 .l:after{content:" ";display:table;clear:both;}
