@@ -79,9 +79,6 @@
 			<li><a href="<?php echo $main_name; ?>/pastnews/ukri/50" rel="nofollow">Украина</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/west/50" rel="nofollow">Запад</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/agent/50" rel="nofollow">Агенты Запада</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/ussr/50" rel="nofollow">СССР</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/cis/50" rel="nofollow">СНГ</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/economy/50" rel="nofollow">Экономика</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50" rel="nofollow">Политика</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/syria/50" rel="nofollow">Сирия</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/novoros/50" rel="nofollow">ДНР</a></li>
