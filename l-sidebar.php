@@ -87,7 +87,6 @@
 
 					<h3 class="title">Соцсети</h3>
 					<ul>
-
 							<li><a class="icon-facebook-1" href="https://www.facebook.com/bybyinform/">Facebook</a></li>
 							<li><a class="icon-video" href="https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg">Youtube</a></li>
 							<li><a class="icon-twitter" href="https://twitter.com/byby_info">Twitter</a></li>
