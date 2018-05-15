@@ -94,7 +94,7 @@
 							<li><a class="icon-vk" href="https://vk.com/bybyinfo">Vkontakte</a></li>
 							<li><a class="icon-odnoklassniki" href="https://ok.ru/group/59043407855648">Ok.ru</a></li>
 						    <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/">Instagram</a></li>
-						    <li><a class="icon-gplus" href="https://https://by-byinfo.livejournal.com//">Livejournal</a></li>
+						    <li><a class="icon-gplus" href="https://https://by-byinfo.livejournal.com/">Livejournal</a></li>
 						    <li><a class="icon-gplus" href="https://ru.pinterest.com/byby_info/">Pinterest</a></li>
 							<!-- <li><a class="icon-gplus" href="https://google.com/+charter97org_news/">gplus</a></li>-->
 							<li><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></li>
