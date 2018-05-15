@@ -48,11 +48,7 @@
 							<ul>
 
 								<li>
-									<!--<a class="twitter-timeline" href="https://twitter.com/byby_info"   width="240" height="400"
-									   data-chrome="nofooter" lang="ru">Твиттер By-By.info</a>
 
-
-									<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 									<a class="twitter-timeline"  href="https://twitter.com/search?q=%40byby_info" data-widget-id="991931261655617537" data-chrome="nofooter" lang="ru">Твиты про @byby_info</a>
 									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -98,7 +94,7 @@
 							<li><a class="icon-vk" href="https://vk.com/bybyinfo">Vkontakte</a></li>
 							<li><a class="icon-odnoklassniki" href="https://ok.ru/group/59043407855648">Ok.ru</a></li>
 						    <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/">Instagram</a></li>
-						    <li><a class="icon-gplus" href="https://bybyinfo.livejournal.com/">Livejournal</a></li>
+						    <li><a class="icon-gplus" href="https://https://by-byinfo.livejournal.com//">Livejournal</a></li>
 						    <li><a class="icon-gplus" href="https://ru.pinterest.com/byby_info/">Pinterest</a></li>
 							<!-- <li><a class="icon-gplus" href="https://google.com/+charter97org_news/">gplus</a></li>-->
 							<li><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></li>
