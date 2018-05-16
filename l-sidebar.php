@@ -3,7 +3,7 @@
 			    <div style="margin: 0 0 10px 0;">
 					<div class="b weather">
 						<div class="opinion__pic">
-							<a href="https://by-by.info/reklama_1546324/" target="_blank rel="nofollow">
+							<a href="https://by-by.info/reklama_1546324.php" target="_blank rel="nofollow">
 							<img src="/img/reklama.jpg" alt="Реклама" width="231" height="115" />
 							</a>
 						</div>
