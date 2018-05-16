@@ -78,6 +78,8 @@ switch($rubrika){
 		require("parser.php");
 		exit;
 		break;
+	case 'reklama_1546324': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
+		require("reklama_1546324.php");
 	//case '': header('Location: '.$main_name.'/news');
 	//	break;
 	case 'rss': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
@@ -271,7 +273,6 @@ if ($route){
 				else $page['teme_int'] = $row['teme_int'];
 			}
 
-			//header( "Location: https://by-by.info/news/2018/04/05/1522938060/stranica-oshibki/" );
 			break;
 	}
 }
