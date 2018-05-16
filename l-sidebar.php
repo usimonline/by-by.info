@@ -3,7 +3,7 @@
 			    <div style="margin: 0 0 10px 0;">
 					<div class="b weather">
 						<div class="opinion__pic">
-							<img src="/img/reklama.jpg" alt="Реклама" width="347" height="173">
+							<img src="/img/reklama.jpg" alt="Реклама" width="347" height="173" />
 						</div>
 					</div>
 				</div>
