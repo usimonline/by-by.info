@@ -2,13 +2,9 @@
 			<div class="">
 			    <div style="margin: 0 0 10px 0;">
 					<div class="b weather">
-						<!-- home_right_1 | !4 adaptive_300х600_top_right -->
-						<ins class="adsbygoogle"
-							 style="display:block"
-							 data-ad-client="ca-pub-4738140743555043"
-							 data-ad-slot="2063974814"
-							 data-ad-format="auto"></ins>
-						<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+						<div class="opinion__pic">
+							<img src="/img/reklama.jpg" alt="Реклама" width="347" height="173">
+						</div>
 					</div>
 				</div>
 				<div class="b opinion">
