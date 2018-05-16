@@ -3,7 +3,7 @@
 			    <div style="margin: 0 0 10px 0;">
 					<div class="b weather">
 						<div class="opinion__pic">
-							<img src="/img/reklama.jpg" alt="Реклама" width="347" height="173" />
+							<img src="/img/reklama.jpg" alt="Реклама" width="231" height="115" />
 						</div>
 					</div>
 				</div>
@@ -20,7 +20,7 @@
 							$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
 							$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
 							echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg"
-								 alt="<?php echo str_replace('"','',$lsidebar[$count]['teme']); ?>" width="120" height="76">
+								 alt="<?php echo str_replace('"','',$lsidebar[$count]['teme']); ?>" width="120" height="76" />
 						</div>
 						<div class="opinion__content"><strong class="news__title"><?php echo $lsidebar[$count]['teme']; ?></strong>
 						    <span class="opinion__author"><?php echo $lsidebar[$count]['description']; ?></span>
