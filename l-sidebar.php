@@ -1,7 +1,15 @@
 <div class="l-sidebar">
 			<div class="">
 			    <div style="margin: 0 0 10px 0;">
-				    <div ></div>
+					<div class="b weather">
+						<!-- home_right_1 | !4 adaptive_300х600_top_right -->
+						<ins class="adsbygoogle"
+							 style="display:block"
+							 data-ad-client="ca-pub-4738140743555043"
+							 data-ad-slot="2063974814"
+							 data-ad-format="auto"></ins>
+						<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+					</div>
 				</div>
 				<div class="b opinion">
 				    <h3 class="title"><a href="<?php echo $main_name; ?>/topic/l-sidebar/50" rel="nofollow">Мнение экспертов</a></h3>
