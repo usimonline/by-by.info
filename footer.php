@@ -116,7 +116,47 @@
 		При использовании материалов сайта ссылка на сайт "<?php echo $site_name; ?>" обязательна.<br>
 		Сайт "<?php echo $site_name; ?>": <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		</p>
-		
+		<!--LiveInternet counter--><script type="text/javascript">
+			document.write("<a href='//www.liveinternet.ru/click' "+
+				"target=_blank><img src='//counter.yadro.ru/hit?t44.6;r"+
+				escape(document.referrer)+((typeof(screen)=="undefined")?"":
+				";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+					screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+				";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+				"' alt='' title='LiveInternet' "+
+				"border='0' width='31' height='31'><\/a>")
+		</script><!--/LiveInternet-->
+		<!-- Top100 (Kraken) Counter -->
+		<script>
+			(function (w, d, c) {
+				(w[c] = w[c] || []).push(function() {
+					var options = {
+						project: 6187417,
+						trackHashes: true,
+						user_id: null,
+					};
+					try {
+						w.top100Counter = new top100(options);
+					} catch(e) { }
+				});
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src =
+					(d.location.protocol == "https:" ? "https:" : "http:") +
+					"//st.top100.ru/top100/top100.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(window, document, "_top100q");
+		</script>
+		<noscript>
+			<img src="//counter.rambler.ru/top100.cnt?pid=6187417" alt="Топ-100" />
+		</noscript>
+		<!-- END Top100 (Kraken) Counter -->
 	</div>
 </div>
 </footer>
