@@ -3,9 +3,9 @@ if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
     else $head_nomer_url_mass = ($head_nomer_url_mass-49).'-'.$head_nomer_url_mass;
     if (empty($title_rub)) {
-        $title = 'Политические новости (страницы ' . $head_nomer_url_mass . ')';
-        $description = 'Портал ' . $site_name . ' публикует политические новости Беларуси, России и мира.
-	Читайте страницы ' . $head_nomer_url_mass . '.';
+        $title = 'Политические новости противостояния России и Запада, а также политический юмор и честная история(страницы ' . $head_nomer_url_mass . ')';
+        $description = 'Портал ' . $site_name . ' публикует политические новости противостояния России и Запада, а также политический юмор и честную историю. 
+        Наша команда редакторов и журналистов предалагает вам лучшие новости и юмор, читать страницы ' . $head_nomer_url_mass . '.';
         $keys = 'Политические новости';
         $url_og = '';
         $url_og_picture = "/img/metro.jpg";
