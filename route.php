@@ -5,6 +5,12 @@ $REQUEST_URI = $_SERVER['REQUEST_URI'];
 switch($REQUEST_URI ){
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
 		break;
+	case '/belnews/': $REQUEST_URI = '/pastnews/belnews/50/';
+		break;
+	case '/coldwar/': $REQUEST_URI = '/pastnews/coldwar/50/';
+		break;
+	case '/polithumor/': $REQUEST_URI = '/pastnews/polithumor/50/';
+		break;
 }
 
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
