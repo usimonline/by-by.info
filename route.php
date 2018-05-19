@@ -2,6 +2,11 @@
 
 $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
+switch($REQUEST_URI ){
+	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
+		break;
+}
+
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
 if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'){
