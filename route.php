@@ -135,7 +135,10 @@ switch($rubrika){
 	if ($nomer_url_mass[3] > $number_of_pages) $nomer_url = $nomer_url_mass[3];
 	else $nomer_url = $number_of_pages;
 	if ($keys_value == 'empty') $keys = '';
-	else $keys = $keys_value;
+	else {
+		$keys = $keys_value;
+		$keys_rubrika = $keys_value;
+	}
 	$keys = translate_into_russian_pastnews($keys);
 	break;
 	
