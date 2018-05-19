@@ -185,6 +185,56 @@ $nomer_url_3 = $nomer_url + $number_of_pages;
 //echo $keys;
 //echo $keys_name;
 
+// вставка из base началась
+
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'toplist' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 4";
+$res = mysqli_query($link, $select);
+
+$i = 0;
+while($row = mysqli_fetch_array($res))
+{
+	$toplist[$i]['datetime'] = $row['datetime'];
+	$toplist[$i]['teme'] = $row['teme'];
+	$toplist[$i]['comments'] = $row['comments'];
+	$toplist[$i++]['url'] = $row['url'];
+}
+
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'topnews' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 1";
+$res = mysqli_query($link, $select);
+
+$i = 0;
+while($row = mysqli_fetch_array($res))
+{
+	$topnews[$i]['datetime'] = $row['datetime'];
+	$topnews[$i]['teme'] = $row['teme'];
+	$topnews[$i]['description'] = $row['description'];
+	$topnews[$i]['comments'] = $row['comments'];
+	$topnews[$i++]['url'] = $row['url'];
+}
+
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'header' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 3";
+$res = mysqli_query($link, $select);
+
+$i = 0;
+while($row = mysqli_fetch_array($res))
+{
+	$header[$i]['teme'] = $row['teme'];
+	$header[$i++]['url'] = $row['url'];
+}
+
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'l-sidebar' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 12";
+$res = mysqli_query($link, $select);
+
+$i = 0;
+while($row = mysqli_fetch_array($res))
+{
+	$lsidebar[$i]['teme'] = $row['teme'];
+	$lsidebar[$i]['description'] = $row['description'];
+	$lsidebar[$i++]['url'] = $row['url'];
+}
+
+// вставка из base закончилась
+
 if ($admin) $select = "SELECT COUNT(*) FROM $Name_database.$table WHERE `$keys_name` LIKE '%$keys%'";
 else $select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime > '2017-01-25 20:12:53' AND datetime < '$datetime_site' AND `$keys_name` LIKE '%$keys%'";
 $res = mysqli_query($link, $select);
