@@ -1,7 +1,7 @@
 <footer>
     <div class="footer__topics">
 		<ul>
-		<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50" rel="nofollow">Белоруссия</a></li>
+		<!-- <li><a href="<?php echo $main_name; ?>/pastnews/belarus/50" rel="nofollow">Белоруссия</a></li>
 		<li><a href="<?php echo $main_name; ?>/pastnews/russia/50" rel="nofollow">Россия</a></li>
 		<li><a href="<?php echo $main_name; ?>/pastnews/ukri/50" rel="nofollow">Украина</a></li>
 		<li><a href="<?php echo $main_name; ?>/pastnews/poland/50" rel="nofollow">Польша</a></li>
@@ -22,8 +22,18 @@
 		<li><a href="<?php echo $main_name; ?>/pastnews/language/50" rel="nofollow">Русский язык</a></li>
 		<li><a href="<?php echo $main_name; ?>/pastnews/agent/50" rel="nofollow">Агенты Запада</a></li>
 		<li><a href="<?php echo $main_name; ?>/pastnews/nweapon/50" rel="nofollow">Ядерное оружие</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/CSTO/50" rel="nofollow">ОДКБ</a></li>
-		<li><a href="<?php echo $main_name; ?>/pastnews/site/50" rel="nofollow"><?php echo $site_name; ?></a></li>
+		<li><a href="<?php echo $main_name; ?>/pastnews/CSTO/50" rel="nofollow">ОДКБ</a></li> -->
+			<li><a href="<?php echo $main_name; ?>/pastnews/belnews/50" rel="nofollow">НОВОСТИ БЕЛАРУСИ</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/coldwar/50" rel="nofollow">ХОЛОДНАЯ ВОЙНА</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/polithumor/50" rel="nofollow">ПОЛИТИЧЕСКИЙ ЮМОР</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50" rel="nofollow">Беларусь</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/russia/50" rel="nofollow">Россия</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/ukri/50" rel="nofollow">Украина</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/west/50" rel="nofollow">Запад</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/agent/50" rel="nofollow">Агенты Запада</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50" rel="nofollow">Политика</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/history/50" rel="nofollow">История</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/economy/50" rel="nofollow">Экономика</a></li>
 		</ul>
 	</div>
 
