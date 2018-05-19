@@ -193,7 +193,7 @@ $nomer_url_3 = $nomer_url + $number_of_pages;
 
 // вставка из base началась
 
-$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'toplist' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 4";
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'toplist' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 4";
 $res = mysqli_query($link, $select);
 
 $i = 0;
@@ -205,7 +205,7 @@ while($row = mysqli_fetch_array($res))
 	$toplist[$i++]['url'] = $row['url'];
 }
 
-$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'topnews' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 1";
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'topnews' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 1";
 $res = mysqli_query($link, $select);
 
 $i = 0;
@@ -218,7 +218,7 @@ while($row = mysqli_fetch_array($res))
 	$topnews[$i++]['url'] = $row['url'];
 }
 
-$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'header' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 3";
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'header' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 3";
 $res = mysqli_query($link, $select);
 
 $i = 0;
