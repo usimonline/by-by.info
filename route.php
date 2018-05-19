@@ -4,12 +4,38 @@ $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
 switch($REQUEST_URI ){
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
+		$title_rub = 'История';
+		$description_rub = 'Портал ' . $site_name . ' публикует новости истории.
+	Читайте страницы ' . $head_nomer_url_mass . '.';
+		$keys_rub = 'История';
+		$url_og_rub = '/history/';
+		$url_og_picture_rub = "/img/metro.jpg";
 		break;
 	case '/belnews/': $REQUEST_URI = '/pastnews/belnews/50/';
+		$title_rub = 'Новости Беларуси';
+		$description_rub = 'Портал ' . $site_name . ' публикует новости Беларуси.
+	Читайте страницы ' . $head_nomer_url_mass . '.';
+		$keys_rub = 'Новости Беларуси';
+		$url_og_rub = '/belnews/';
+		$url_og_picture_rub = "/img/metro.jpg";
 		break;
 	case '/coldwar/': $REQUEST_URI = '/pastnews/coldwar/50/';
+		$title_rub = 'Холодная война';
+		$description_rub = 'Портал ' . $site_name . ' публикует новости холодной войны.
+	Читайте страницы ' . $head_nomer_url_mass . '.';
+		$keys_rub = 'Холодная война';
+		$url_og_rub = '/coldwar/';
+		$url_og_picture_rub = "/img/metro.jpg";
 		break;
 	case '/polithumor/': $REQUEST_URI = '/pastnews/polithumor/50/';
+		$title_rub = 'Политический юмор';
+		$description_rub = 'Портал ' . $site_name . ' публикует новости политического юмора.
+	Читайте страницы ' . $head_nomer_url_mass . '.';
+		$keys_rub = 'Политический юмор';
+		$url_og_rub = '/polithumor/';
+		$url_og_picture_rub = "/img/metro.jpg";
+		break;
+	default: $title_rub = '';
 		break;
 }
 

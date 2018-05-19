@@ -2,12 +2,20 @@
 if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
     else $head_nomer_url_mass = ($head_nomer_url_mass-49).'-'.$head_nomer_url_mass;
-	$title = 'Политические новости (страницы '.$head_nomer_url_mass.')';
-	$description = 'Портал '.$site_name.' публикует самые важные политические новости Беларуси, России и мира.
-	Читайте страницы '.$head_nomer_url_mass.'.';
-	$keys = 'Политические новости';
-    $url_og = '';
-    $url_og_picture = "/img/metro.jpg";
+    if (empty($title_rub)) {
+        $title = 'Политические новости (страницы ' . $head_nomer_url_mass . ')';
+        $description = 'Портал ' . $site_name . ' публикует политические новости Беларуси, России и мира.
+	Читайте страницы ' . $head_nomer_url_mass . '.';
+        $keys = 'Политические новости';
+        $url_og = '';
+        $url_og_picture = "/img/metro.jpg";
+    } else {
+        $title = $title_rub.' (страницы ' . $head_nomer_url_mass . ')';
+        $description = $description_rub;
+        $keys = $keys_rub;
+        $url_og = $url_og_rub;
+        $url_og_picture = $url_og_picture_rub;
+    }
 } else {
 	$title = htmlspecialchars($page['teme']);
 	$description = htmlspecialchars($page['description']);
