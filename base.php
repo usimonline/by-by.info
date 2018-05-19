@@ -15,3 +15,4 @@ $table_users ='users';
 $table_comments ='comments';
 
 $table ='news';
+
