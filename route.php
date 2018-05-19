@@ -57,6 +57,8 @@ else $news_year_2 = 0;
 
 
 $keys_name = 'keys';
+$keys_name_rubrika = 'keys';
+$keys_rubrika = '';
 
 $number_of_pages = 50;//константа
 
@@ -222,7 +224,7 @@ while($row = mysqli_fetch_array($res))
 	$header[$i++]['url'] = $row['url'];
 }
 
-$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'l-sidebar' AND datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 12";
+$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'l-sidebar' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 12";
 $res = mysqli_query($link, $select);
 
 $i = 0;
