@@ -137,10 +137,10 @@ switch($rubrika){
 	if ($keys_value == 'empty') $keys = '';
 	else {
 		$keys = $keys_value;
-		$keys_rubrika = $keys_value;
+		//$keys_rubrika = $keys_value;
 	}
 	$keys = translate_into_russian_pastnews($keys);
-	$keys_rubrika = translate_into_russian_pastnews($keys_rubrika);
+	//$keys_rubrika = translate_into_russian_pastnews($keys_rubrika);
 	break;
 	
 	case 'searchnews':
