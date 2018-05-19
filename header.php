@@ -81,6 +81,6 @@
 			<li><a href="<?php echo $main_name; ?>/pastnews/agent/50" rel="nofollow">Агенты Запада</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50" rel="nofollow">Политика</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/syria/50" rel="nofollow">Сирия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/novoros/50" rel="nofollow">ДНР</a></li>
+			<li><a href="<?php echo $main_name; ?>/pastnews/economy/50" rel="nofollow">Экономика</a></li>
 		</ul>
 	</div>
