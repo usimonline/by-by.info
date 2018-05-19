@@ -11,7 +11,7 @@ if ($route) {//Переключатель заголовков
         $url_og_picture = "/img/metro.jpg";
     } else {
         $title = $title_rub.' (страницы ' . $head_nomer_url_mass . ')';
-        $description = $description_rub;
+        $description = $description_rub.$head_nomer_url_mass . '.';
         $keys = $keys_rub;
         $url_og = $url_og_rub;
         $url_og_picture = $url_og_picture_rub;
