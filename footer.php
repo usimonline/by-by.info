@@ -193,7 +193,7 @@
 		</script>
 		<noscript>
 			<a href="http://click.hotlog.ru/?2569229" target="_blank" rel="nofollow">
-				<img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569229&im=68" border="0"
+				<img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569229&im=68"
 					 title="HotLog" alt="HotLog"></a>
 		</noscript>
 		<!-- /HotLog -->
@@ -209,44 +209,45 @@
 		</script>
 		<!--/Openstat-->
 		<!-- InetLog -->
-		<script language="javascript">
+		<script>
 			i=Math.random();w=screen.width;h=screen.height;
 			clr=screen.colorDepth;
 			if(navigator.cookieEnabled) ck = "Y"; else ck = "N";
 			document.write('<a href="http://inetlog.ru/" target="_top" rel="nofollow"><img width=80 height=15 src="http://inetlog.ru/counter/?i='+i+'&cid=21&r='+escape(document.referrer)+'&sid=90222&ck='+ck+'&res='+w+'x'+h+'&clr='+clr+'&pg='+escape(window.location.href)+'" alt="InetLog.ru - статистика сайта" border=0></a>')
-		</script><a href="http://inetlog.ru" title="статистика" rel="nofollow"><img border=0 width=1 height=1 src="http://inetlog.ru/img/del.gif" alt="статистика"></a>
+		</script><a href="http://inetlog.ru" title="статистика" rel="nofollow"><img width=1 height=1 src="http://inetlog.ru/img/del.gif" alt="статистика"></a>
 		<!-- /InetLog -->
 		<!--Start LogXP.ru code-->
-		<script language="JavaScript"><!--
+		<script><!--
 			siteid = 1246446;
 			//--></script>
-		<script language="JavaScript"><!--
+		<script><!--
 			js=1//--></script>
-		<script language="JavaScript1.1"><!--
+		<script><!--
 js=1.1//--></script>
-		<script language="JavaScript1.2"><!--
+		<script><!--
 			js=1.2//--></script>
-		<script language="JavaScript1.3"><!--
+		<script><!--
 js=1.3//--></script>
-		<script language="JavaScript1.4"><!--
+		<script><!--
 js=1.4//--></script>
-		<script language="JavaScript1.5"><!--
+		<script><!--
 js=1.5//--></script>
-		<script language="JavaScript1.6"><!--
+		<script><!--
 js=1.6//--></script>
 		<script src="http://logxp.ru/counter.js">
 		</script>
 		<noscript>
 			<a href="http://logxp.ru?siteid=1246446" target=_top rel="nofollow">
-				<IMG src="http://logxp.ru/counter.php?siteid=1246446&js=0" border=0></a>
+				<IMG src="http://logxp.ru/counter.php?siteid=1246446&js=0" alt="Дополнительно"></a>
 		</noscript>
 		<!--/End LogXP.ru code-->
 		<!--Start 24log code-->
-		<table cellpadding="0" cellspacing="0" border="0" width="88" style="line-height:0;width:88px;"><tr>
-				<td width="7"  style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6l.gif" width="7" height="19" border="0" alt="" style="margin:0;padding:0;" /></a></td>
-				<td width="48" style="padding:0;"><a href="http://www.24log.es" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6m.gif" width="48" height="19" alt="contador de visitas" title="" border="0" style="margin:0;padding:0;" /></a></td>
-				<td width="33" style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img border="0" width="33" height="19" src="http://counter.24log.ru/count1_269570_4_6_60.pcx" alt="счетчик посещений" title="Сейчас на сайте" style="margin:0;padding:0;" /></a></td></tr></table>
+		<table style="line-height:0;width:88px;"><tr>
+				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6l.gif" width="7" height="19"  alt="" style="margin:0;padding:0;" /></a></td>
+				<td style="padding:0;"><a href="http://www.24log.es" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6m.gif" width="48" height="19" alt="contador de visitas" title=""  style="margin:0;padding:0;" /></a></td>
+				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img width="33" height="19" src="http://counter.24log.ru/count1_269570_4_6_60.pcx" alt="счетчик посещений" title="Сейчас на сайте" style="margin:0;padding:0;" /></a></td></tr>
+		</table>
 		<!--End 24log code-->
-
+	</div>
 </div>
 </footer>
