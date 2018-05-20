@@ -168,7 +168,7 @@
 		</noscript>
 		<!-- END Top100 (Kraken) Counter -->
 		<!-- Rating@Mail.ru counter -->
-		<script type="text/javascript">
+		<script>
 			var _tmr = window._tmr || (window._tmr = []);
 			_tmr.push({id: "3030977", type: "pageView", start: (new Date()).getTime()});
 			(function (d, w, id) {
@@ -185,14 +185,14 @@
 		<!-- HotLog -->
 		<span id="hotlog_counter"></span>
 		<span id="hotlog_dyn"></span>
-		<script type="text/javascript"> var hot_s = document.createElement('script');
+		<script> var hot_s = document.createElement('script');
 			hot_s.type = 'text/javascript'; hot_s.async = true;
 			hot_s.src = 'http://js.hotlog.ru/dcounter/2569229.js';
 			hot_d = document.getElementById('hotlog_dyn');
 			hot_d.appendChild(hot_s);
 		</script>
 		<noscript>
-			<a href="http://click.hotlog.ru/?2569229" target="_blank">
+			<a href="http://click.hotlog.ru/?2569229" target="_blank" rel="nofollow">
 				<img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569229&im=68" border="0"
 					 title="HotLog" alt="HotLog"></a>
 		</noscript>
