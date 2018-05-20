@@ -216,5 +216,30 @@
 			document.write('<a href="http://inetlog.ru/" target="_top" rel="nofollow"><img width=80 height=15 src="http://inetlog.ru/counter/?i='+i+'&cid=21&r='+escape(document.referrer)+'&sid=90222&ck='+ck+'&res='+w+'x'+h+'&clr='+clr+'&pg='+escape(window.location.href)+'" alt="InetLog.ru - статистика сайта" border=0></a>')
 		</script><a href="http://inetlog.ru" title="статистика" rel="nofollow"><img border=0 width=1 height=1 src="http://inetlog.ru/img/del.gif" alt="статистика"></a>
 		<!-- /InetLog -->
+		<!--Start LogXP.ru code-->
+		<script language="JavaScript"><!--
+			siteid = 1246446;
+			//--></script>
+		<script language="JavaScript"><!--
+			js=1//--></script>
+		<script language="JavaScript1.1"><!--
+js=1.1//--></script>
+		<script language="JavaScript1.2"><!--
+			js=1.2//--></script>
+		<script language="JavaScript1.3"><!--
+js=1.3//--></script>
+		<script language="JavaScript1.4"><!--
+js=1.4//--></script>
+		<script language="JavaScript1.5"><!--
+js=1.5//--></script>
+		<script language="JavaScript1.6"><!--
+js=1.6//--></script>
+		<script src="http://logxp.ru/counter.js">
+		</script>
+		<noscript>
+			<a href="http://logxp.ru?siteid=1246446" target=_top rel="nofollow">
+				<IMG src="http://logxp.ru/counter.php?siteid=1246446&js=0" border=0></a>
+		</noscript>
+		<!--/End LogXP.ru code-->
 </div>
 </footer>
