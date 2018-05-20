@@ -199,7 +199,7 @@
 		<!-- /HotLog -->
 		<!--Openstat-->
 		<span id="openstat1"></span>
-		<script type="text/javascript">
+		<script>
 			var openstat = { counter: 1, next: openstat, track_links: "all" };
 			(function(d, t, p) {
 				var j = d.createElement(t); j.async = true; j.type = "text/javascript";
