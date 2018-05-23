@@ -136,37 +136,7 @@
 				"' alt='' title='LiveInternet' "+
 				"border='0' width='31' height='31'><\/a>")
 		</script><!--/LiveInternet-->
-		<!-- Top100 (Kraken) Counter -->
-		<script>
-			(function (w, d, c) {
-				(w[c] = w[c] || []).push(function() {
-					var options = {
-						project: 6187417,
-						trackHashes: true,
-						user_id: null,
-					};
-					try {
-						w.top100Counter = new top100(options);
-					} catch(e) { }
-				});
-				var n = d.getElementsByTagName("script")[0],
-					s = d.createElement("script"),
-					f = function () { n.parentNode.insertBefore(s, n); };
-				s.type = "text/javascript";
-				s.async = true;
-				s.src =
-					(d.location.protocol == "https:" ? "https:" : "http:") +
-					"//st.top100.ru/top100/top100.js";
-
-				if (w.opera == "[object Opera]") {
-					d.addEventListener("DOMContentLoaded", f, false);
-				} else { f(); }
-			})(window, document, "_top100q");
-		</script>
-		<noscript>
-			<img src="//counter.rambler.ru/top100.cnt?pid=6187417" alt="Топ-100" />
-		</noscript>
-		<!-- END Top100 (Kraken) Counter -->
+		
 		<!-- Rating@Mail.ru counter -->
 		<script>
 			var _tmr = window._tmr || (window._tmr = []);
@@ -216,7 +186,7 @@
 			document.write('<a href="http://inetlog.ru/" target="_top" rel="nofollow"><img width=80 height=15 src="http://inetlog.ru/counter/?i='+i+'&cid=21&r='+escape(document.referrer)+'&sid=90222&ck='+ck+'&res='+w+'x'+h+'&clr='+clr+'&pg='+escape(window.location.href)+'" alt="InetLog.ru - статистика сайта" border=0></a>')
 		</script><a href="http://inetlog.ru" title="статистика" rel="nofollow"><img width=1 height=1 src="http://inetlog.ru/img/del.gif" alt="статистика"></a>
 		<!-- /InetLog -->
-		
+
 		<!--Start 24log code-->
 		<table style="line-height:0;width:88px;"><tr>
 				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6l.gif" width="7" height="19"  alt="" style="margin:0;padding:0;" /></a></td>
