@@ -136,7 +136,7 @@
 				"' alt='' title='LiveInternet' "+
 				"border='0' width='31' height='31'><\/a>")
 		</script><!--/LiveInternet-->
-		
+
 		<!-- Rating@Mail.ru counter -->
 		<script>
 			var _tmr = window._tmr || (window._tmr = []);
@@ -152,21 +152,7 @@
 				<img src="//top-fwz1.mail.ru/counter?id=3030977;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
 			</div></noscript>
 		<!-- //Rating@Mail.ru counter -->
-		<!-- HotLog -->
-		<span id="hotlog_counter"></span>
-		<span id="hotlog_dyn"></span>
-		<script> var hot_s = document.createElement('script');
-			hot_s.type = 'text/javascript'; hot_s.async = true;
-			hot_s.src = 'http://js.hotlog.ru/dcounter/2569229.js';
-			hot_d = document.getElementById('hotlog_dyn');
-			hot_d.appendChild(hot_s);
-		</script>
-		<noscript>
-			<a href="http://click.hotlog.ru/?2569229" target="_blank" rel="nofollow">
-				<img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569229&im=68"
-					 title="HotLog" alt="HotLog"></a>
-		</noscript>
-		<!-- /HotLog -->
+		
 		<!--Openstat-->
 		<span id="openstat1"></span>
 		<script>
