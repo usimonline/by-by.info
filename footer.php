@@ -208,7 +208,7 @@
 			})(document, "script", document.location.protocol);
 		</script>
 		<!--/Openstat-->
-		
+
 		<!--Start LogXP.ru code-->
 		<script><!--
 			siteid = 1246446;
@@ -227,7 +227,6 @@
 			js=1.5//--></script>
 		<script><!--
 			js=1.6//--></script>
-		<script src="http://logxp.ru/counter.js">
 		</script>
 		<noscript>
 			<a href="http://logxp.ru?siteid=1246446" target=_top rel="nofollow">
