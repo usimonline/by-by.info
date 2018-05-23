@@ -216,30 +216,7 @@
 			document.write('<a href="http://inetlog.ru/" target="_top" rel="nofollow"><img width=80 height=15 src="http://inetlog.ru/counter/?i='+i+'&cid=21&r='+escape(document.referrer)+'&sid=90222&ck='+ck+'&res='+w+'x'+h+'&clr='+clr+'&pg='+escape(window.location.href)+'" alt="InetLog.ru - статистика сайта" border=0></a>')
 		</script><a href="http://inetlog.ru" title="статистика" rel="nofollow"><img width=1 height=1 src="http://inetlog.ru/img/del.gif" alt="статистика"></a>
 		<!-- /InetLog -->
-		<!--Start LogXP.ru code-->
-		<script><!--
-			siteid = 1246446;
-			//--></script>
-		<script><!--
-			js=1//--></script>
-		<script><!--
-			js=1.1//--></script>
-		<script><!--
-			js=1.2//--></script>
-		<script><!--
-			js=1.3//--></script>
-		<script><!--
-			js=1.4//--></script>
-		<script><!--
-			js=1.5//--></script>
-		<script><!--
-			js=1.6//--></script>
-		</script>
-		<noscript>
-			<a href="http://logxp.ru?siteid=1246446" target=_top rel="nofollow">
-				<IMG src="http://logxp.ru/counter.php?siteid=1246446&js=0" alt="Дополнительно"></a>
-		</noscript>
-		<!--/End LogXP.ru code-->
+		
 		<!--Start 24log code-->
 		<table style="line-height:0;width:88px;"><tr>
 				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6l.gif" width="7" height="19"  alt="" style="margin:0;padding:0;" /></a></td>
