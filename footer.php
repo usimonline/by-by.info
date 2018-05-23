@@ -152,7 +152,7 @@
 				<img src="//top-fwz1.mail.ru/counter?id=3030977;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
 			</div></noscript>
 		<!-- //Rating@Mail.ru counter -->
-		
+
 		<!--Openstat-->
 		<span id="openstat1"></span>
 		<script>
@@ -164,22 +164,7 @@
 			})(document, "script", document.location.protocol);
 		</script>
 		<!--/Openstat-->
-		<!-- InetLog -->
-		<script>
-			i=Math.random();w=screen.width;h=screen.height;
-			clr=screen.colorDepth;
-			if(navigator.cookieEnabled) ck = "Y"; else ck = "N";
-			document.write('<a href="http://inetlog.ru/" target="_top" rel="nofollow"><img width=80 height=15 src="http://inetlog.ru/counter/?i='+i+'&cid=21&r='+escape(document.referrer)+'&sid=90222&ck='+ck+'&res='+w+'x'+h+'&clr='+clr+'&pg='+escape(window.location.href)+'" alt="InetLog.ru - статистика сайта" border=0></a>')
-		</script><a href="http://inetlog.ru" title="статистика" rel="nofollow"><img width=1 height=1 src="http://inetlog.ru/img/del.gif" alt="статистика"></a>
-		<!-- /InetLog -->
-
-		<!--Start 24log code-->
-		<table style="line-height:0;width:88px;"><tr>
-				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6l.gif" width="7" height="19"  alt="" style="margin:0;padding:0;" /></a></td>
-				<td style="padding:0;"><a href="http://www.24log.es" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6m.gif" width="48" height="19" alt="contador de visitas" title=""  style="margin:0;padding:0;" /></a></td>
-				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img width="33" height="19" src="http://counter.24log.ru/count1_269570_4_6_60.pcx" alt="счетчик посещений" title="Сейчас на сайте" style="margin:0;padding:0;" /></a></td></tr>
-		</table>
-		<!--End 24log code-->
+		
 	</div>
 </div>
 </footer>
