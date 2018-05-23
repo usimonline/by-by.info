@@ -208,7 +208,14 @@
 			})(document, "script", document.location.protocol);
 		</script>
 		<!--/Openstat-->
-
+		<!-- InetLog -->
+		<script>
+			i=Math.random();w=screen.width;h=screen.height;
+			clr=screen.colorDepth;
+			if(navigator.cookieEnabled) ck = "Y"; else ck = "N";
+			document.write('<a href="http://inetlog.ru/" target="_top" rel="nofollow"><img width=80 height=15 src="http://inetlog.ru/counter/?i='+i+'&cid=21&r='+escape(document.referrer)+'&sid=90222&ck='+ck+'&res='+w+'x'+h+'&clr='+clr+'&pg='+escape(window.location.href)+'" alt="InetLog.ru - статистика сайта" border=0></a>')
+		</script><a href="http://inetlog.ru" title="статистика" rel="nofollow"><img width=1 height=1 src="http://inetlog.ru/img/del.gif" alt="статистика"></a>
+		<!-- /InetLog -->
 		<!--Start LogXP.ru code-->
 		<script><!--
 			siteid = 1246446;
