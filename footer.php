@@ -227,19 +227,14 @@
 			js=1.5//--></script>
 		<script><!--
 			js=1.6//--></script>
+		<script src="http://logxp.ru/counter.js">
 		</script>
 		<noscript>
 			<a href="http://logxp.ru?siteid=1246446" target=_top rel="nofollow">
 				<IMG src="http://logxp.ru/counter.php?siteid=1246446&js=0" alt="Дополнительно"></a>
 		</noscript>
 		<!--/End LogXP.ru code-->
-		<!--Start 24log code-->
-		<table style="line-height:0;width:88px;"><tr>
-				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6l.gif" width="7" height="19"  alt="" style="margin:0;padding:0;" /></a></td>
-				<td style="padding:0;"><a href="http://www.24log.es" target="_blank" rel="nofollow"><img src="http://counter.24log.ru/buttons/4/bg4-6m.gif" width="48" height="19" alt="contador de visitas" title=""  style="margin:0;padding:0;" /></a></td>
-				<td style="padding:0;"><a href="http://www.24log.ru" target="_blank" rel="nofollow"><img width="33" height="19" src="http://counter.24log.ru/count1_269570_4_6_60.pcx" alt="счетчик посещений" title="Сейчас на сайте" style="margin:0;padding:0;" /></a></td></tr>
-		</table>
-		<!--End 24log code-->
+		
 	</div>
 </div>
 </footer>
