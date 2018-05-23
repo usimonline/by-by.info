@@ -74,13 +74,13 @@
 			<li><a href="<?php echo $main_name; ?>/belnews/" >НОВОСТИ БЕЛАРУСИ</a></li>
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >ХОЛОДНАЯ ВОЙНА</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >ПОЛИТИЧЕСКИЙ ЮМОР</a></li>
+			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50/" rel="nofollow">Беларусь</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/russia/50/" rel="nofollow">Россия</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/ukri/50/" rel="nofollow">Украина</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/west/50/" rel="nofollow">Запад</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/agent/50/" rel="nofollow">Агенты Запада</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50/" rel="nofollow">Политика</a></li>
-			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/economy/50/" rel="nofollow">Экономика</a></li>
 		</ul>
 	</div>
