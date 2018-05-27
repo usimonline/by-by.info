@@ -103,7 +103,7 @@
 							<li><a class="icon-vk" href="https://vk.com/bybyinfo" rel="nofollow" target="_blank">Vkontakte</a></li>
 							<li><a class="icon-odnoklassniki" href="https://ok.ru/group/59043407855648" rel="nofollow" target="_blank">Ok.ru</a></li>
 						    <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/" rel="nofollow" target="_blank">Instagram</a></li>
-						    <li><a class="icon-gplus" href="https://by-byinfo.livejournal.com/" rel="nofollow" target="_blank">Livejournal</a></li>
+						   <!-- <li><a class="icon-gplus" href="https://by-byinfo.livejournal.com/" rel="nofollow" target="_blank">Livejournal</a></li> -->
 						    <li><a class="icon-gplus" href="https://ru.pinterest.com/byby_info/" rel="nofollow" target="_blank">Pinterest</a></li>
 							<li><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></li>
 					</ul>
