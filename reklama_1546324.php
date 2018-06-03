@@ -1,3 +1,3 @@
 <?php
-header( "Location: https://diplomfabrika.ru/order.php" );
+header( "Location: https://vivadiplom.ru/order.php" );
 

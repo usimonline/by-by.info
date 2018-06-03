@@ -23,7 +23,7 @@ $datetime_mass_1 = explode(' ', $datetime);
     //echo $datetime_mass_1.'<br>         ';
 $datetime_mass_2 = explode('-', $datetime_mass_1[0]);
     //echo $datetime_mass_2.'<br>         ';
-$year = $datetime_mass_2[0].'-2';
+$year = $datetime_mass_2[0];//$datetime_mass_2[0].'-2';
    // echo $year.'<br>         ';
 $month = $datetime_mass_2[1];
   //  echo $month.'<br>         ';
@@ -47,8 +47,9 @@ $text = transform_img($text, $url);
 $keys = $keys_temp;
 
 $url_frame = '';
-
-$temp_time_ogr = '2017-01-25 20:12:53';
+    $date = strtotime('-5 days');
+    $date = date('Y-m-d H:i:s', $date);
+$temp_time_ogr = $date;//была просто дата '2017-05-06 5:5:5'; date("Y-m-d H:i:s");
 $select_rand = "SELECT COUNT(*) FROM $Name_database.$table WHERE `datetime` > '$temp_time_ogr' ";
 $res_rand = mysqli_query($link, $select_rand);
 $row_rand = mysqli_fetch_row($res_rand);
