@@ -43,6 +43,8 @@ $description = $url_mass_description[$k];
 $text = $url_mass_texts[$k];
 $text = transform_img($text, $url);
     $text = transform_words($text);
+    $text = str_replace("<br />\r\n<br />", '', $text);//это только для tut.by!!
+    $text = str_replace("<br />\n\r<br />", '', $text);//это только для tut.by!!
 
 $keys = $keys_temp;
 
