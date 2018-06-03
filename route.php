@@ -117,6 +117,10 @@ switch($rubrika){
 		require("parser.php");
 		exit;
 		break;
+	case 'parse_vz': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
+		require("parser_vz.php");
+		exit;
+		break;
 	case 'reklama_1546324': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 		require("reklama_1546324.php");
 	//case '': header('Location: '.$main_name.'/news');
@@ -302,6 +306,7 @@ if ($route){
 		case '/rss/':
 		case '/parse':
 		case '/parse/':
+		case '/parse_vz/':
 		case '/parse_2':
 		case '/parse_3':
 			break;
