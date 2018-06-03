@@ -20,6 +20,7 @@ if(empty($_POST['post_1'])) {
 
 
     $mainContent = file_get_contents($ParserPage);
+    $mainContent = iconv('windows-1251', 'UTF-8', $mainContent);
 
     $otbor = array();
 
