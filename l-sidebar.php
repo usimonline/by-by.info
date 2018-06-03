@@ -83,16 +83,7 @@
 
 								</li>
 							</ul>
-							<ul>
 
-								<li>
-
-
-									<iframe src="//widget.stapico.ru/?q=byby_info&s=80&w=2&h=3&b=1&p=3&title=by-by.info&flw_t=%D0%9B%D0%B0%D0%B9%D0%BA&effect=2"
-											allowtransparency="true" frameborder="0"
-											scrolling="no" style="border:none;overflow:hidden;width:206px; height: 424px" ></iframe> <!-- stapico - stapico.ru -->
-								</li>
-							</ul>
 
 
 
