@@ -5,7 +5,7 @@ if ($route) {//Переключатель заголовков
     if (empty($title_rub)) {
         $title = 'Политические новости противостояния России и Запада, а также политический юмор и честная история (страницы ' . $head_nomer_url_mass . ')';
         $description = 'Портал ' . $site_name . ' публикует политические новости противостояния России и Запада, а также политический юмор и честную историю. 
-        Наша команда редакторов и журналистов предалагает вам лучшие новости и юмор, читать страницы ' . $head_nomer_url_mass . '.';
+        Наша команда редакторов и журналистов предлагает вам лучшие новости и юмор, читать страницы ' . $head_nomer_url_mass . '.';
         $keys = 'Политические новости, политический юмор';
         $url_og = '';
         $url_og_picture = "/img/metro.jpg";
@@ -86,9 +86,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 	"https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg",
 	"https://twitter.com/byby_info",
 	"https://vk.com/bybyinfo",
-	"https://ok.ru/group/59043407855648",
 	"https://www.instagram.com/byby_info",
-	"https://by-byinfo.livejournal.com",
 	"https://ru.pinterest.com/byby_info"
   ]
 }
