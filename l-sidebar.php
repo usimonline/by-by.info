@@ -56,12 +56,34 @@
 								<li>
 
 
+									<div id="fb-root"></div>
+									<script>(function(d, s, id) {
+											var js, fjs = d.getElementsByTagName(s)[0];
+											if (d.getElementById(id)) return;
+											js = d.createElement(s); js.id = id;
+											js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0&appId=202050887250892&autoLogAppEvents=1';
+											fjs.parentNode.insertBefore(js, fjs);
+										}(document, 'script', 'facebook-jssdk'));</script>
+									<div class="fb-page" data-href="https://www.facebook.com/bybyinform/"
+										 data-tabs="timeline" data-width="190" data-small-header="false"
+										 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote
+											cite="https://www.facebook.com/bybyinform/" class="fb-xfbml-parse-ignore">
+											<a href="https://www.facebook.com/bybyinform/" rel="nofollow">By-by.info</a></blockquote></div>
+
+								</li>
+							</ul>
+							<ul>
+
+								<li>
+
+
 									<a class="twitter-timeline"  href="https://twitter.com/search?q=%40byby_info" data-widget-id="991931261655617537" data-chrome="nofooter" lang="ru" rel="nofollow" target="_blank">Твиты про @byby_info</a>
 									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
 								</li>
 							</ul>
+
 
 
 
