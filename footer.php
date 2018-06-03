@@ -127,7 +127,7 @@
 		Сайт "<?php echo $site_name; ?>": <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		</p>
 		<!--LiveInternet counter--><script>
-			document.write("<a href='//www.liveinternet.ru/click' "+
+			document.write("<a href='//www.liveinternet.ru/click' rel='nofollow'"+
 				"target=_blank><img src='//counter.yadro.ru/hit?t44.6;r"+
 				escape(document.referrer)+((typeof(screen)=="undefined")?"":
 				";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
