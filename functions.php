@@ -113,3 +113,9 @@ function otbor_parse($string, $StartWord, $EndWord)
 	$string = str_replace($StartWord, '', $string);//получили
 	return $string;
 }
+
+function str_replace_once($search, $replace, $text)
+{
+	$pos = strpos($text, $search);
+	return $pos!==false ? substr_replace($text, $replace, $pos, strlen($search)) : $text;
+} 
