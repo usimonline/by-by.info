@@ -1,7 +1,6 @@
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=windows-1251">
 </head>
 <body>
 <?php
