@@ -13,7 +13,7 @@ $text_temp_2 = $_POST['description_'.$k];//file_get_contents($url_mass_url[$i]);
                        // $text_temp_2 = str_replace('Читайте также:', '', $text_temp_2);
                        // $text_temp_2 = str_replace('Читайте также', '', $text_temp_2);
                        // $text_temp_2 = str_replace('FINANCE.', '', $text_temp_2);
-$url_mass_texts[$i] = str_replace('ВЗГЛЯД', 'by-by.info', $text_temp_2);
+$url_mass_texts[$i] = strip_tags(str_replace('ВЗГЛЯД', 'by-by.info', $text_temp_2));
                         //$url_mass_texts[$i] = str_replace('vz.ru', 'by-by.info', $text_temp_2);
 
 
