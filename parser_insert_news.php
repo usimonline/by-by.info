@@ -55,7 +55,7 @@ $temp_time_ogr = $date;//была просто дата '2017-05-06 5:5:5'; date
 $select_rand = "SELECT COUNT(*) FROM $Name_database.$table WHERE `datetime` > '$temp_time_ogr' ";
 $res_rand = mysqli_query($link, $select_rand);
 $row_rand = mysqli_fetch_row($res_rand);
-$all_count_temp_1 = $row_rand[0] - 70; // всего записей по выборке
+$all_count_temp_1 = $row_rand[0]; // всего записей по выборке было $row_rand[0] - 70;
 
 $nomer_zap = rand(0,$all_count_temp_1);
    // echo $nomer_zap.'<br>         ';
