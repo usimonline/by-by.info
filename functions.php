@@ -119,3 +119,15 @@ function str_replace_once($search, $replace, $text)// заменяет перв�
 	$pos = strpos($text, $search);
 	return $pos!==false ? substr_replace($text, $replace, $pos, strlen($search)) : $text;
 }
+
+function str_replace_poslednee($search, $replace, $subject)// заменяет последнее вхождение подстроки
+{
+	$pos = strrpos($subject, $search);
+
+	if($pos !== false)
+	{
+		$subject = substr_replace($subject, $replace, $pos, strlen($search));
+	}
+
+	return $subject;
+}

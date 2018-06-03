@@ -46,7 +46,7 @@ $text = transform_img($text, $url);
     $text = str_replace("\r\n", '', $text);//это только для tut.by!!
     $text = str_replace("\n\r", '', $text);//это только для tut.by!!
     $text = str_replace_once('<p>','',$text);//это только для tut.by!!
-    $text = preg_replace('/</p>$/', '', $text); //это только для tut.by!!
+    $text = str_replace_poslednee('</p>', '', $text); //это только для tut.by!!
 
 $keys = $keys_temp;
 
