@@ -322,8 +322,7 @@ if ($route){
 			$count_slash = substr_count($REQUEST_URI, '/');
 			if ($count_slash > 4) $rubrika_4_bool = false;
 			else $rubrika_4_bool = true;
-			$rubrika_2_array = Array('belnews','coldwar','polithumor','empty','belarus','russia','ukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
-				'world','army','rusbel','history','religion','science','language','agent','nweapon','CSTO','site');
+			$rubrika_2_array = Array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic','world','interview','army','rusbel','history','religion','science','language','westagent','nweapon','CSTO','site');
 
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;
