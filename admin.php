@@ -25,11 +25,21 @@ if (!empty($_POST['teme'])){
 	$pic_alt_3 = $_POST["pic_alt_3"];
 	$pic_alt_4 = $_POST["pic_alt_4"];
 	$pic_alt_5 = $_POST["pic_alt_5"];
+	$pic_alt_6 = $_POST["pic_alt_6"];
+	$pic_alt_7 = $_POST["pic_alt_7"];
+	$pic_alt_8 = $_POST["pic_alt_8"];
+	$pic_alt_9 = $_POST["pic_alt_9"];
+	$pic_alt_10 = $_POST["pic_alt_10"];
 	$pic_alt = array(
 		2 => $pic_alt_2,
 		$pic_alt_3,
 		$pic_alt_4,
-		$pic_alt_5
+		$pic_alt_5,
+		$pic_alt_6,
+		$pic_alt_7,
+		$pic_alt_8,
+		$pic_alt_9,
+		$pic_alt_10
 	);
 	$text = transform_img($text,$url,$pic_alt);
 	$keys = $_POST["keys"];
@@ -106,6 +116,31 @@ $teme_int = $_POST["teme_int"];
 		echo ("Размер файла превышает 1 мегабайт");
 		exit;
 	}
+	if($_FILES['filename_6']['size'] > 1024*1024)
+	{
+		echo ("Размер файла превышает 1 мегабайт");
+		exit;
+	}
+	if($_FILES['filename_7']['size'] > 1024*1024)
+	{
+		echo ("Размер файла превышает 1 мегабайт");
+		exit;
+	}
+	if($_FILES['filename_8']['size'] > 1024*1024)
+	{
+		echo ("Размер файла превышает 1 мегабайт");
+		exit;
+	}
+	if($_FILES['filename_9']['size'] > 1024*1024)
+	{
+		echo ("Размер файла превышает 1 мегабайт");
+		exit;
+	}
+	if($_FILES['filename_10']['size'] > 1024*1024)
+	{
+		echo ("Размер файла превышает 1 мегабайт");
+		exit;
+	}
 
     // Проверяем загружен ли файл
 	$url_mass = explode ( '/', $url);
@@ -147,6 +182,26 @@ $teme_int = $_POST["teme_int"];
 	if(is_uploaded_file($_FILES["filename_5"]["tmp_name"]))
 	{
 		move_uploaded_file($_FILES["filename_5"]["tmp_name"], $url_pic."/img_5.jpg");
+	}
+	if(is_uploaded_file($_FILES["filename_6"]["tmp_name"]))
+	{
+		move_uploaded_file($_FILES["filename_6"]["tmp_name"], $url_pic."/img_6.jpg");
+	}
+	if(is_uploaded_file($_FILES["filename_7"]["tmp_name"]))
+	{
+		move_uploaded_file($_FILES["filename_7"]["tmp_name"], $url_pic."/img_7.jpg");
+	}
+	if(is_uploaded_file($_FILES["filename_8"]["tmp_name"]))
+	{
+		move_uploaded_file($_FILES["filename_8"]["tmp_name"], $url_pic."/img_8.jpg");
+	}
+	if(is_uploaded_file($_FILES["filename_9"]["tmp_name"]))
+	{
+		move_uploaded_file($_FILES["filename_9"]["tmp_name"], $url_pic."/img_9.jpg");
+	}
+	if(is_uploaded_file($_FILES["filename_10"]["tmp_name"]))
+	{
+		move_uploaded_file($_FILES["filename_10"]["tmp_name"], $url_pic."/img_10.jpg");
 	}
 }
 //if(@$_POST["post_vk"] == 1) require_once('vk.php');
@@ -267,6 +322,16 @@ echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;';?><br>
 	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_4" type="text" >пусто</textarea><br><br>
 	<input type="file" name="filename_5"><br>
 	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_5" type="text" >пусто</textarea><br><br>
+	<input type="file" name="filename_6"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_6" type="text" >пусто</textarea><br><br>
+	<input type="file" name="filename_7"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_7" type="text" >пусто</textarea><br><br>
+	<input type="file" name="filename_8"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_8" type="text" >пусто</textarea><br><br>
+	<input type="file" name="filename_9"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_9" type="text" >пусто</textarea><br><br>
+	<input type="file" name="filename_10"><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="pic_alt_10" type="text" >пусто</textarea><br><br>
 	<input type="hidden" name="post_vk" value="<?php echo $post_vk; ?>">
 		<input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить статью"/>
 		<br><br>
