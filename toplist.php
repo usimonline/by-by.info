@@ -2,9 +2,7 @@
 			<div class="topnews__pic">
 			    <a href="<?php echo $main_name; ?><?php echo $topnews[0]['url']; ?>">
 				    <img src="<?php
-					$url_pic_news_latest = str_replace('coldwar', 'pictures', $topnews[0]['url']);
-					$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
-					$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+					$url_pic_news_latest = transform_img_prost($topnews[0]['url']);
 					echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1.jpg"
 					alt="<?php echo str_replace('"','',$topnews[0]['teme']); ?>" width="355"  />
 			    </a>
@@ -29,9 +27,7 @@
 					    <li>
 						    <a href="<?php echo $main_name; ?><?php echo $toplist[$count]['url']; ?>">
 							    <div class="news__pic"><img src="<?php
-									$url_pic_news_latest = str_replace('coldwar', 'pictures', $toplist[$count]['url']);
-									$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
-									$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+									$url_pic_news_latest = transform_img_prost($toplist[$count]['url']);
 									echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg"
 															alt="<?php echo str_replace('"','',$toplist[$count]['teme']); ?>"></div>
 								<span class="news__time"><?php echo $toplist[$count]['datetime']; ?></span>
