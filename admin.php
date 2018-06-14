@@ -211,10 +211,8 @@ $res = mysqli_query($link, $select);
 	$description = 'Описание';
 	$razdel = '';
 	$text = 'Текст';
-	$keys = 'НОВОСТИ БЕЛАРУСИ, ХОЛОДНАЯ ВОЙНА, ПОЛИТИЧЕСКИЙ ЮМОР, ИСТОРИЯ, МЕМЫ, СТУДЕНТЫ, КАРИКАТУРЫ, УКРАИНА, СИРИЯ, 
-	БЕЛОРУССИЯ, РОССИЯ, ПОЛЬША, ЗАПАД, СОВЕТСКИЙ СОЮЗ, СНГ, ЭКОНОМИКА, ПОЛИТИКА, НОВОРОССИЯ, 
-	ПРИБАЛТИКА, МИР, АРМИЯ,СОЮЗНОЕ ГОСУДАРСТВО РОССИИ И БЕЛОРУССИИ, РЕЛИГИЯ, 
-	НАУКА, РУССКИЙ ЯЗЫК, АГЕНТЫ ЗАПАДА, ЯДЕРНОЕ ОРУЖИЕ, ОДКБ, BY-BY.INFO';
+	$keys = 'НОВОСТИ БЕЛАРУСИ, ХОЛОДНАЯ ВОЙНА, УКРАИНА, ПОЛИТИЧЕСКИЙ ЮМОР, ЭКОНОМИКА, ИСТОРИЯ, МЕМЫ, КАРИКАТУРЫ, СТУДЕНТЫ, 
+	СИРИЯ, ПОЛЬША, НОВОРОССИЯ, ПРИБАЛТИКА, АРМИЯ, РЕЛИГИЯ, НАУКА, АГЕНТЫ ЗАПАДА';
 	$url_ext = 'https://by-by.info/news';
 	$url_frame = '';
 	$url_int = '/news';
@@ -255,10 +253,10 @@ echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;';?><br>
 <textarea style="width:200px; height:30px; border: 1px solid #cccccc;" 
 		name="datetime" type="text" ><?php echo $datetime; ?></textarea><br>
 		<textarea 	 name="id" type="text" ><?php echo $id; ?></textarea><br>
-	<p>belnews coldwar polithumor</p><br>
+	<p>belnews coldwar polithumor helpstud caricatures bestmemes history westagent economy ancientukri</p><br>
 		<textarea style="width:600px; height:25px; border: 1px solid #cccccc;" name="url" type="text" ><?php echo $url; ?></textarea><br>
         <p>Добавить картинки (360х230, jpg, Главная)</p>
-		<input type="hidden" name="MAX_FILE_SIZE" value="600000">
+		<input type="hidden" name="MAX_FILE_SIZE" value="1500000">
         <input type="file" name="filename"><br><br>
 
 		<input type="file" name="filename_2"><br>

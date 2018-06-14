@@ -41,7 +41,10 @@ switch($REQUEST_URI ){
 
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
-if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'){
+if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'
+	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'westagent'
+	or $nomer_url_mass[1] == 'history' or $nomer_url_mass[1] == 'bestmemes' or $nomer_url_mass[1] == 'caricatures'
+	or $nomer_url_mass[1] == 'helpstud'){
 	$rubrika_izmenenie = $nomer_url_mass[1];
 	$nomer_url_mass[1] = 'news';
 } else $rubrika_izmenenie = 'news';
