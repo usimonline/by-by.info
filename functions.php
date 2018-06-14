@@ -64,17 +64,12 @@ function preobrazovanie_url_razdel($url){
 	return $url;
 }
 
+
+
 function transform_img($string,$url,$pic_alt) {
-	$url = str_replace('helpstud', 'pictures', $url);
-	$url = str_replace('caricatures', 'pictures', $url);
-	$url = str_replace('bestmemes', 'pictures', $url);
-	$url = str_replace('history', 'pictures', $url);
-	$url = str_replace('agents', 'pictures', $url);
-	$url = str_replace('economy', 'pictures', $url);
-	$url = str_replace('ancientukri', 'pictures', $url);
-	$url = str_replace('belnews', 'pictures', $url);
+	$first=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','ancientukri','economy','history','agents');
+	$url = str_replace($first, 'pictures', $url);
 	$url = str_replace('news', 'pictures', $url);
-	$url = str_replace('polithumor', 'pictures', $url);
 	$first = '<figure class="article__video"><div class="article__video-container"><img src="'.$url.'img_';
 	$second = '.jpg" alt="';
 	$third = '" /></div><figcaption>';
@@ -88,6 +83,13 @@ function transform_img($string,$url,$pic_alt) {
 	//$string = str_replace($zamena, $img, $string);
 	return $string;
 }
+
+function transform_img_prost($string) {
+	$first=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','ancientukri','economy','history','agents');
+	$string = str_replace($first, 'pictures', $string);
+return $string;
+}
+
 
 function transform_words($string) {
 	$string = str_replace('Беларусью','Белоруссией',$string);
