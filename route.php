@@ -42,7 +42,7 @@ switch($REQUEST_URI ){
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
 if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'
-	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'westagent'
+	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'agents'
 	or $nomer_url_mass[1] == 'history' or $nomer_url_mass[1] == 'bestmemes' or $nomer_url_mass[1] == 'caricatures'
 	or $nomer_url_mass[1] == 'helpstud'){
 	$rubrika_izmenenie = $nomer_url_mass[1];
@@ -322,7 +322,7 @@ if ($route){
 			$count_slash = substr_count($REQUEST_URI, '/');
 			if ($count_slash > 4) $rubrika_4_bool = false;
 			else $rubrika_4_bool = true;
-			$rubrika_2_array = Array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic','world','interview','army','rusbel','history','religion','science','language','westagent','nweapon','CSTO','site');
+			$rubrika_2_array = Array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic','world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site');
 
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;
