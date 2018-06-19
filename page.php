@@ -49,12 +49,13 @@
 	   }
 			if($news_year_2 == 0) {
 				$string_page_temp = nl2br($page['text']);
+				$string_page_temp = podstanovka_kh2($string_page_temp);
 				$string_page_temp = '<p>'.str_replace("<br />\r\n<br />", '</p><p>', $string_page_temp).'</p>';
 				$string_page_temp = str_replace("<br />\n\r<br />", '</p><p>', $string_page_temp);
 				$string_page_temp = str_replace("</figcaption><br />", '</figcaption><p></p>', $string_page_temp);
 				echo $string_page_temp;
 
-			} else echo $page['text'];
+			} else echo podstanovka_kh2($page['text']);
 			?>
 <p></p>
 <?php echo $page['url_frame']; ?>
