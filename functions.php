@@ -187,10 +187,10 @@ function virezat_h2($string)
 
 function podstanovka_kh2($string)
 {
-	for($i = 0; ;$i++) {
-		$string = preg_replace('<h2>', '<h2 id="my_page_'.$i.'">', $string, 1, $count);
-		if($count == 0) break;
-	}
+	//for($i = 0; ;$i++) {
+	//	$string = preg_replace('<h2>', '<h2 id="my_page_'.$i.'">', $string, 1, $count);
+	//	if($count == 0) break;
+	//}
 	$string = str_replace('<<','<',$string);
 	$string = str_replace('>>','>',$string);
 	return $string;
