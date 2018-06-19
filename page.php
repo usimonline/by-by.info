@@ -36,7 +36,7 @@
 	   $colichestvo_h2_per = colichestvo_h2($page['text']);
 	   if ($colichestvo_h2_per > 1){ ?>
 	   <noindex> <p><blockquote> </p>
-		   <ul class="spiski" ><li><strong>Содержание</strong></li>
+		   <ul ><li><strong>Содержание</strong></li>
 		   <?php
 		   $massiv_h2 = virezat_h2($page['text']);
 		   for($i = 0; $i < $colichestvo_h2_per; $i++){
