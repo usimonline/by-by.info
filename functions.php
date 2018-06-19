@@ -159,5 +159,5 @@ function autor_rand($string)
 function colichestvo_h2($string)
 {
 	$col_h2 = substr_count($string, '<h2>');
-	return $col_h2;
+	return 1;//$col_h2;
 }
