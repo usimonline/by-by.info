@@ -32,7 +32,7 @@
 	   } else { ?>
 		   <p>Автор <?php echo autor_rand($page['url']); ?></p><p></p>
 		   <?php
-	   } if (colichestvo_h1($page['text'] > 1)){ ?>
+	   } if (colichestvo_h2($page['text'] > 1)){ ?>
 		   <p><blockquote> </p><p>Содержание</p><p> </blockquote> </p>
 	   <?php
 	   }
