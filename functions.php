@@ -155,3 +155,9 @@ function autor_rand($string)// заменяет последнее вхожде�
 	$name_autor = $first[$kol_sim_mod];
 	return $name_autor;
 }
+
+function colichestvo_h1($string)// заменяет последнее вхождение подстроки
+{
+	$col_h1 = substr_count($string, '<h1>');
+	return $col_h1;
+}
