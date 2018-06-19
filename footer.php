@@ -122,7 +122,7 @@
 
 <div class="footer__bottom">
 	<div class="footer__copy">
-		<p>© 2017 <a href="<?php echo $main_name; ?>"><?php echo $main_name_corot; ?></a><br><br>
+		<p>© 2018 <a href="<?php echo $main_name; ?>/news/2018/06/19/1529407551/Vihodnie-dannie/" rel="nofollow">О газете</a><br><br>
 		При использовании материалов сайта ссылка на сайт "<?php echo $site_name; ?>" обязательна.<br>
 		Сайт "<?php echo $site_name; ?>": <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		</p>
