@@ -190,6 +190,8 @@ function podstanovka_kh2($string, $kol)
 	if($kol <= 1) return $string;
 
 	//for($i = 0; $i < $kol; $i++) {
+	$i = 0;
+	$string = preg_replace('<h2>', '<h2 id="my_page_'.$i.'">', $string, 1);
 	$i = 1;
 		$string = preg_replace('<h2>', '<h2 id="my_page_'.$i.'">', $string, 1);
 	//}
