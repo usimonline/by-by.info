@@ -158,6 +158,6 @@ function autor_rand($string)// заменяет последнее вхожде�
 
 function colichestvo_h2($string)// заменяет последнее вхождение подстроки
 {
-	$col_h1 = substr_count($string, '<h2>');
-	return $col_h1;
+	$col_h2 = substr_count($string, '<h2>');
+	return $col_h2;
 }
