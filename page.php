@@ -33,8 +33,20 @@
 		   <p>Автор <?php echo autor_rand($page['url']); ?></p><p></p>
 		   <?php
 	   }
-	   if (colichestvo_h2($page['text']) > 1){ ?>
-		   <p><blockquote> </p><p>Содержание</p><p> </blockquote> </p>
+	   $colichestvo_h2_per = colichestvo_h2($page['text']);
+	   if ($colichestvo_h2_per > 1){ ?>
+		   <p><blockquote> </p>
+		   <p>Содержание</p>
+		   <?php
+		   $massiv_h2 = virezat_h2($page['text']);
+		   for($i == 0; $i < $colichestvo_h2_per; $i++){
+			   echo '<p>'.($i+1).'. '.$massiv_h2[$i].'</p>';
+		   }
+		   ?>
+
+
+
+		   <p> </blockquote> </p>
 	   <?php
 	   }
 			if($news_year_2 == 0) {

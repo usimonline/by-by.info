@@ -159,5 +159,28 @@ function autor_rand($string)
 function colichestvo_h2($string)
 {
 	$col_h2 = substr_count($string, '<h2>');
-	return 1;//$col_h2;
+	return $col_h2;
+}
+
+function virezat_h2($string)
+{
+	for ($i = 0; ; $i++) {
+		$content = $string;
+		$StartWord = "<h2>";
+		$EndWord = "</h2>";
+
+		$pos = strpos($string, $StartWord);
+		if ($pos === false) break;
+
+		$string = substr($string, $pos);
+
+		$pos = strpos($string, $EndWord);
+		$string = substr($string, $pos); //сохранили в $string обрезку original до </h2>
+
+		$content = otbor_parse($content, $StartWord, $EndWord); //i-й обрезок от <h2> до </h2>
+
+		$content_link[$i] = $content;
+	}
+
+	return $content_link;
 }
