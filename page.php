@@ -39,7 +39,7 @@
 		   <p>Содержание</p>
 		   <?php
 		   $massiv_h2 = virezat_h2($page['text']);
-		   for($i == 0; $i < $colichestvo_h2_per; $i++){
+		   for($i = 0; $i < $colichestvo_h2_per; $i++){
 			   echo '<p>'.($i+1).'. '.$massiv_h2[$i].'</p>';
 		   }
 		   ?>
