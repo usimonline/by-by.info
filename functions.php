@@ -187,6 +187,6 @@ function virezat_h2($string)
 
 function podstanovka_kh2($string)
 {
-	$string = preg_replace('<h2','<h2 id="my_page_0"',$string,1);
+	$string = preg_replace('<h2>','<h2 id="my_page_0">',$string,1);
 	return $string;
 }
