@@ -30,7 +30,7 @@
 		   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><p></p>
 		   <?php
 	   } else { ?>
-		   <p></p>
+		   <p>Автор <?php echo autor_rand($page['url']); ?></p><p></p>
 		   <?php
 	   }
 			if($news_year_2 == 0) {
