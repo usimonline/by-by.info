@@ -36,16 +36,14 @@
 	   $colichestvo_h2_per = colichestvo_h2($page['text']);
 	   if ($colichestvo_h2_per > 1){
 	   ?>
-	    <!--<noindex>--> <blockquote>
-		   <ul ><li><strong>Содержание</strong></li>
+	    <!--<noindex>--><ul ><li><strong>Содержание</strong></li>
 		   <?php
 		   $massiv_h2 = virezat_h2($page['text']);
 		   for($i = 0; $i < $colichestvo_h2_per; $i++){
 			   echo '<li><a href="#my_page_'.$i.'">'.($i+1).'. '.$massiv_h2[$i].'</a></li>';
 		   }
 		   ?>
-			   </ul>
-		   </blockquote><!--</noindex>-->
+			   </ul><!--</noindex>-->
 	   <?php
 	   }
 			if($news_year_2 == 0) {
