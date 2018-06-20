@@ -19,7 +19,24 @@ if (!empty($_POST['teme'])){
 	if ($_POST["chpu_url_switch"] == 1 ) $url = $url.translate_into_english($_POST['teme']).'/';
 	$description = $_POST["description"];
 	$razdel = $_POST["razdel"];
+
+
 	$text = $_POST["text"];
+	//$colichestvo_h2_per = colichestvo_h2($text);
+	//if ($colichestvo_h2_per > 1) {
+	//	$massiv_h2 = virezat_h2($text);
+	//	$text = podstanovka_kh2($string_page_temp, $colichestvo_h2_per);
+	//	$dop_text_soderg = '<noindex><p><blockquote></p><ul><li><strong>Содержание</strong></li>';
+	//	for($i = 0; $i < $colichestvo_h2_per; $i++) {
+	//		$dop_text_soderg = $dop_text_soderg.'<li><a href="#my_page_' . $i . '">' . ($i + 1) . '. ' . $massiv_h2[$i] . '</a></li>';
+	//	}
+	//	$dop_text_soderg = $dop_text_soderg.'</ul><p></blockquote></p></noindex>';
+	//	$text = $dop_text_soderg.$text;
+	//}
+
+
+
+
 	$picture_text = $_POST["picture_text"];
 	$pic_alt_2 = $_POST["pic_alt_2"];
 	$pic_alt_3 = $_POST["pic_alt_3"];

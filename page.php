@@ -34,8 +34,9 @@
 		   <?php
 	   }
 	   $colichestvo_h2_per = colichestvo_h2($page['text']);
-	   if ($colichestvo_h2_per > 1){ ?>
-	   <noindex> <p><blockquote> </p>
+	   if ($colichestvo_h2_per > 1){
+	   ?>
+	    <!--<noindex>--> <blockquote>
 		   <ul ><li><strong>Содержание</strong></li>
 		   <?php
 		   $massiv_h2 = virezat_h2($page['text']);
@@ -44,18 +45,18 @@
 		   }
 		   ?>
 			   </ul>
-		   <p> </blockquote> </p></noindex>
+		   </blockquote><!--</noindex>-->
 	   <?php
 	   }
 			if($news_year_2 == 0) {
 				$string_page_temp = nl2br($page['text']);
-				$string_page_temp = podstanovka_kh2($string_page_temp , $colichestvo_h2_per);
+				//$string_page_temp = podstanovka_kh2($string_page_temp , $colichestvo_h2_per);
 				$string_page_temp = '<p>'.str_replace("<br />\r\n<br />", '</p><p>', $string_page_temp).'</p>';
 				$string_page_temp = str_replace("<br />\n\r<br />", '</p><p>', $string_page_temp);
 				$string_page_temp = str_replace("</figcaption><br />", '</figcaption><p></p>', $string_page_temp);
 				echo $string_page_temp;
 
-			} else echo podstanovka_kh2($page['text'], $colichestvo_h2_per);
+			} else echo $page['text'];//podstanovka_kh2($page['text'], $colichestvo_h2_per);
 			?>
 <p></p>
 <?php echo $page['url_frame']; ?>
