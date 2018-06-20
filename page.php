@@ -43,7 +43,7 @@
 			   echo '<li><a href="#my_page_'.$i.'">'.($i+1).'. '.$massiv_h2[$i].'</a></li>';
 		   }
 		   ?>
-			   </ul><!--</noindex>-->
+			   </ul><!--</noindex>--><p></p>
 	   <?php
 	   }
 			if($news_year_2 == 0) {
