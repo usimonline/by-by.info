@@ -73,8 +73,8 @@
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >ХОЛОДНАЯ ВОЙНА</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >ПОЛИТИЧЕСКИЙ ЮМОР</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
-			<li><a href="<?php echo $main_name; ?>/bestmemes/" rel="nofollow">Мемы</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/russia/50/" rel="nofollow">Россия</a></li>
+			<li><a href="<?php echo $main_name; ?>/bestmemes/" >Мемы</a></li>
+			<li><a href="<?php echo $main_name; ?>/caricatures/" >Карикатуры</a></li>
 			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/west/50/" rel="nofollow">Запад</a></li>
 			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты Запада</a></li>
