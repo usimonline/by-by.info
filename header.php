@@ -73,12 +73,12 @@
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >ХОЛОДНАЯ ВОЙНА</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >ПОЛИТИЧЕСКИЙ ЮМОР</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50/" rel="nofollow">Беларусь</a></li>
+			<li><a href="<?php echo $main_name; ?>/bestmemes/" rel="nofollow">Мемы</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/russia/50/" rel="nofollow">Россия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/ancientukri/50/" rel="nofollow">Украина</a></li>
+			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/west/50/" rel="nofollow">Запад</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/agents/50/" rel="nofollow">Агенты Запада</a></li>
+			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты Запада</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50/" rel="nofollow">Политика</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/economy/50/" rel="nofollow">Экономика</a></li>
+			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
 		</ul>
 	</div>
