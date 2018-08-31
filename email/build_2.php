@@ -364,7 +364,7 @@ $vibor_pris_case = 1; //rand(1,46);
 switch ($vibor_pris_case) {
 
     case 1:
-        $vibor_pris = ' Развиваю свой <a href="https://by-by.info/">новостной сайт</a>, веду группы 
+        $vibor_pris = ' Развиваю свой <a href="https://by-by.info/">новостной сайт</a>, под псевдонимом Ольга Витальевна веду группы 
  <a href="https://vk.com/bybyinfo">ВК</a>, <a href="https://twitter.com/byby_info">Tw</a>, <a href="https://www.instagram.com/byby_info/">Inst</a> 
  для поддержания 
  и развития профессиональных навыков
@@ -2945,8 +2945,8 @@ img {
                   
                   
                   <div class="title" style="font-family:'.$rand_nom_text_9.'; font-size: 17px; font-weight: '.$rand_nom_text_1.'; 
-                  color: #374'.$color_rand.'52">'.$name.'! 
-                  "<a href="'.$site_url.'">'.$site_name.'</a>"
+                  color: #374'.$color_rand.'52">Представители '.$name.'! 
+                  "<a href="'.$site_url.'">Я Усимов Игорь, живу в Минске.</a>"
                   '.$vibor_pris.'
                   
                   <a href="'.$site_url.'order.php" >'.$rand_nom_text_4.'</a>
