@@ -2621,12 +2621,12 @@ switch ($rand_nom_5) {
 
 $rand_nom_text_5 = rand_podstav_smv($rand_nom_text_5);
 
-$rand_nom_6 = rand(1,5);
+$rand_nom_6 = 1; //rand(1,5);
 
 switch ($rand_nom_6) {
 
     case 1:
-        $rand_nom_text_6 = 'Отписка';
+        $rand_nom_text_6 = 'Жду ваш ответ';
         break;
     case 2:
         $rand_nom_text_6 = 'Отказаться от рассылки';
@@ -3125,7 +3125,7 @@ img {
               '.$name.'! <a href="'.$site_url.'otpiska.php" >'.$rand_nom_text_6.'</a>.<br>
             </span>
 
-            ©'.$rand_nom_text_7.'-2017 <a href="'.$site_url.'" style="color: #aaaaa'.$color_rand.'">'.$site_name.'</a><br>
+            ©'.2018 <a href="'.$site_url.'" style="color: #aaaaa'.$color_rand.'">'.$site_name.'</a><br>
             
             
             <br>
