@@ -51,11 +51,11 @@ switch ($per_site){
 
 //Выбор Выполнение по низкой цене готово
 
-$vibor_let_case = rand(1,67);
+$vibor_let_case = 1; //rand(1,67);
 
 switch ($vibor_let_case) {
     case 1:
-        $vibor_let = 'В январе-феврале 2018 снизили цены.';
+        $vibor_let = 'Занимаюсь редакторской работой для сайтов более двух лет.';
         break;
     case 2:
         $vibor_let = 'Зимня распродажа работ 2018.';
@@ -278,11 +278,11 @@ $vibor_let = rand_podstav_smv($vibor_let);
 
 //Без предоплаты сделано
 
-$vibor_akc_case = rand(1,22);
+$vibor_akc_case = 1; //rand(1,22);
 
 switch ($vibor_akc_case) {
     case 1:
-        $vibor_akc = 'Начинаем работать вообще без оплаты.';
+        $vibor_akc = 'Владею основами front-end и back-end разработки сайтов (php, html, css, javascript)';
         break;
     case 2:
         $vibor_akc = 'Автор приступит к работе без денег.';
@@ -359,13 +359,18 @@ $sut_mag = rand(12,16);
 
 //чек + договор сделано
 
-$vibor_pris_case = rand(1,46);
+$vibor_pris_case = 1; //rand(1,46);
 
 switch ($vibor_pris_case) {
 
     case 1:
-        $vibor_pris = ' уже больше восьми лет выполняет дипломы и курсовые
-		по самым разным предметам. Вас ждет чек и публичная оферта. ';
+        $vibor_pris = ' Развиваю свой <a href="https://by-by.info/">новостной сайт</a>, веду группы 
+ <a href="https://vk.com/bybyinfo">ВК</a>, <a href="https://twitter.com/byby_info">Tw</a>, <a href="https://www.instagram.com/byby_info/">Inst</a> 
+ для поддержания 
+ и развития профессиональных навыков
+         в  web-программировании, SEO и журналистско-редакторской работе. 
+         Пару дней назад начал вести <a href="https://www.youtube.com/watch?v=E6YaNJYSeig">блог</a>, 
+         где выможете увидеть меня.';
         break;
 
 
@@ -569,13 +574,13 @@ $vibor_pris = rand_podstav_smv($vibor_pris);
 
 //Текст курсовой
 
-$text_kurs_case = rand(1,41);
+$text_kurs_case = 1; //rand(1,41);
 
 switch ($text_kurs_case) {
 
     case 1:
-        $text_kurs = 'С каждым годом все большее число студентов склоняется к мысли, что лучше заказать написание курсовой работы
-        у специалистов.
+        $text_kurs = 'Работал последние 3 года в рефератной компании в отделе контроля качества, проверял дипломные работы 
+        и магистерские диссертации, бился на всех фронтах: исправлял ошибки, следил за содержанием и оформлением.
         ';
         break;
     case 2:
@@ -790,12 +795,12 @@ $text_kurs = rand_podstav_smv($text_kurs);
 
 //Текст дипломной
 
-$text_dip_case = rand(1,41);
+$text_dip_case = 1; //rand(1,41);
 
 switch ($text_dip_case) {
     case 1:
-        $text_dip = 'Далеко не каждому удается написать курсовой или диплом самостоятельно, ведь такая работа требует огромных 
-        затрат сил и, что важнее, времени.
+        $text_dip = 'Закончил аспирантуру БГУ, кафедра геометрии, топологии и методики преподавания математики. Написал более 
+        4 научных статей. Аналитический склад ума.
         ';
         break;
     case 2:
@@ -1014,12 +1019,12 @@ $text_dip = rand_podstav_smv($text_dip);
 
 //Текст магистерской
 
-$text_mag_case = rand(1,41);
+$text_mag_case = 1;//rand(1,41);
 
 switch ($text_mag_case) {
     case 1:
-        $text_mag = 'Вопрос качества и уникальности должен стоять превыше вопроса о том, сколько стоит магистерская работа, 
-        но мы поможем сэкономить.
+        $text_mag = 'Более трех лет работал аналитиком СМИ, копирайтером, корректором и редактором на фрилансе.
+        Контролировал работу копирайтеров на бирже etxt.ru и freelancer.ru.
         ';
         break;
     case 2:
@@ -1236,11 +1241,14 @@ $text_mag = rand_podstav_smv($text_mag);
 
 //Выбор Скидки
 
-$vibor_filial_case = rand(1,72);
+$vibor_filial_case = 1; //rand(1,72);
 
 switch ($vibor_filial_case) {
     case 1:
-        $vibor_filial = 'Мы знаем семь способов сэкономить на написании работы.';
+        $vibor_filial = 'Все делал сам для своего сайта: и программировал на php + css + html, 
+        и создавал семантическое ядро, и писал статьи по ТЗ. Обрабатывал картинки в Photoshop. 
+        В социальных сетях размещал анонсы статей или новостей с помощью сервиса seolit.ru. 
+        Для своего проекта около полутора лет занимался email-рассылками посредством сервиса sendpulse.com.';
         break;
     case 2:
         $vibor_filial = 'Гибкий подход к клиенту - наше главное правило.';
@@ -1463,18 +1471,15 @@ $vibor_filial = rand_podstav_smv($vibor_filial);
 
 //Выбор низа
 
-$vibor_niz_case = rand(1, 39);
+$vibor_niz_case = 1; //rand(1, 39);
 
 switch ($vibor_niz_case) {
     case 1:
-        $vibor_niz = 'Восьмой год работает наша компания в сфере образовательных услуг, 
-        основным направлением которой является выполнение дипломов, курсовых и рефератов на заказ.<br>
-        И наше появление в Нижнем Новгороде, городе знаменитом и авторитетном, нас радует. <br>
-        Почти 8 лет в наше стремительно несущееся в будущее время – срок немалый.<br>
-         За этот срок в компании 
-        сформировался костяк исполнителей работ высокой квалификации,<br> состоящий главным образом из преподавателей 
-        престижных высших учебных заведений, <br>
-        людей с учеными степенями, авторами многочисленных научных работ в своих областях.<br>
+        $vibor_niz = 'За последние 5 лет я написал сотни статей и аналитических записок (см. примеры на сайте),<br>
+        занимался email-маркетингом, руководил десятком копирайтеров, работал в контроле качества диссертаций.<br>
+        У меня развитое аналитическое мышление, я внимателен и креативен,<br>
+        отлично разбираюсь во всей «кухне» сайтостроительства и поиске информации в интернете.<br>
+        Готов приступить к работе уже сегодня.<br>
 ';
         break;
     case 2:
@@ -2569,12 +2574,12 @@ $rand_nom_text_3_3 = rand_podstav_smv($rand_nom_text_3_3);
 
 
 
-$rand_nom_4 = rand(1,5);
+$rand_nom_4 = 1; //rand(1,5);
 
 switch ($rand_nom_4) {
 
     case 1:
-        $rand_nom_text_4 = 'Сделать заказ';
+        $rand_nom_text_4 = 'Буду ждать ваш ответ.';
         break;
     case 2:
         $rand_nom_text_4 = 'Заказать';
@@ -2593,12 +2598,12 @@ switch ($rand_nom_4) {
 $rand_nom_text_4 = rand_podstav_smv($rand_nom_text_4);
 
 
-$rand_nom_5 = rand(1,5);
+$rand_nom_5 = 1; //rand(1,5);
 
 switch ($rand_nom_5) {
 
     case 1:
-        $rand_nom_text_5 = 'сделать заказ';
+        $rand_nom_text_5 = 'буду ждать ваш ответ.';
         break;
     case 2:
         $rand_nom_text_5 = 'заказать';
@@ -2915,7 +2920,7 @@ img {
           font-size: 25px; font-weight: bold; padding-bottom: 13px; 
           color:#DF47'.$color_rand. '5; padding-left: '.$rand_nom_text_10.'; padding-right: '.$rand_nom_text_10.'">
           
-                  <span style="color: '.$rand_color_green.';">' .$name.'!<br>'.$vid_rab.$rand_nom_text_8.$pay.$rand_nom_text_16.'</span><br>
+                  <span style="color: '.$rand_color_green.';">Уважаемые представители компании ' .$name.'!<br>Интересна ваша вакансия '.$vid_rab.'</span><br>
                   
             '.$vibor_let.'
                  <br><span style="color: '.$rand_color_green.';">'.$vibor_akc.'</span><br>

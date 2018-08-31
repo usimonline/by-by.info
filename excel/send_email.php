@@ -261,9 +261,9 @@ if ( (int)$i >= (int)$count) {
 
         if ($predmet != '') $predmet = $predmet.'.';
 
-        $dobroe_text = rand_podstav_smv('Здравствуй, ');
+        $dobroe_text = rand_podstav_smv('Здравствуйте, ');
 
-        $subject =  $name . "! " . $vid_rab . $sub_1_text . $pay . ". ".$predmet. $sub_2_text;
+        $subject =  "Отклик на вакансию ".$vid_rab." для кадровой службы компании ".$name;
 
         $sender = new sender($email, $site_name, $subject, '', $password);
 
