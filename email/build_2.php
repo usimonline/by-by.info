@@ -2949,7 +2949,7 @@ img {
                   <a href="https://www.facebook.com/profile.php?id=100028038362953">Я Усимов Игорь, живу в Минске.</a>
                   '.$vibor_pris.'
                   
-                  <a href="'.$site_url.'order.php" >'.$rand_nom_text_4.'</a>
+                  <a href="mailto:'.$email.'" >'.$rand_nom_text_4.'</a>
                   
                   </div>
                   
@@ -3094,7 +3094,7 @@ img {
                 <td class="cont'.$style_1.'ain22-padding header" align="left" style="font-family: '.$rand_nom_text_9.'; font-size: '.$rand_nom_text_10.'; 
                 font-weight: bold; padding-bottom: 13px; color: #DF47'.$color_rand.'5;padding-left: '.$rand_nom_text_10.'; padding-right: '.$rand_nom_text_10.'">
                 
-                  <a href="'.$site_url.'order.php">'.$name.', '.$rand_nom_text_5.'</a><br>
+                  <a href="mailto:'.$email.'">'.$name.', '.$rand_nom_text_5.'</a><br>
                    '.$vibor_filial.'
                 </td>
                 
