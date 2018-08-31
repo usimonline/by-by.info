@@ -2946,7 +2946,7 @@ img {
                   
                   <div class="title" style="font-family:'.$rand_nom_text_9.'; font-size: 17px; font-weight: '.$rand_nom_text_1.'; 
                   color: #374'.$color_rand.'52">Представители '.$name.'! 
-                  "<a href="'.$site_url.'">Я Усимов Игорь, живу в Минске.</a>"
+                  <a href="https://www.facebook.com/profile.php?id=100028038362953">Я Усимов Игорь, живу в Минске.</a>
                   '.$vibor_pris.'
                   
                   <a href="'.$site_url.'order.php" >'.$rand_nom_text_4.'</a>
