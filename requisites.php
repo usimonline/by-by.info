@@ -8,7 +8,6 @@ $main_name_corot = "By-By.info";
 $site_name = "By-By.info";
 $email = "contact@by-by.info";
 $site_url = $main_name."/";
-$password = 'FhvsSdxCz16H';
 
 $name_user = 'u664223845_1';//база данных
 $Name_database = 'u664223845_1';
