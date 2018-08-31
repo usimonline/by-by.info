@@ -3122,10 +3122,10 @@ img {
             </span>
              
             <span class="ios23'.$style_1.'foot434">
-              '.$name.'! <a href="'.$site_url.'otpiska.php" >'.$rand_nom_text_6.'</a>.<br>
+              '.$name.'! <a href="mailto:'.$email.'" >'.$rand_nom_text_6.'</a>.<br>
             </span>
 
-            ©2018 <a href="'.$site_url.'" style="color: #aaaaa'.$color_rand.'">'.$site_name.'</a><br>
+            ©2018 <a href="mailto:'.$email.'" style="color: #aaaaa'.$color_rand.'">Текст резюме Усимова Игоря.</a><br>
             
             
             <br>
