@@ -368,7 +368,7 @@ switch ($vibor_pris_case) {
  <a href="https://vk.com/bybyinfo">ВК</a>, <a href="https://twitter.com/byby_info">Tw</a>, <a href="https://www.instagram.com/byby_info/">Inst</a> 
  для поддержания 
  и развития профессиональных навыков
-         в  web-программировании, SEO и журналистско-редакторской работе. 
+         в  web-программировании, SEO и журналистско-редакторской работе.
          Пару дней назад начал вести <a href="https://www.youtube.com/watch?v=E6YaNJYSeig">блог</a>, 
          где выможете увидеть меня.';
         break;
