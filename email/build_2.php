@@ -2920,7 +2920,7 @@ img {
           font-size: 25px; font-weight: bold; padding-bottom: 13px; 
           color:#DF47'.$color_rand. '5; padding-left: '.$rand_nom_text_10.'; padding-right: '.$rand_nom_text_10.'">
           
-                  <span style="color: '.$rand_color_green.';">Уважаемые представители компании ' .$name.'!<br>Интересна ваша вакансия '.$vid_rab.'</span><br>
+                  <span style="color: '.$rand_color_green.';">Уважаемые представители компании ' .$name.'!<br>Интересна ваша вакансия <a href="'.$pay.'">'.$vid_rab.'</a></span><br>
                   
             '.$vibor_let.'
                  <br><span style="color: '.$rand_color_green.';">'.$vibor_akc.'</span><br>
