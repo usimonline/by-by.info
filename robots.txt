@@ -5,6 +5,8 @@ Disallow: /topic
 Disallow: /reklama_1546324.php
 Disallow: /news/2018-2
 Disallow: /pastnews
+Disallow: /email
+Disallow: /excel
 Allow: /pastnews/empty
 Host: https://by-by.info
 Sitemap: https://by-by.info/sitemap.xml
