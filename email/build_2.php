@@ -282,7 +282,7 @@ $vibor_akc_case = 1; //rand(1,22);
 
 switch ($vibor_akc_case) {
     case 1:
-        $vibor_akc = 'Владею основами front-end и back-end разработки сайтов (php, html, css, javascript)';
+        $vibor_akc = 'Владею основами front-end и back-end разработки сайтов (php, html+css, javascript).';
         break;
     case 2:
         $vibor_akc = 'Автор приступит к работе без денег.';
@@ -2920,7 +2920,7 @@ img {
           font-size: 25px; font-weight: bold; padding-bottom: 13px; 
           color:#DF47'.$color_rand. '5; padding-left: '.$rand_nom_text_10.'; padding-right: '.$rand_nom_text_10.'">
           
-                  <span style="color: '.$rand_color_green.';">Уважаемые представители ' .$name.'!<br>Интересна ваша вакансия <a href="'.$pay.'">'.$vid_rab.'</a></span><br>
+                  <span style="color: '.$rand_color_green.';">Уважаемые представители ' .$name.'!<br>Интересна ваша вакансия <a href="'.$pay.'">'.$vid_rab.'</a>.</span><br>
                   
             '.$vibor_let.'
                  <br><span style="color: '.$rand_color_green.';">'.$vibor_akc.'</span><br>
