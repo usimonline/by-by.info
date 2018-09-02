@@ -55,7 +55,7 @@ $vibor_let_case = 1; //rand(1,67);
 
 switch ($vibor_let_case) {
     case 1:
-        $vibor_let = 'Занимаюсь редакторской работой для сайтов более двух лет.';
+        $vibor_let = 'Занимаюсь редакторской работой три года.';
         break;
     case 2:
         $vibor_let = 'Зимня распродажа работ 2018.';
@@ -2920,7 +2920,7 @@ img {
           font-size: 25px; font-weight: bold; padding-bottom: 13px; 
           color:#DF47'.$color_rand. '5; padding-left: '.$rand_nom_text_10.'; padding-right: '.$rand_nom_text_10.'">
           
-                  <span style="color: '.$rand_color_green.';">Уважаемые представители компании ' .$name.'!<br>Интересна ваша вакансия <a href="'.$pay.'">'.$vid_rab.'</a></span><br>
+                  <span style="color: '.$rand_color_green.';">Уважаемые представители ' .$name.'!<br>Интересна ваша вакансия <a href="'.$pay.'">'.$vid_rab.'</a></span><br>
                   
             '.$vibor_let.'
                  <br><span style="color: '.$rand_color_green.';">'.$vibor_akc.'</span><br>
