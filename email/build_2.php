@@ -2998,7 +2998,7 @@ img {
                         
                         <div class="coo'.$style_1.'332l-copy" style="font-family:'.$rand_nom_text_9.'; 
                         font-size: '.$rand_nom_text_12.'; line-height: 21px; text-align: left; color:#3333'.$color_rand.'2">'.$sut_kurs.$rand_nom_text_17.' <br>
-                          '.$name.'!<br>'.$text_kurs.'
+                          Представители '.$name.'!<br>'.$text_kurs.'
                                                    
                         </div>
                         
@@ -3035,7 +3035,7 @@ img {
                         
                         <div class="coo'.$style_1.'332l-copy" style="font-family: '.$rand_nom_text_9.'; font-size: '.$rand_nom_text_12.'; 
                         line-height: 21px; text-align: left; color:#333'.$color_rand.'32">'.$sut_dip.$rand_nom_text_17.'<br>
-                          '.$name.'!<br>'.$text_dip.'
+                          Представители '.$name.'!<br>'.$text_dip.'
                           
                                                  </div>                                               
                         <br>
@@ -3075,7 +3075,7 @@ img {
                         </table>
                         <div class="coo'.$style_1.'332l-copy" style="font-family: '.$rand_nom_text_9.'; font-size: '.$rand_nom_text_12.'; 
                         line-height: 21px; text-align: left; color:#33'.$color_rand.'332">'.$sut_mag.$rand_nom_text_17.'<br>
-                          '.$name.'!<br>'.$text_mag.'
+                          Представители '.$name.'!<br>'.$text_mag.'
                         </div>
                         
                         <br>
@@ -3094,7 +3094,7 @@ img {
                 <td class="cont'.$style_1.'ain22-padding header" align="left" style="font-family: '.$rand_nom_text_9.'; font-size: '.$rand_nom_text_10.'; 
                 font-weight: bold; padding-bottom: 13px; color: #DF47'.$color_rand.'5;padding-left: '.$rand_nom_text_10.'; padding-right: '.$rand_nom_text_10.'">
                 
-                  <a href="mailto:'.$email.'">'.$name.', '.$rand_nom_text_5.'</a><br>
+                  <a href="mailto:'.$email.'">Представители '.$name.', '.$rand_nom_text_5.'</a><br>
                    '.$vibor_filial.'
                 </td>
                 
