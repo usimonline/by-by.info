@@ -353,9 +353,9 @@ $vibor_akc = rand_podstav_smv($vibor_akc);
 
 //Выбор сроков
 
-$sut_kurs = rand(2,5);
-$sut_dip = rand(6,11);
-$sut_mag = rand(12,16);
+$sut_kurs = 3;
+$sut_dip = 3;
+$sut_mag = 4;
 
 //чек + договор сделано
 
@@ -2846,12 +2846,12 @@ switch ($rand_nom_16) {
 
 $rand_nom_text_16 = rand_podstav_smv($rand_nom_text_16);
 
-$rand_nom_17 = rand(1,5);
+$rand_nom_17 = 1;//rand(1,5);
 
 switch ($rand_nom_17) {
 
     case 1:
-        $rand_nom_text_17 = ' д.';
+        $rand_nom_text_17 = ' года';
         break;
     case 2:
         $rand_nom_text_17 = ' дн.';
