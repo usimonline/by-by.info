@@ -580,7 +580,7 @@ switch ($text_kurs_case) {
 
     case 1:
         $text_kurs = 'Работал последние 3 года в рефератной компании в отделе контроля качества, проверял дипломные работы 
-        и магистерские диссертации, бился на всех фронтах: исправлял ошибки, следил за содержанием и оформлением.
+        и магистерские диссертации, бился на всех фронтах: исправлял ошибки, следил за содержанием.
         ';
         break;
     case 2:
@@ -2526,9 +2526,9 @@ $rand_nom_3 = 1; //rand(1,8);
 switch ($rand_nom_3) {
 
     case 1:
-        $rand_nom_text_3_1 = 'Контроль качества';
-        $rand_nom_text_3_2 = 'Дипломная';
-        $rand_nom_text_3_3 = 'Магистерская';
+        $rand_nom_text_3_1 = 'Контроль Качества';
+        $rand_nom_text_3_2 = 'Аспирантура БГУ';
+        $rand_nom_text_3_3 = 'Журналист-фрилансер';
         break;
     case 2:
         $rand_nom_text_3_1 = 'Курсовой';
@@ -2603,7 +2603,7 @@ $rand_nom_5 = 1; //rand(1,5);
 switch ($rand_nom_5) {
 
     case 1:
-        $rand_nom_text_5 = 'буду ждать ваш ответ.';
+        $rand_nom_text_5 = 'жду ваш ответ.';
         break;
     case 2:
         $rand_nom_text_5 = 'заказать';
@@ -3094,7 +3094,7 @@ img {
                 <td class="cont'.$style_1.'ain22-padding header" align="left" style="font-family: '.$rand_nom_text_9.'; font-size: '.$rand_nom_text_10.'; 
                 font-weight: bold; padding-bottom: 13px; color: #DF47'.$color_rand.'5;padding-left: '.$rand_nom_text_10.'; padding-right: '.$rand_nom_text_10.'">
                 
-                  <a href="mailto:'.$email.'">Уважаемые представители '.$name.', '.$rand_nom_text_5.'</a><br>
+                  <a href="mailto:'.$email.'">'.$name.', '.$rand_nom_text_5.'</a><br>
                    '.$vibor_filial.'
                 </td>
                 
