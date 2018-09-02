@@ -364,9 +364,9 @@ $vibor_pris_case = 1; //rand(1,46);
 switch ($vibor_pris_case) {
 
     case 1:
-        $vibor_pris = ' Развиваю свой <a href="https://by-by.info/">новостной сайт</a>, под псевдонимом Ольга Витальевна веду группы 
+        $vibor_pris = ' Развиваю свой <a href="https://by-by.info/">новостной сайт</a>, веду группы 
  <a href="https://vk.com/bybyinfo">ВК</a>, <a href="https://twitter.com/byby_info">Tw</a>, <a href="https://www.instagram.com/byby_info/">Inst</a> 
- — все для поддержания 
+ под псевдонимом Ольга Витальевна — все для поддержания 
  и развития профессиональных навыков
          в  web-программировании, SEO и журналистско-редакторской работе.
          Недавно начал вести <a href="https://www.youtube.com/watch?v=E6YaNJYSeig">блог</a>, 
