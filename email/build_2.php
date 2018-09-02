@@ -282,7 +282,7 @@ $vibor_akc_case = 1; //rand(1,22);
 
 switch ($vibor_akc_case) {
     case 1:
-        $vibor_akc = 'Владею основами front-end и back-end разработки сайтов (php, html+css, javascript).';
+        $vibor_akc = 'Владею основами front- и back-end разработки сайтов (php, html+css, javascript).';
         break;
     case 2:
         $vibor_akc = 'Автор приступит к работе без денег.';
