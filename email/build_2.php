@@ -355,7 +355,7 @@ $vibor_akc = rand_podstav_smv($vibor_akc);
 
 $sut_kurs = 3;
 $sut_dip = 3;
-$sut_mag = 4;
+$sut_mag = 2;
 
 //чек + договор сделано
 
