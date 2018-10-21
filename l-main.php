@@ -38,13 +38,17 @@
 					<?php
 					if ($news_latest[$i]['nomer_novosti'] == '') {
 						$datetime_page_temp = $news_latest[$count]['datetime'];
+						$id_page_temp = $news_latest[$count]['datetime'];
 						$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_page_temp'";
 						$res = mysqli_query($link, $select);
 						$row = mysqli_fetch_row($res);
 						$all_count_nomer = $row[0] + 1; // количество записей с более ранней датой, чем $datetime_page_temp
 						echo $all_count_nomer;// нормер от 1 (самая старая ) до последней (в переменной $all_count)
-					}
-					
+						$insert = "UPDATE $Name_database.$table SET nomer_novosti = '$all_count_nomer' WHERE id='$id_page_temp'";
+
+					} else "Из базы данных ".$news_latest[$i]['nomer_novosti'];
+
+
 
 					?>
 
