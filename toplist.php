@@ -11,7 +11,7 @@
 		    <h2 class="news__title"><a href="<?php echo $main_name; ?><?php echo $topnews[0]['url']; ?>"><?php echo $topnews[0]['teme']; ?></a></h2>
 		    <p><?php echo $topnews[0]['description']; ?>
 			    <a href="<?php echo $main_name; ?><?php echo $topnews[0]['url']; ?>" class="news__counter">
-				    <?php echo $topnews[0]['comments']; ?>
+				    <?php // echo $topnews[0]['comments']; ?>
 				</a>
 			</p>
 </div>
@@ -36,7 +36,7 @@
 							<!-- <span class="news__type">фото</span> -->
 							<!-- <span class="news__type">видео</span> -->
 							<a href="<?php echo $main_name; ?><?php echo $toplist[$count]['url']; ?>" class="news__counter">
-							    <?php echo $toplist[$count]['comments']; ?>
+							    <?php // echo $toplist[$count]['comments']; ?>
 							</a>		
 						</li>
 						
