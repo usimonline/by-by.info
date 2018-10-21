@@ -17,7 +17,7 @@ $table_comments ='comments';
 $table ='news';
 
 
-$select = "SELECT COUNT(*) FROM $Name_database.$table";
+$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_site'";
 
 $res = mysqli_query($link, $select);
 
