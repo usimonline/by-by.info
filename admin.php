@@ -7,6 +7,7 @@
 if (!empty($_POST['teme'])){
 	
 	$datetime = $_POST["datetime"];//date("Y-m-d H:i:s");
+	$nomer_novosti = $_POST["nomer_novosti"];
     $id = $_POST["id"];//time();
 	$datetime_mass_1 = explode ( ' ', $datetime);
 	$datetime_mass_2 = explode ( '-', $datetime_mass_1[0]);
@@ -65,8 +66,8 @@ $url_frame = $_POST["url_frame"];
 $url_int = $_POST["url_int"];
 $teme_int = $_POST["teme_int"];
 	
-	$insert = "REPLACE INTO $Name_database.$table (`id`, `datetime`, `teme`, `description`, `razdel`, `url`, `comments`, `text`, `keys`, `url_ext`, `url_frame`, `url_int`, `teme_int`) 
-	VALUES ($id,'$datetime','$teme','$description','$razdel','$url',$comments,'$text','$keys','$url_ext','$url_frame','$url_int','$teme_int')";
+	$insert = "REPLACE INTO $Name_database.$table (`id`, `datetime`, `teme`, `description`, `razdel`, `url`, `comments`, `text`, `keys`, `url_ext`, `url_frame`, `url_int`, `teme_int`,`nomer_novosti`) 
+	VALUES ($id,'$datetime','$teme','$description','$razdel','$url',$comments,'$text','$keys','$url_ext','$url_frame','$url_int','$teme_int',$nomer_novosti)";
 	
 	$result = mysqli_query($link, $insert);
 	if ($result = 'true'){
@@ -252,6 +253,7 @@ $res = mysqli_query($link, $select);
 	$row = mysqli_fetch_array($res);
 	
 	$datetime = $row['datetime'];
+	$nomer_novosti = $row['$nomer_novosti'];
     $id = $row['id'];
     $url = $row['url'];
     $comments = $row['comments'];
@@ -270,6 +272,7 @@ $res = mysqli_query($link, $select);
 
 } else {
 	$datetime = date("Y-m-d H:i:s");
+	$nomer_novosti = $all_count_nomer + 1;
     $id = time();
 	$datetime_mass_1 = explode ( ' ', $datetime);
 	$datetime_mass_2 = explode ( '-', $datetime_mass_1[0]);
@@ -325,6 +328,7 @@ echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;';?><br>
 <textarea style="width:200px; height:30px; border: 1px solid #cccccc;" 
 		name="datetime" type="text" ><?php echo $datetime; ?></textarea><br>
 		<textarea 	 name="id" type="text" ><?php echo $id; ?></textarea><br>
+	<textarea 	 name="nomer_novosti" type="text" ><?php echo $nomer_novosti; ?></textarea><br>
 	<p>belnews coldwar polithumor helpstud caricatures bestmemes history agents economy ancientukri</p><br>
 		<textarea style="width:600px; height:25px; border: 1px solid #cccccc;" name="url" type="text" ><?php echo $url; ?></textarea><br>
         <p>Добавить картинки (360х230, jpg, Главная)</p>
