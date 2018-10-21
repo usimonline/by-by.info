@@ -121,7 +121,6 @@
                         <li><a class="icon-twitter" href="https://twitter.com/byby_info" rel="nofollow" target="_blank">Twitter</a></li>
                         <li><a class="icon-vk" href="https://vk.com/bybyinfo" rel="nofollow" target="_blank">Vkontakte</a></li>
                         <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/" rel="nofollow" target="_blank">Instagram</a></li>
-                        <li><a class="icon-gplus" href="https://zen.yandex.ru/id/5b40c510d16e8800a9ec26f1" rel="nofollow" target="_blank">Zen.yandex</a></li>
 						    <li><a class="icon-gplus" href="https://ru.pinterest.com/byby_info/" rel="nofollow" target="_blank">Pinterest</a></li>
 							<li><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></li>
 					</ul>
