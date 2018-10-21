@@ -111,7 +111,7 @@ $route = false;
 if (empty($row)) {
 	$route = true;
 } else {
-	$page['datetime'] = $row['datetime'];
+	$page['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
 	$page['teme'] = $row['teme'];
 	$page['description'] = $row['description'];
 	$page['comments'] = $row['comments'];
@@ -405,7 +405,7 @@ if ($route){
 				$page['url_int'] = '/news/2018/04/04/1522848137/sayt-by-byinfo-i-ego-rol-v-mirovom-processe/';
 				$page['teme_int'] = 'Международная инициатива «Центр защиты национальных меньшинств»';
 			} else {
-				$page['datetime'] = $row['datetime'];
+				$page['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
 				$page['teme'] = $row['teme'];
 				$page['description'] = $row['description'];
 				$page['comments'] = $row['comments'];
