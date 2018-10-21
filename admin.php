@@ -272,7 +272,7 @@ $res = mysqli_query($link, $select);
 
 } else {
 	$datetime = date("Y-m-d H:i:s");
-	$nomer_novosti = $all_count_nomer + 1;
+	$nomer_novosti = $all_count_nomer;
     $id = time();
 	$datetime_mass_1 = explode ( ' ', $datetime);
 	$datetime_mass_2 = explode ( '-', $datetime_mass_1[0]);
