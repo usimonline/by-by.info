@@ -253,7 +253,7 @@ $res = mysqli_query($link, $select);
 	$row = mysqli_fetch_array($res);
 	
 	$datetime = $row['datetime'];
-	$nomer_novosti = $row['$nomer_novosti'];
+	$nomer_novosti = $row['nomer_novosti'];
     $id = $row['id'];
     $url = $row['url'];
     $comments = $row['comments'];
