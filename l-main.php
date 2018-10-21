@@ -36,7 +36,7 @@
                 <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Удалить"/>
             </form>
 					<?php
-					if ($news_latest[$i]['nomer_novosti'] == '') {
+					if ($news_latest[$count]['nomer_novosti'] == '') {
 						$datetime_page_temp = $news_latest[$count]['datetime'];
 						$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_page_temp'";
 						$res = mysqli_query($link, $select);
