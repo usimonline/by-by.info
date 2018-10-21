@@ -1,7 +1,7 @@
 <?php
 require("../requisites.php");
-$name = "EPAM";
-$vid_rab = "журналист-копирайтер";
+$name = "N";
+$vid_rab = "специалиста";
 $pay = "https://jobs.tut.by/vacancy/27505582";
 $predmet = '';//'Алгебра и Геометрия';
 

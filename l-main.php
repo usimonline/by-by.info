@@ -35,6 +35,16 @@
 				type="text" ><?php echo $news_latest[$count]['datetime']; ?></textarea>
                 <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Удалить"/>
             </form>
+					<?php
+					$datetime_page_temp = $news_latest[$count]['datetime'];
+					$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_page_temp'";
+					$res = mysqli_query($link, $select);
+					$row = mysqli_fetch_row($res);
+					$all_count_nomer = $row[0]; // количество записей с более ранней датой, чем $datetime_page_temp
+					echo $all_count_nomer;
+
+					?>
+
 			<?php endif; ?>
 				
 			</li>
