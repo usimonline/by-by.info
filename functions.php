@@ -197,7 +197,7 @@ function podstanovka_kh2($string, $kol)
 
 function beer_data($nomer_novosti, $all_zapisey){
 	$hernia = $all_zapisey - $nomer_novosti;
-	$result_data = date("Y-m-d H:i:s",strtotime("-".($hernia*240)." minutes")) - date("H:i:s");
+	$result_data = date("Y-m-d H:i:s",strtotime("-".($hernia*240)." minutes"));
 	return $result_data;
 
 }
