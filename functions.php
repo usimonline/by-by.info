@@ -197,7 +197,10 @@ function podstanovka_kh2($string, $kol)
 
 function beer_data($nomer_novosti, $all_zapisey){
 	$hernia = $all_zapisey - $nomer_novosti;
-	$result_data = date("Y-m-d H:i:s",strtotime("-".($hernia*240)." minutes"));
+	$time_temp = date("U");
+	$suka = $time_temp % 3600;
+	$time_temp_2 = $time_temp - $suka -$hernia*240*60;
+	$result_data = date("Y-m-d H:i:s",strtotime($time_temp_2));
 	return $result_data;
 
 }
