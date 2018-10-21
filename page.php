@@ -2,7 +2,7 @@
    <article class="article" style="margin-top:0px;">
 		<header class="article__header">
 			<h1><?php echo $page['teme']; ?></h1>
-			<a href="<?php echo $main_name; ?><?php echo $page['url']; ?>" class="news__counter"><?php echo $page['comments']; ?></a>
+			<a href="<?php echo $main_name; ?><?php echo $page['url']; ?>" class="news__counter"><?php //echo $page['comments']; ?></a>
 			<ul class="article__info">
 			    <li><?php echo $page['datetime']; ?></li>
 <li><span class="news__views"><?php echo rand(50, 3650);?><i class="icon-eye"></i></span></li>
