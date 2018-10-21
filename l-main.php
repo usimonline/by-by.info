@@ -38,7 +38,7 @@
 					<?php
 					if ($news_latest[$i]['nomer_novosti'] == '') {
 						$datetime_page_temp = $news_latest[$count]['datetime'];
-						$id_page_temp = $news_latest[$count]['datetime'];
+						$id_page_temp = $news_latest[$count]['id'];
 						$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_page_temp'";
 						$res = mysqli_query($link, $select);
 						$row = mysqli_fetch_row($res);
