@@ -200,7 +200,7 @@ function beer_data($nomer_novosti, $all_zapisey){
 	$time_temp = date("U");
 	$suka = $time_temp % 3600;
 	$time_temp_2 = $time_temp - $suka -$hernia*240*60;
-	$result_data = date("Y-m-d H:i:s",strtotime($time_temp_2));
+	$result_data = date("Y-m-d H:i:s",$time_temp_2);
 	return $result_data;
 
 }
