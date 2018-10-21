@@ -46,7 +46,7 @@
 						$insert = "UPDATE $Name_database.$table SET nomer_novosti = $all_count_nomer WHERE datetime='$datetime_page_temp'";
 						$res = mysqli_query($link, $insert);
 
-					} else "Из базы данных ".$news_latest[$i]['nomer_novosti'];
+					} else "Из базы данных ".$news_latest[$count]['nomer_novosti'];
 
 
 
