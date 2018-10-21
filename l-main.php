@@ -48,7 +48,7 @@
 
 					} else {
 						$zzz = $news_latest[$count]['nomer_novosti'];
-						"Из базы данных ".$zzz;
+						echo "Из базы данных ".$zzz;
 					}
 
 
