@@ -233,7 +233,7 @@ if (!empty($_POST['datetime_del'])){
 	
 	$sel_2 = $_POST['datetime_del'];
 
-$delete = "DELETE FROM $Name_database.$table WHERE datetime = '$sel_2'";
+$delete = "DELETE FROM $Name_database.$table WHERE url = '$sel_2'";
 $res = mysqli_query($link, $delete);
 exit;
 }
