@@ -291,7 +291,7 @@ $res = mysqli_query($link, $select);
 $i = 0;
 while($row = mysqli_fetch_array($res))
 {
-	$toplist[$i]['datetime'] = $row['datetime'];
+	$toplist[$i]['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
 	$toplist[$i]['teme'] = $row['teme'];
 	$toplist[$i]['comments'] = $row['comments'];
 	$toplist[$i++]['url'] = $row['url'];
@@ -303,7 +303,7 @@ $res = mysqli_query($link, $select);
 $i = 0;
 while($row = mysqli_fetch_array($res))
 {
-	$topnews[$i]['datetime'] = $row['datetime'];
+	$topnews[$i]['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
 	$topnews[$i]['teme'] = $row['teme'];
 	$topnews[$i]['description'] = $row['description'];
 	$topnews[$i]['comments'] = $row['comments'];
@@ -442,12 +442,13 @@ $keys_value = translate_into_english($keys_value);
 $i = 0;
 while($row = mysqli_fetch_array($res))
 {
-	$news_latest[$i]['datetime'] = $row['datetime'];
+	$news_latest[$i]['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
 	$news_latest[$i]['teme'] = $row['teme'];
 	$news_latest[$i]['razdel'] = $row['razdel'];
 	$news_latest[$i]['description'] = $row['description'];
 	$news_latest[$i]['comments'] = $row['comments'];
 	$news_latest[$i]['nomer_novosti'] = $row['nomer_novosti'];
+	
 	$news_latest[$i++]['url'] = $row['url'];
 }
 $total = $i;
@@ -467,5 +468,7 @@ if($sitemap == 1) {
 	//echo $rss_file;
 	exit;
 }
+
+
 
 

@@ -246,7 +246,7 @@ if (!empty($_POST['datetime_re'])){
 	
 $sel_1 = $_POST['datetime_re'];
 
-$select = "SELECT * FROM $Name_database.$table WHERE datetime = '$sel_1' ";
+$select = "SELECT * FROM $Name_database.$table WHERE url = '$sel_1' ";
 $res = mysqli_query($link, $select);
 
 	$row = mysqli_fetch_array($res);

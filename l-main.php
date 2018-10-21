@@ -27,33 +27,15 @@
 				<?php if ($admin): ?>	
 			<form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/admin/<?php echo $keys_value; ?>/<?php echo ($nomer_url - $nomer_url%50); ?>/">
                 <textarea style="visibility: hidden;" name="datetime_re" 
-				type="text" ><?php echo $news_latest[$count]['datetime']; ?></textarea>
+				type="text" ><?php echo $news_latest[$count]['url']; ?></textarea>
                 <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Изменить"/>
             </form>
 			<form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/admin/<?php echo $keys_value; ?>/<?php echo ($nomer_url - $nomer_url%50 ); ?>/">
                 <textarea style="visibility: hidden;" name="datetime_del" 
-				type="text" ><?php echo $news_latest[$count]['datetime']; ?></textarea>
+				type="text" ><?php echo $news_latest[$count]['url']; ?></textarea>
                 <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Удалить"/>
             </form>
-					<?php
-					if ($news_latest[$count]['nomer_novosti'] == 0) {
-						$datetime_page_temp = $news_latest[$count]['datetime'];
-						$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_page_temp'";
-						$res = mysqli_query($link, $select);
-						$row = mysqli_fetch_row($res);
-						$all_count_nomer = $row[0] + 1; // количество записей с более ранней датой, чем $datetime_page_temp
-						echo $all_count_nomer;// нормер от 1 (самая старая ) до последней (в переменной $all_count)
-						$insert = "UPDATE $Name_database.$table SET nomer_novosti = $all_count_nomer WHERE datetime='$datetime_page_temp'";
-						$res = mysqli_query($link, $insert);
 
-					} else {
-						$zzz = $news_latest[$count]['nomer_novosti'];
-						echo "Из базы данных ".$zzz;
-					}
-
-
-
-					?>
 
 			<?php endif; ?>
 				
