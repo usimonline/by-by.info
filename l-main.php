@@ -48,6 +48,10 @@
 
 					echo $all_count_nomer;
 
+					$insert = "UPDATE $Name_database.$table SET nomer_novosti = $all_count_nomer WHERE datetime='$temp_temp_temp'";
+
+					$res = mysqli_query($link, $insert);
+
 					?>
 
 			<?php endif; ?>
