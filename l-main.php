@@ -35,7 +35,20 @@
 				type="text" ><?php echo $news_latest[$count]['url']; ?></textarea>
                 <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Удалить"/>
             </form>
-					<?php if ($news_latest[$count]['url_ext'] != 'https://by-by.info/news') echo $news_latest[$count]['url_ext'];?>
+					
+					<?php
+					$temp_temp_temp = $news_latest[$count]['url'];
+					$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_site' AND url = $temp_temp_temp";
+
+					$res = mysqli_query($link, $select);
+
+					$row = mysqli_fetch_row($res);
+
+					$all_count_nomer = $row[0] + 1; // количество записей ВСЕХ
+
+					echo $all_count_nomer;
+
+					?>
 
 			<?php endif; ?>
 				
