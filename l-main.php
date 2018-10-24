@@ -37,8 +37,8 @@
             </form>
 					
 					<?php
-					$temp_temp_temp = $news_latest[$count]['url'];
-					$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$datetime_site' AND url = $temp_temp_temp";
+					$temp_temp_temp = $news_latest[$count]['datetime'];
+					$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$temp_temp_temp'";
 
 					$res = mysqli_query($link, $select);
 
