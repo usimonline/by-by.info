@@ -35,7 +35,7 @@
 				type="text" ><?php echo $news_latest[$count]['url']; ?></textarea>
                 <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Удалить"/>
             </form>
-
+					<?php if ($news_latest[$count]['url_ext'] != 'https://by-by.info/') echo $news_latest[$count]['url_ext'];?>
 
 			<?php endif; ?>
 				
