@@ -442,7 +442,7 @@ $keys_value = translate_into_english($keys_value);
 $i = 0;
 while($row = mysqli_fetch_array($res))
 {
-	$news_latest[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
+	$news_latest[$i]['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
 	$news_latest[$i]['teme'] = $row['teme'];
 	$news_latest[$i]['razdel'] = $row['razdel'];
 	$news_latest[$i]['description'] = $row['description'];

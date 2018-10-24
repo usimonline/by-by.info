@@ -35,24 +35,6 @@
 				type="text" ><?php echo $news_latest[$count]['url']; ?></textarea>
                 <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Удалить"/>
             </form>
-					
-					<?php
-					$temp_temp_temp = $news_latest[$count]['datetime'];
-					$select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime < '$temp_temp_temp'";
-
-					$res = mysqli_query($link, $select);
-
-					$row = mysqli_fetch_row($res);
-
-					$all_count_nomer = $row[0] + 1; // количество записей ВСЕХ
-
-					echo $all_count_nomer;
-
-					$insert = "UPDATE $Name_database.$table SET nomer_novosti = $all_count_nomer WHERE datetime='$temp_temp_temp'";
-
-					$res = mysqli_query($link, $insert);
-
-					?>
 
 			<?php endif; ?>
 				
