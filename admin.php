@@ -65,9 +65,12 @@ $url_ext = $_POST["url_ext"];
 $url_frame = $_POST["url_frame"];
 $url_int = $_POST["url_int"];
 $teme_int = $_POST["teme_int"];
+	$metatitle = $_POST["title"];
+	$metadesc = $_POST["metadesc"];
+	$author = $_POST["author"];
 	
-	$insert = "REPLACE INTO $Name_database.$table (`id`, `datetime`, `teme`, `description`, `razdel`, `url`, `comments`, `text`, `keys`, `url_ext`, `url_frame`, `url_int`, `teme_int`,`nomer_novosti`) 
-	VALUES ($id,'$datetime','$teme','$description','$razdel','$url',$comments,'$text','$keys','$url_ext','$url_frame','$url_int','$teme_int',$nomer_novosti)";
+	$insert = "REPLACE INTO $Name_database.$table (`id`, `datetime`, `teme`, `description`, `razdel`, `url`, `comments`, `text`, `keys`, `url_ext`, `url_frame`, `url_int`, `teme_int`,`nomer_novosti`,`author`,`title`,`metadesc`) 
+	VALUES ($id,'$datetime','$teme','$description','$razdel','$url',$comments,'$text','$keys','$url_ext','$url_frame','$url_int','$teme_int',$nomer_novosti,'$author','$metatitle','$metadesc')";
 	
 	$result = mysqli_query($link, $insert);
 	if ($result = 'true'){
@@ -267,6 +270,9 @@ $res = mysqli_query($link, $select);
     $url_frame = $row["url_frame"];
     $url_int = $row["url_int"];
     $teme_int = $row["teme_int"];
+	$metatitle = $row["title"];
+	$metadesc = $row["metadesc"];
+	$author = $row["author"];
 	$post_vk = 0;
 	$text_re = 1;
 
@@ -292,6 +298,9 @@ $res = mysqli_query($link, $select);
 	$url_frame = '';
 	$url_int = '/news';
 	$teme_int = 'Другие новости по этой теме.';
+	$metatitle = '';
+	$metadesc = '';
+	$author = '';
 	$post_vk = 1;
 	$text_re = 0;
 }
@@ -299,6 +308,9 @@ $res = mysqli_query($link, $select);
 
 <h1>Панель администратора для добавления статей</h1>
 <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/admin/<?php echo $keys_value; ?>/<?php echo $nomer_url; ?>/">
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="url_ext" type="title" ><?php echo $metatitle ?></textarea><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="url_ext" type="metadesc" ><?php echo $metadesc ?></textarea><br>
+	<textarea style="width:300px; height:25px; border: 1px solid #cccccc;" name="url_ext" type="author" ><?php echo $author ?></textarea><br>
         <textarea style="width:500px; height:50px; border: 1px solid #cccccc;" name="teme" type="text" ><?php echo $teme; ?></textarea><br>
 		<textarea style="width:600px; height:50px; border: 1px solid #cccccc;" 
 		name="description" type="text" ><?php echo $description; ?></textarea><br>

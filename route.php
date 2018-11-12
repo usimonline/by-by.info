@@ -119,6 +119,9 @@ if (empty($row)) {
 	$page['text'] = $row['text'];
 	$page['keys'] = $row['keys'];
 	$page['id'] = $row['id'];
+	$page['title'] = $row['title'];
+	$page['metadesc'] = $row['metadesc'];
+	$page['author'] = $row['author'];
 if ($row['url_ext'] == NULL) $page['url_ext'] = 'https://ria.ru/';
 else $page['url_ext'] = $row['url_ext'];
 if ($row['url_frame'] == NULL) $page['url_frame'] = '';

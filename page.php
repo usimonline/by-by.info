@@ -30,7 +30,10 @@
 		   <p><a target="_blank" href="<?php echo $page['url_ext']; ?>">Источник</a></p><p></p>
 		   <?php
 	   } else { ?>
-		   <p>Автор <?php echo autor_rand($page['url']); ?></p><p></p>
+		   <p>Автор <?php
+			   if (empty($page['author']))echo autor_rand($page['url']);
+			   else echo $page['author'];
+			   ?></p><p></p>
 		   <?php
 	   }
 	   $colichestvo_h2_per = colichestvo_h2($page['text']);

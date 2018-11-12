@@ -17,11 +17,12 @@ if ($route) {//Переключатель заголовков
         $url_og_picture = $url_og_picture_rub;
     }
 } else {
-	$title = htmlspecialchars($page['teme']);
-	$description = htmlspecialchars($page['description']);
-	$keys = htmlspecialchars($page['keys']);
+	if(empty($page['title']))$title = htmlspecialchars($page['teme']);
+    else $title = htmlspecialchars($page['title']);
+    if(empty($page['metadesc']))$description = htmlspecialchars($page['description']);
+    else $description = htmlspecialchars($page['metadesc']);
     $url_og = $page['url'];
-    $url_og_picture = str_replace('news', 'pictures', $page['url'])."img_1.jpg";
+    $url_og_picture = transform_img_prost($page['url'])."img_1.jpg";
 }
 if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noindex" />';
 ?>
@@ -49,7 +50,6 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 	<title><?php echo $title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <meta name="description" content="<?php echo $description ?>" />
-<meta name="keywords" content="<?php echo $keys; ?>" />
 
 
 
