@@ -22,7 +22,7 @@ if ($route) {//Переключатель заголовков
     if(empty($page['metadesc']))$description = htmlspecialchars($page['description']);
     else $description = htmlspecialchars($page['metadesc']);
     $url_og = $page['url'];
-    $url_og_picture = transform_img_prost(str_replace('news', 'pictures', $page['url']))."img_1.jpg";
+    $url_og_picture = str_replace('news', 'pictures', transform_img_prost($page['url']))."img_1.jpg";
 }
 if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noindex" />';
 ?>
