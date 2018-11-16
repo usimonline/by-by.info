@@ -39,7 +39,7 @@ while ($row = mysqli_fetch_array($res)) {
 }
 
 $date_save = $date_save[0]['date_save'];
-$datetime_site_ymd = '2018-11-17'; date("Y-m-d");
+$datetime_site_ymd = '2018-11-17'; //date("Y-m-d");
 //echo $date_save.'<br>';
 //echo $datetime_site_ymd;
 $select = "UPDATE $Name_database.$table_save SET date_save = '$datetime_site_ymd' WHERE ind = 0";
