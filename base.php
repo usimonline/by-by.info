@@ -36,6 +36,8 @@ $res = mysqli_query($link, $select);
 $row = mysqli_fetch_row($res);
 $date_save = $row['date_save'];
 $datetime_site_ymd = date("Y-m-d");
+echo $date_save.'<br>';
+echo $datetime_site_ymd;
 
 
 //новые выборки первых 6 элементов
