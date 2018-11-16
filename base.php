@@ -39,7 +39,7 @@ $datetime_site_ymd = date("Y-m-d");
 
 
 //новые выборки первых 6 элементов
-if ($date_save != $datetime_site_ymd) {
+if (false) { //$date_save != $datetime_site_ymd) {
 
 	$select = "UPDATE $Name_database.$table_save SET date_save = '$datetime_site_ymd' WHERE ind = 0";
 	$res = mysqli_query($link, $select);
@@ -49,6 +49,7 @@ if ($date_save != $datetime_site_ymd) {
 
 	$i = 0;
 	while ($row = mysqli_fetch_array($res)) {
+		$news_first_temp[$i]['id'] = $row['id'];
 		$news_first_temp[$i]['datetime'] = $row['datetime'];
 		$news_first_temp[$i++]['nomer_novosti'] = $row['nomer_novosti'];
 	}
@@ -63,19 +64,22 @@ while ($i < 6) {
 	$res = mysqli_query($link, $select);
 	$row = mysqli_fetch_array($res);
 
+	$news_first_temp_2[$i]['id'] = $row['id'];
 	$news_first_temp_2[$i]['datetime'] = $row['datetime'];
 	$news_first_temp_2[$i++]['nomer_novosti'] = $row['nomer_novosti'];
 }
 $i = 0;
 while ($i < 6) {
+	$per_base_temp_id = $news_first_temp[$i]['id'];
 	$per_base_temp_date = $news_first_temp[$i]['datetime'];
 	$per_base_temp_nomer = $news_first_temp[$i]['nomer_novosti'];
+	$per_base_temp_id_rand = $news_first_temp_2[$i]['id'];
 	$per_base_temp_date_rand = $news_first_temp_2[$i]['datetime'];
 	$per_base_temp_nomer_rand = $news_first_temp_2[$i++]['nomer_novosti'];
 
-	$select = "UPDATE $Name_database.$table SET nomer_novosti = $per_base_temp_nomer_rand, datetime = '$per_base_temp_date_rand' WHERE nomer_novosti = $per_base_temp_nomer";
+	$select = "UPDATE $Name_database.$table SET nomer_novosti = $per_base_temp_nomer_rand, datetime = '$per_base_temp_date_rand' WHERE id = $per_base_temp_id";
 	$res = mysqli_query($link, $select);
-	$select = "UPDATE $Name_database.$table SET nomer_novosti = $per_base_temp_nomer, datetime = '$per_base_temp_date' WHERE nomer_novosti = $per_base_temp_nomer_rand";
+	$select = "UPDATE $Name_database.$table SET nomer_novosti = $per_base_temp_nomer, datetime = '$per_base_temp_date' WHERE id = $per_base_temp_id_rand";
 	$res = mysqli_query($link, $select);
 }
 
