@@ -33,8 +33,12 @@ $all_count_nomer = $row[0] + 1; // количество записей ВСЕХ
 
 $select = "SELECT * FROM $Name_database.$table_save WHERE ind = 0";
 $res = mysqli_query($link, $select);
-$row = mysqli_fetch_row($res);
-$date_save = $row['date_save'];
+$i = 0;
+while ($row = mysqli_fetch_array($res)) {
+	$date_save[$i]['date_save'] = $row['date_save'];
+}
+
+$date_save = $date_save[0]['date_save'];
 $datetime_site_ymd = date("Y-m-d");
 echo $date_save.'<br>';
 echo $datetime_site_ymd;
