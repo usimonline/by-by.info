@@ -204,3 +204,14 @@ function beer_data($nomer_novosti, $all_zapisey){
 	return $result_data;
 
 }
+
+function shest_rand_chisel($max){
+	$mass_sluch_shest[0] = 25;
+	$mass_sluch_shest[1] = 50;
+	$mass_sluch_shest[2] = 75;
+	$mass_sluch_shest[3] = 100;
+	$mass_sluch_shest[4] = 125;
+	$mass_sluch_shest[5] = 150;
+
+	return $mass_sluch_shest;
+}
