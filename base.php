@@ -39,7 +39,7 @@ $datetime_site_ymd = date("Y-m-d");
 
 
 //новые выборки первых 6 элементов
-if (false) { //$date_save != $datetime_site_ymd) {
+if (false){//$date_save != $datetime_site_ymd) {
 
 	$select = "UPDATE $Name_database.$table_save SET date_save = '$datetime_site_ymd' WHERE ind = 0";
 	$res = mysqli_query($link, $select);
