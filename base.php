@@ -40,12 +40,12 @@ while ($row = mysqli_fetch_array($res)) {
 
 $date_save = $date_save[0]['date_save'];
 $datetime_site_ymd = date("Y-m-d");
-echo $date_save.'<br>';
-echo $datetime_site_ymd;
+//echo $date_save.'<br>';
+//echo $datetime_site_ymd;
 
 
 //новые выборки первых 6 элементов
-if (false){//$date_save != $datetime_site_ymd) {
+if ($date_save != $datetime_site_ymd) {
 
 	$select = "UPDATE $Name_database.$table_save SET date_save = '$datetime_site_ymd' WHERE ind = 0";
 	$res = mysqli_query($link, $select);
