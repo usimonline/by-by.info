@@ -206,7 +206,7 @@ function beer_data($nomer_novosti, $all_zapisey){
 }
 
 function shest_rand_chisel($max){
-	$max = $max - 6;
+	$max = $max - 7;
 	$length_mass = 0;
 	while($length_mass < 6) {
 		for ($i = 0; $i < 6; $i++) {
