@@ -155,7 +155,7 @@ else $news_year_2 = 0;
 $keys_name = 'keys';
 $keys_name_rubrika = 'keys';
 $keys_rubrika = '';
-if ($perikluch_page and $temp_rubrika_temp != 'news'){
+if ($perikluch_page and $temp_rubrika_temp != 'news'){//срабатывает только для page
 	$keys_rubrika = translate_into_russian_pastnews($temp_rubrika_temp);
 }
 
@@ -344,6 +344,11 @@ while($row = mysqli_fetch_array($res))
 }
 
 // вставка из base закончилась
+
+if ($perikluch_page and $temp_rubrika_temp != 'news'){//срабатывает только для page
+	$keys_name = 'keys';
+	$keys = translate_into_russian_pastnews($temp_rubrika_temp);
+}
 
 if ($admin) $select = "SELECT COUNT(*) FROM $Name_database.$table WHERE `$keys_name` LIKE '%$keys%'";
 else $select = "SELECT COUNT(*) FROM $Name_database.$table WHERE datetime > '2017-01-25 20:12:53' AND datetime < '$datetime_site' AND `$keys_name` LIKE '%$keys%'";
