@@ -27,6 +27,8 @@ $row = mysqli_fetch_row($res);
 
 $all_count_nomer = $row[0] + 1; // количество записей ВСЕХ
 
+print_r(shest_rand_chisel($all_count_nomer));
+
 //$insert = "UPDATE $Name_database.$table SET nomer_novosti = $all_count_nomer WHERE datetime='$datetime_page_temp'";
 
 //$res = mysqli_query($link, $insert);
@@ -77,7 +79,7 @@ while ($i < 6) {
 $i = 0;
 while ($i < 6) {
 	$per_base_temp_id = $news_first_temp[$i]['id'];
-	$per_base_temp_date = $news_first_temp[$i]['datetime'];
+	$per_base_temp_date = $news_first_temp[$i]['datetime'];// нужно поменять от 0 - самая первая до 5 - последняя по дате $datetime_site_ymd.$vramia_novosi;
 	$per_base_temp_nomer = $news_first_temp[$i]['nomer_novosti'];
 	$per_base_temp_id_rand = $news_first_temp_2[$i]['id'];
 	$per_base_temp_date_rand = $news_first_temp_2[$i]['datetime'];

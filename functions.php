@@ -206,12 +206,23 @@ function beer_data($nomer_novosti, $all_zapisey){
 }
 
 function shest_rand_chisel($max){
-	$mass_sluch_shest[0] = 25;
-	$mass_sluch_shest[1] = 50;
-	$mass_sluch_shest[2] = 75;
-	$mass_sluch_shest[3] = 100;
-	$mass_sluch_shest[4] = 125;
-	$mass_sluch_shest[5] = 150;
+	$max = $max - 6;
+	$length_mass = 0;
+	while($length_mass < 6) {
+		for ($i = 0; $i < 6; $i++) {
+			$mass_sluch_shest[$i] = rand(1, $max);
+		}
+		$mass_sluch_shest_temp = array_unique($mass_sluch_shest);
+		$length_mass = count($mass_sluch_shest_temp);
+	}
+
+
+	//$mass_sluch_shest[0] = 25;
+	//$mass_sluch_shest[1] = 50;
+	//$mass_sluch_shest[2] = 75;
+	//$mass_sluch_shest[3] = 100;
+	//$mass_sluch_shest[4] = 125;
+	//$mass_sluch_shest[5] = 150;
 
 	return $mass_sluch_shest;
 }
