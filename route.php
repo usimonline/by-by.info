@@ -130,6 +130,7 @@ if ($row['url_int'] == NULL) $page['url_int'] = '/news';
 else $page['url_int'] = $row['url_int'];
 if ($row['teme_int'] == NULL) $page['teme_int'] = 'Смотрите другие новости по этой теме.';
 else $page['teme_int'] = $row['teme_int'];
+	echo $rubrika;
 }
 
 $admin = false;
@@ -150,6 +151,7 @@ else $news_year_2 = 0;
 $keys_name = 'keys';
 $keys_name_rubrika = 'keys';
 $keys_rubrika = '';
+//$keys_rubrika = translate_into_russian_pastnews($keys_rubrika); - тут нужно в зависимости от
 
 $number_of_pages = 50;//константа
 
