@@ -27,7 +27,7 @@ $row = mysqli_fetch_row($res);
 
 $all_count_nomer = $row[0] + 1; // количество записей ВСЕХ
 
-print_r(shest_rand_chisel($all_count_nomer));
+//print_r(shest_rand_chisel($all_count_nomer));
 
 //$insert = "UPDATE $Name_database.$table SET nomer_novosti = $all_count_nomer WHERE datetime='$datetime_page_temp'";
 
