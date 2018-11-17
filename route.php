@@ -89,6 +89,8 @@ switch($REQUEST_URI ){
 
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
+$temp_rubrika_temp = $nomer_url_mass[1];
+
 if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'
 	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'agents'
 	or $nomer_url_mass[1] == 'history' or $nomer_url_mass[1] == 'bestmemes' or $nomer_url_mass[1] == 'caricatures'
@@ -130,7 +132,7 @@ if ($row['url_int'] == NULL) $page['url_int'] = '/news';
 else $page['url_int'] = $row['url_int'];
 if ($row['teme_int'] == NULL) $page['teme_int'] = 'Смотрите другие новости по этой теме.';
 else $page['teme_int'] = $row['teme_int'];
-	echo $rubrika;
+	echo $temp_rubrika_temp;
 }
 
 $admin = false;
