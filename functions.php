@@ -210,7 +210,7 @@ function shest_rand_chisel($max){
 	$length_mass = 0;
 	while($length_mass < 6) {
 		for ($i = 0; $i < 6; $i++) {
-			$mass_sluch_shest[$i] = rand(1, $max);
+			$mass_sluch_shest[$i] = rand(10, $max);
 		}
 		$mass_sluch_shest_temp = array_unique($mass_sluch_shest);
 		$length_mass = count($mass_sluch_shest_temp);
