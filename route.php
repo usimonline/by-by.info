@@ -110,6 +110,7 @@ $res = mysqli_query($link, $select);
 $i = 0;
 	$row = mysqli_fetch_array($res);
 $route = false;
+$perikluch_page = false;
 if (empty($row)) {
 	$route = true;
 } else {
@@ -132,7 +133,8 @@ if ($row['url_int'] == NULL) $page['url_int'] = '/news';
 else $page['url_int'] = $row['url_int'];
 if ($row['teme_int'] == NULL) $page['teme_int'] = 'Смотрите другие новости по этой теме.';
 else $page['teme_int'] = $row['teme_int'];
-	echo $temp_rubrika_temp;
+	//echo $temp_rubrika_temp;
+	$perikluch_page = true;
 }
 
 $admin = false;
@@ -153,7 +155,10 @@ else $news_year_2 = 0;
 $keys_name = 'keys';
 $keys_name_rubrika = 'keys';
 $keys_rubrika = '';
-//$keys_rubrika = translate_into_russian_pastnews($keys_rubrika); - тут нужно в зависимости от
+if ($perikluch_page and $temp_rubrika_temp != 'news'){
+	$keys_rubrika = translate_into_russian_pastnews($temp_rubrika_temp);
+}
+
 
 $number_of_pages = 50;//константа
 
