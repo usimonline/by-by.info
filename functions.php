@@ -67,7 +67,7 @@ function preobrazovanie_url_razdel($url){
 
 
 function transform_img($string,$url,$pic_alt) {
-	$first=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','ancientukri','economy','history','agents');
+	$first=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','ancientukri','economy','history','agents','eaes');
 	$url = str_replace($first, 'pictures', $url);
 	$url = str_replace('news', 'pictures', $url);
 	$first = '<figure class="article__video"><div class="article__video-container"><img src="'.$url.'img_';
@@ -90,7 +90,7 @@ function transform_img($string,$url,$pic_alt) {
 }
 
 function transform_img_prost($string) {
-	$first=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','ancientukri','economy','history','agents');
+	$first=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','ancientukri','economy','history','agents','eaes');//eaes добавить
 	$string = str_replace($first, 'pictures', $string);
 return $string;
 }
