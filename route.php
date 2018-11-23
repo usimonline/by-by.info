@@ -83,6 +83,14 @@ switch($REQUEST_URI ){
 		$url_og_rub = '/agents/';
 		$url_og_picture_rub = "/img/metro.jpg";
 		break;
+	case '/eaes/': $REQUEST_URI = '/pastnews/eaes/50/';
+		$title_rub = 'Почему Беларуси выгодно интегрироваться в ЕАЭС, а не в ЕС';
+		$description_rub = 'Портал ' . $site_name . ' рассказывает о ходе интеграции Беларуси в ЕАЭС. Проект ЕАЭС еще молодой, он 
+		весьма активно развивается. Граждане беларуси увеличивают свои доходы, читайте страницы ';
+		$keys_rub = 'ЕАЭС';
+		$url_og_rub = '/eaes/';
+		$url_og_picture_rub = "/img/metro.jpg";
+		break;
 	default: $title_rub = '';
 		break;
 }
