@@ -53,8 +53,8 @@ $lat=array('-','A','B','V','G','D','E','E','Z','I','Y','K','L','M','N','O','P','
 
 
 function translate_into_russian_pastnews($string) {
-$rus=array('МЕМЫ', 'СТУДЕНТЫ', 'КАРИКАТУРЫ', 'новости Беларуси', 'холодная война', 'политический юмор', 'Белоруссия','Россия','Украина','Польша','Запад','Советский Союз','СНГ','Экономика','Политика','Сирия','Новороссия','Прибалтика','Мир','Интервью','Армия','Союзное государство России и Белоруссии','История','Религия','Наука','Русский язык','Агенты Запада','Ядерное оружие','ОДКБ','by-by.info');
-$lat=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic','world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site');
+$rus=array('МЕМЫ', 'СТУДЕНТЫ', 'КАРИКАТУРЫ', 'новости Беларуси', 'холодная война', 'политический юмор', 'Белоруссия','Россия','Украина','Польша','Запад','Советский Союз','СНГ','Экономика','Политика','Сирия','Новороссия','Прибалтика','Мир','Интервью','Армия','Союзное государство России и Белоруссии','История','Религия','Наука','Русский язык','Агенты Запада','Ядерное оружие','ОДКБ','by-by.info','Евразийский экономический союз');
+$lat=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic','world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site','eaes');
 	$string = str_replace($lat, $rus, $string);
 	return $string;
 }
