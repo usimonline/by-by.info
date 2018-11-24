@@ -90,8 +90,8 @@ function transform_img($string,$url,$pic_alt) {
 }
 
 function transform_img_prost($string) {
-	$first=array('bestmemes','helpstud','caricatures','belnews','coldwar','polithumor','ancientukri','economy','history','agents','eaes');//eaes добавить
-	$string = str_replace($first, 'pictures', $string);
+	$first=array('/bestmemes/','/helpstud/','/caricatures/','/belnews/','/coldwar/','/polithumor/','/ancientukri/','/economy/','/history/','/agents/','/eaes/');//eaes добавить
+	$string = preg_replace($first, 'pictures', $string, 1);//str_replace($first, 'pictures', $string);
 return $string;
 }
 
