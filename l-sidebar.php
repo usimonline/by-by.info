@@ -15,6 +15,7 @@
 
 
 					<?php for($count = 0 ; $count <4; $count++): ?>
+						<?php if(!empty($lsidebar[$count]['url'])): ?>
 					<a href="<?php echo $main_name; ?><?php echo $lsidebar[$count]['url']; ?>" class="opinion__item">
 					    <div class="opinion__pic">
 						    <img src="<?php
@@ -26,7 +27,8 @@
 						    <span class="opinion__author"><?php echo $lsidebar[$count]['description']; ?></span>
 						</div>
 					</a>
-					<?php   endfor ?>	
+						<?php endif; ?>
+					<?php   endfor; ?>
 					
 				</div>
 				
