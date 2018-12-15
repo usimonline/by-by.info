@@ -71,7 +71,7 @@
 		<ul>
 			<li><a href="<?php echo $main_name; ?>/belnews/" >БЕЛАРУСЬ</a></li>
 			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/coldwar/" >Война</a></li>
+			<li><a href="<?php echo $main_name; ?>/coldwar/" >Холодная война</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >ЮМОР</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
 			<li><a href="<?php echo $main_name; ?>/bestmemes/" >Мемы</a></li>
