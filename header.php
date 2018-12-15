@@ -70,7 +70,7 @@
 	<div class="footer__topics">
 		<ul>
 			<li><a href="<?php echo $main_name; ?>/belnews/" >БЕЛАРУСЬ</a></li>
-			<li><a href="<?php echo $main_name; ?>/eaes/" >ЕАЭС</a></li>
+			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >Война</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >ЮМОР</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
@@ -78,7 +78,7 @@
 			<li><a href="<?php echo $main_name; ?>/caricatures/" >Карикатуры</a></li>
 			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/west/50/" rel="nofollow">Запад</a></li>
-			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты</a></li>
+			<li><a href="<?php echo $main_name; ?>/agents/" >Западные агенты</a></li>
 			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50/" rel="nofollow">Политика</a></li>
 			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
 		</ul>
