@@ -91,6 +91,14 @@ switch($REQUEST_URI ){
 		$url_og_rub = '/eaes/';
 		$url_og_picture_rub = "/img/metro.jpg";
 		break;
+	case '/SovetskijSojuz/': $REQUEST_URI = '/pastnews/SovetskijSojuz/50/';
+		$title_rub = 'Почему в Советском Союзе люди верили в светлое будущее: цикл статей';
+		$description_rub = 'Портал ' . $site_name . ' рассказывает о Советском Союзе. Почему советские граждане верили в светлое будущее, 
+		почему нынешние прозападные либералы - антисоветчики, читайте страницы ';
+		$keys_rub = 'Советский союз';
+		$url_og_rub = '/SovetskijSojuz/';
+		$url_og_picture_rub = "/img/metro.jpg";
+		break;
 	default: $title_rub = '';
 		break;
 }
@@ -102,7 +110,7 @@ $temp_rubrika_temp = $nomer_url_mass[1];
 if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'
 	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'agents'
 	or $nomer_url_mass[1] == 'history' or $nomer_url_mass[1] == 'bestmemes' or $nomer_url_mass[1] == 'caricatures'
-	or $nomer_url_mass[1] == 'helpstud' or $nomer_url_mass[1] == 'eaes'){
+	or $nomer_url_mass[1] == 'helpstud' or $nomer_url_mass[1] == 'eaes' or $nomer_url_mass[1] == 'SovetskijSojuz'){
 	$rubrika_izmenenie = $nomer_url_mass[1];
 	$nomer_url_mass[1] = 'news';
 } else $rubrika_izmenenie = 'news';
@@ -397,7 +405,7 @@ if ($route){
 			else $rubrika_4_bool = true;
 			$rubrika_2_array = Array('empty', 'bestmemes','helpstud','caricatures','belnews','coldwar','polithumor',
 				'belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
-				'world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site','eaes');
+				'world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site','eaes','SovetskijSojuz');
 
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;

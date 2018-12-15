@@ -77,9 +77,8 @@
 			<li><a href="<?php echo $main_name; ?>/bestmemes/" >Мемы</a></li>
 			<li><a href="<?php echo $main_name; ?>/caricatures/" >Карикатуры</a></li>
 			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/west/50/" rel="nofollow">Запад</a></li>
-			<li><a href="<?php echo $main_name; ?>/agents/" >Западные агенты</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50/" rel="nofollow">Политика</a></li>
+			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты Запада</a></li>
 			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
 		</ul>
 	</div>
