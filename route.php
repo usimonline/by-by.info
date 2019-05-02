@@ -3,6 +3,14 @@
 $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
 switch($REQUEST_URI ){
+	case '/splitmind/': $REQUEST_URI = '/pastnews/splitmind/50/';
+		$title_rub = 'Шизофрения: новости, свежие методики, рассказ об опыте шизофреников';
+		$description_rub = 'Портал ' . $site_name . ' публикует новости из мира шизофрении для страдающих и их родствеников, 
+		опыт шизофреников и современные способы лечения, читайте страницы ';
+		$keys_rub = 'Шизофрения без предубеждения';
+		$url_og_rub = '/splitmind/';
+		$url_og_picture_rub = "/img/metro.jpg";
+		break;
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
 		$title_rub = 'История без русофобии от проверенных ученых';
 		$description_rub = 'Портал ' . $site_name . ' публикует без русофобии новости и видео по истории России, Российской империи и Советского Союза. Мы 
@@ -43,14 +51,14 @@ switch($REQUEST_URI ){
 		$url_og_rub = '/bestmemes/';
 		$url_og_picture_rub = "/img/metro.jpg";
 		break;
-	case '/helpstud/': $REQUEST_URI = '/pastnews/helpstud/50/';
-		$title_rub = 'В помощь студенту: где заказать дипломные и магистерские работы';
-		$description_rub = 'Портал ' . $site_name . ' публикует новости для студентов, где заказать дипломные работы и магистерские диссертации. 
-		Наши авторы расскажут, как написать дипломную или магистерскую работу, читайте страницы ';
-		$keys_rub = 'Где заказать дипломную, где заказать магистерскую, работа для стедентов, рефератные компании';
-		$url_og_rub = '/helpstud/';
-		$url_og_picture_rub = "/img/metro.jpg";
-		break;
+	//case '/helpstud/': $REQUEST_URI = '/pastnews/helpstud/50/';
+	//	$title_rub = 'В помощь студенту: где заказать дипломные и магистерские работы';
+	//	$description_rub = 'Портал ' . $site_name . ' публикует новости для студентов, где заказать дипломные работы и магистерские диссертации.
+	//	Наши авторы расскажут, как написать дипломную или магистерскую работу, читайте страницы ';
+	//	$keys_rub = 'Где заказать дипломную, где заказать магистерскую, работа для стедентов, рефератные компании';
+	//	$url_og_rub = '/helpstud/';
+	//	$url_og_picture_rub = "/img/metro.jpg";
+	//	break;
 	case '/caricatures/': $REQUEST_URI = '/pastnews/caricatures/50/';
 		$title_rub = 'Лучшие карикатуры на Украину и Россию';
 		$description_rub = 'Портал ' . $site_name . ' публикует новости карикатуры: карикатуры на Украину, карикатуры на Россию. 
@@ -110,7 +118,8 @@ $temp_rubrika_temp = $nomer_url_mass[1];
 if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'
 	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'agents'
 	or $nomer_url_mass[1] == 'history' or $nomer_url_mass[1] == 'bestmemes' or $nomer_url_mass[1] == 'caricatures'
-	or $nomer_url_mass[1] == 'helpstud' or $nomer_url_mass[1] == 'eaes' or $nomer_url_mass[1] == 'SovetskijSojuz'){
+	or $nomer_url_mass[1] == 'helpstud' or $nomer_url_mass[1] == 'eaes' or $nomer_url_mass[1] == 'SovetskijSojuz'
+	or $nomer_url_mass[1] == 'splitmind'){
 	$rubrika_izmenenie = $nomer_url_mass[1];
 	$nomer_url_mass[1] = 'news';
 } else $rubrika_izmenenie = 'news';
@@ -405,7 +414,7 @@ if ($route){
 			else $rubrika_4_bool = true;
 			$rubrika_2_array = Array('empty', 'bestmemes','helpstud','caricatures','belnews','coldwar','polithumor',
 				'belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
-				'world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site','eaes','SovetskijSojuz');
+				'world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site','eaes','SovetskijSojuz','splitmind');
 
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;

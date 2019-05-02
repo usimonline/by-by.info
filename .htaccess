@@ -17,6 +17,7 @@ Redirect 301 /pastnews/economy/50/ https://by-by.info/economy/
 Redirect 301 /pastnews/agents/50/ https://by-by.info/agents/
 Redirect 301 /pastnews/eaes/50/ https://by-by.info/eaes/
 Redirect 301 /pastnews/SovetskijSojuz/50/ https://by-by.info/SovetskijSojuz/
+Redirect 301 /pastnews/splitmind/50/ https://by-by.info/splitmind/
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.
 RewriteRule (.*) https://by-by.info/$1 [L,R=301]

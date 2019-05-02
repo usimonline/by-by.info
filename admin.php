@@ -341,7 +341,7 @@ echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;';?><br>
 		name="datetime" type="text" ><?php echo $datetime; ?></textarea><br>
 		<textarea 	 name="id" type="text" ><?php echo $id; ?></textarea><br>
 	<textarea 	 name="nomer_novosti" type="text" ><?php echo $nomer_novosti; ?></textarea><br>
-	<p>belnews coldwar polithumor helpstud caricatures bestmemes history agents economy ancientukri</p><br>
+	<p>belnews coldwar polithumor eaes caricatures bestmemes history agents SovetskijSojuz splitmind</p><br>
 		<textarea style="width:600px; height:25px; border: 1px solid #cccccc;" name="url" type="text" ><?php echo $url; ?></textarea><br>
         <p>Добавить картинки (360х230, jpg, Главная)</p>
 		<input type="hidden" name="MAX_FILE_SIZE" value="1500000">
