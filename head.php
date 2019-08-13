@@ -82,7 +82,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
   "name" : "by-by.info",
   "url" : "https://by-by.info",
   "sameAs" : [
-    "https://www.facebook.com/bybyinform",
+    "https://www.facebook.com/Olgausim-519372818804183",
 	"https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg",
 	"https://twitter.com/byby_info",
 	"https://vk.com/bybyinfo",

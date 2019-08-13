@@ -119,7 +119,7 @@ if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer
 	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'agents'
 	or $nomer_url_mass[1] == 'history' or $nomer_url_mass[1] == 'bestmemes' or $nomer_url_mass[1] == 'caricatures'
 	or $nomer_url_mass[1] == 'helpstud' or $nomer_url_mass[1] == 'eaes' or $nomer_url_mass[1] == 'SovetskijSojuz'
-	or $nomer_url_mass[1] == 'splitmind'){
+	or $nomer_url_mass[1] == 'splitmind' or $nomer_url_mass[1] == 'copywriting' or $nomer_url_mass[1] == 'creativestudio' ){
 	$rubrika_izmenenie = $nomer_url_mass[1];
 	$nomer_url_mass[1] = 'news';
 } else $rubrika_izmenenie = 'news';
@@ -414,7 +414,7 @@ if ($route){
 			else $rubrika_4_bool = true;
 			$rubrika_2_array = Array('empty', 'bestmemes','helpstud','caricatures','belnews','coldwar','polithumor',
 				'belarus','russia','ancientukri','poland','west','ussr','cis','economy','policy','syria','novoros','baltic',
-				'world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site','eaes','SovetskijSojuz','splitmind');
+				'world','interview','army','rusbel','history','religion','science','language','agents','nweapon','CSTO','site','eaes','SovetskijSojuz','splitmind','copywriting','creativestudio');
 
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;
