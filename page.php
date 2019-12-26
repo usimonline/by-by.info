@@ -59,7 +59,6 @@
 
 			} else echo podstanovka_kh2($page['text'], $colichestvo_h2_per);
 			?>
-	   
 <p></p>
 <?php echo $page['url_frame']; ?>
 
