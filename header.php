@@ -33,11 +33,11 @@
 	<header class="header">
 		<div class="header__right">
 			<a class="logo" href="<?php echo $main_name; ?>"><?php echo $site_name; ?></a>
-			   <span class="header__date"><?php echo date("Y-m-d H:i:s"); ?></span>
+			   
 		</div>
 		<div class="header__main">
 			<!-- Тут удалил элемент поиска и ссылку на выходные данные все в файле код вставляет комменты -->
-			
+
 
 
 			<ul class="header__topnews">
