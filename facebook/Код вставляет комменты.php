@@ -100,3 +100,8 @@
 				<a class="header__top-item send-news" href="<?php echo $main_name; ?>/news/2018/06/19/1529407551/Vihodnie-dannie/" rel="nofollow">О газете</a>
                 <a class="icon-search js-search-show"></a>
 </div>
+
+
+<!-- Тут удалил элемент span с датой, сохранил в файле код вставляет комменты -->
+
+<span class="header__date"><?php echo date("Y-m-d H:i:s"); ?></span>
