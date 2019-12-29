@@ -63,7 +63,7 @@
 			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/topic/toplist/50/" >Статьи</a></li>
 			<li><a href="<?php echo $main_name; ?>/topic/toplist/50/" >Центральные новости</a></li>
-			<li><a href="<?php echo $main_name; ?>/topic/l-sidebar/50/" >Мнение экспертов</a></li>
+			<li><a href="<?php echo $main_name; ?>/experts/" >Мнение экспертов</a></li>
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >Холодная война</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >Юмор</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
