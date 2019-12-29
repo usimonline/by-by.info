@@ -60,7 +60,7 @@
 
 	<div class="footer__topics">
 		<ul>
-			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/topic/toplist/50/" >Статьи</a></li>
 			<li><a href="<?php echo $main_name; ?>/topic/toplist/50/" >Центральные новости</a></li>
 			<li><a href="<?php echo $main_name; ?>/topic/l-sidebar/50/" >Мнение экспертов</a></li>
@@ -72,7 +72,7 @@
 			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
 			<li><a href="<?php echo $main_name; ?>/belnews/" >Белоруссия</a></li>
 			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты Запада</a></li>
+			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты влияния</a></li>
 			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
 		</ul>
 	</div>

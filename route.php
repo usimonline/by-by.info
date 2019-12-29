@@ -19,6 +19,13 @@ switch($REQUEST_URI ){
 		$url_og_rub = '/history/';
 		$url_og_picture_rub = "/img/metro.jpg";
 		break;
+	case '/experts/': $REQUEST_URI = '/topic/l-sidebar/50/';
+		$title_rub = 'Мнение экспертов по актуальным событиям в России и мире';
+		$description_rub = 'Мнение экспертов по актуальным событиям в России и мире';
+		$keys_rub = 'Мнение экспертов';
+		$url_og_rub = '/experts/';
+		$url_og_picture_rub = "/img/metro.jpg";
+		break;
 	case '/belnews/': $REQUEST_URI = '/pastnews/belnews/50/';
 		$title_rub = 'Новости Белоруссии: про белорусизацию и русский мир';
 		$description_rub = 'Новости Белоруссии, очищенные от русофобии. Только самые важные сведения про русский язык, белорусизацию, Лукашенко и ЕАЭС, читайте страницы ' ;
