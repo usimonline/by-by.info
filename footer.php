@@ -183,43 +183,6 @@
 			</div></noscript>
 		<!-- //Rating@Mail.ru counter -->
 		
-		<!--Openstat-->
-		<span id="openstat1"></span>
-		<script>
-			var openstat = { counter: 1, next: openstat, track_links: "all" };
-			(function(d, t, p) {
-				var j = d.createElement(t); j.async = true; j.type = "text/javascript";
-				j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";
-				var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
-			})(document, "script", document.location.protocol);
-		</script>
-		<!--/Openstat-->
-
-		<!--Start LogXP.ru code-->
-		<script><!--
-			siteid = 1246446;
-			//--></script>
-		<script><!--
-			js=1//--></script>
-		<script><!--
-			js=1.1//--></script>
-		<script><!--
-			js=1.2//--></script>
-		<script><!--
-			js=1.3//--></script>
-		<script><!--
-			js=1.4//--></script>
-		<script><!--
-			js=1.5//--></script>
-		<script><!--
-			js=1.6//--></script>
-		<script src="http://logxp.ru/counter.js">
-		</script>
-		<noscript>
-			<a href="http://logxp.ru?siteid=1246446" target=_top rel="nofollow">
-				<IMG src="http://logxp.ru/counter.php?siteid=1246446&js=0" alt="Дополнительно"></a>
-		</noscript>
-		<!--/End LogXP.ru code-->
 
 	</div>
 </div>
