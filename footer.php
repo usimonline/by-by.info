@@ -209,31 +209,7 @@
 		</script>
 		<!--/Openstat-->
 		
-		<!--Start LogXP.ru code-->
-		<script><!--
-			siteid = 1246446;
-			//--></script>
-		<script><!--
-			js=1//--></script>
-		<script><!--
-			js=1.1//--></script>
-		<script><!--
-			js=1.2//--></script>
-		<script><!--
-			js=1.3//--></script>
-		<script><!--
-			js=1.4//--></script>
-		<script><!--
-			js=1.5//--></script>
-		<script><!--
-			js=1.6//--></script>
-		<script src="http://logxp.ru/counter.js">
-		</script>
-		<noscript>
-			<a href="http://logxp.ru?siteid=1246446" target=_top rel="nofollow">
-				<IMG src="http://logxp.ru/counter.php?siteid=1246446&js=0" alt="Дополнительно"></a>
-		</noscript>
-		<!--/End LogXP.ru code-->
+		
 
 	</div>
 </div>
