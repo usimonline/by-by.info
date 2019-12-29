@@ -74,7 +74,5 @@
 			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты Запада</a></li>
 			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
-			<li><a href="<?php echo $main_name; ?>/splitmind/" >Шизофрения</a></li>
-			<li><a href="<?php echo $main_name; ?>/copywriting/" >Копирайтинг</a></li>
 		</ul>
 	</div>

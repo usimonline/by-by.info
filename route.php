@@ -3,14 +3,14 @@
 $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
 switch($REQUEST_URI ){
-	case '/splitmind/': $REQUEST_URI = '/pastnews/splitmind/50/';
-		$title_rub = 'Шизофрения: новости, свежие методики, рассказ об опыте шизофреников';
-		$description_rub = 'Новости из мира шизофрении для страдающих и их родствеников, 
-		опыт шизофреников и современные способы лечения, читайте страницы ';
-		$keys_rub = 'Шизофрения без предубеждения';
-		$url_og_rub = '/splitmind/';
-		$url_og_picture_rub = "/img/metro.jpg";
-		break;
+	//case '/splitmind/': $REQUEST_URI = '/pastnews/splitmind/50/';
+	//	$title_rub = 'Шизофрения: новости, свежие методики, рассказ об опыте шизофреников';
+	//	$description_rub = 'Новости из мира шизофрении для страдающих и их родствеников,
+	//	опыт шизофреников и современные способы лечения, читайте страницы ';
+	//	$keys_rub = 'Шизофрения без предубеждения';
+	//	$url_og_rub = '/splitmind/';
+	//	$url_og_picture_rub = "/img/metro.jpg";
+	//	break;
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
 		$title_rub = 'История без русофобии от академического сообщества';
 		$description_rub = 'Новости без русофобии по истории России, Российской империи и Советского Союза. Мы 
