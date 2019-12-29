@@ -303,6 +303,7 @@ switch($rubrika){
 	else $keys = $keys_value;
 	$keys = translate_into_russian($keys);
 	break;
+
 	case 'topic': $keys_name = 'razdel';
 	$keys_value = $nomer_url_mass[2];
 	if ($nomer_url_mass[3] > $number_of_pages) $nomer_url = $nomer_url_mass[3];
@@ -431,7 +432,7 @@ if ($route){
 			if(array_search($rubrika_2, $rubrika_2_array) === false ) $rubrika_2_key = false;
 			else $rubrika_2_key = true;
 			//$rubrika_2_key = array_search($rubrika_2, $rubrika_2_array);
-			if( $rubrika_1 == 'admin' or ((($rubrika_1 == 'topic' and ($rubrika_2 == 'l-sidebar' or $rubrika_2 == 'toplist')) or ($rubrika_1 == 'pastnews' and $rubrika_2_key) or $rubrika_1 == 'searchnews') and $rubrika_4_bool and (string)((int)$rubrika_3) == $rubrika_3 and is_int((int)$rubrika_3) and $rubrika_3 > 9 and ($rubrika_3 < ($all_count + 50) or $all_count == 0) and ($rubrika_3 % 50 == 0 ))) break;
+			if( $rubrika_1 == 'admin' or ((($rubrika_1 == 'topic' and ($rubrika_2 == 'l-sidebar' or $rubrika_2 == 'toplist' or $rubrika_2 == 'topnews' or $rubrika_2 == 'header')) or ($rubrika_1 == 'pastnews' and $rubrika_2_key) or $rubrika_1 == 'searchnews') and $rubrika_4_bool and (string)((int)$rubrika_3) == $rubrika_3 and is_int((int)$rubrika_3) and $rubrika_3 > 9 and ($rubrika_3 < ($all_count + 50) or $all_count == 0) and ($rubrika_3 % 50 == 0 ))) break;
 			// $rubrika_2 из массива, как сравнивать с массивом? $rubrika_2 == 'empty'
 			// нужно как-то ограничить сверху
 			//header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
