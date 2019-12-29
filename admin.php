@@ -292,7 +292,8 @@ $res = mysqli_query($link, $select);
 	$description = 'Описание';
 	$razdel = '';
 	$text = 'Ранее мы сообщали, что &lt;a target="_blank" href="\news\...\"&gt;&lt;/a&gt;';
-	$keys = 'Творческая мастерская, копирайтинг, Евразийский союз, Советский союз, НОВОСТИ БЕЛАРУСИ, ПОЛИТИЧЕСКИЙ ЮМОР, ИСТОРИЯ, МЕМЫ, Карикатуры, Шизофрения';
+	$keys = 'Шизофрения, История, Новости Беларуси, Холодная война, Политический юмор, Мемы, 
+	Евразийский союз, Карикатуры, Украина, экономика, Агенты запада, Советский союз, Копирайтинг';
 	$url_ext = 'https://by-by.info/news';
 	$url_frame = '';
 	$url_int = '/news';
@@ -340,7 +341,7 @@ echo '&lt;/p&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;';?><br>
 		name="datetime" type="text" ><?php echo $datetime; ?></textarea><br>
 		<textarea 	 name="id" type="text" ><?php echo $id; ?></textarea><br>
 	<textarea 	 name="nomer_novosti" type="text" ><?php echo $nomer_novosti; ?></textarea><br>
-	<p>creativestudio copywriting eaes SovetskijSojuz belnews polithumor history bestmemes caricatures splitmind</p><br>
+	<p>splitmind history belnews coldwar polithumor bestmemes caricatures ancientukri economy agents eaes SovetskijSojuz copywriting</p><br>
 		<textarea style="width:600px; height:25px; border: 1px solid #cccccc;" name="url" type="text" ><?php echo $url; ?></textarea><br>
         <p>Добавить картинки (360х230, jpg, Главная)</p>
 		<input type="hidden" name="MAX_FILE_SIZE" value="1500000">

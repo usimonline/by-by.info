@@ -33,7 +33,7 @@
 	<header class="header">
 		<div class="header__right">
 			<a class="logo" href="<?php echo $main_name; ?>"><?php echo $site_name; ?></a>
-			   
+
 			<!-- Тут удалил элемент span с датой, сохранил в файле код вставляет комменты -->
 		</div>
 		<div class="header__main">
@@ -60,16 +60,21 @@
 
 	<div class="footer__topics">
 		<ul>
-			<li><a href="<?php echo $main_name; ?>/belnews/" >БЕЛАРУСЬ</a></li>
 			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/topic/toplist/50/" >Статьи</a></li>
+			<li><a href="<?php echo $main_name; ?>/topic/toplist/50/" >Центральные новости</a></li>
+			<li><a href="<?php echo $main_name; ?>/topic/l-sidebar/50/" >Мнение экспертов</a></li>
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >Холодная война</a></li>
-			<li><a href="<?php echo $main_name; ?>/polithumor/" >ЮМОР</a></li>
+			<li><a href="<?php echo $main_name; ?>/polithumor/" >Юмор</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
 			<li><a href="<?php echo $main_name; ?>/bestmemes/" >Мемы</a></li>
 			<li><a href="<?php echo $main_name; ?>/caricatures/" >Карикатуры</a></li>
 			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
+			<li><a href="<?php echo $main_name; ?>/belnews/" >Белоруссия</a></li>
 			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты Запада</a></li>
 			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
+			<li><a href="<?php echo $main_name; ?>/splitmind/" >Шизофрения</a></li>
+			<li><a href="<?php echo $main_name; ?>/copywriting/" >Копирайтинг</a></li>
 		</ul>
 	</div>
