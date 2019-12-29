@@ -36,7 +36,10 @@
 			   <span class="header__date"><?php echo date("Y-m-d H:i:s"); ?></span>
 		</div>
 		<div class="header__main">
+			<!-- Тут удалил элемент поиска и ссылку на выходные данные все в файле код вставляет комменты -->
 			
+
+
 			<ul class="header__topnews">
 			    <?php for($count = 0 ; $count <3; $count++): ?>
         			<li class="header__topnews_multiline header__topnews_mid">

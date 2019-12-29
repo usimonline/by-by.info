@@ -82,3 +82,21 @@
 
 <!-- <img border="0" title="Loading..." alt="" src="/images/ajax-loader.gif" id="progressimage" style="display:none; position: absolute; margin:0; padding:0; border:0;"/> -->
 </div>
+
+
+
+<!-- В файле header Тут удалил элемент поиска и ссылку на выходные данные все в файле код вставляет комменты -->
+
+<div class="header__top">
+
+				<form action="<?php echo $main_name; ?>/searchnews/empty/50/" method="POST" name="searchnews">
+
+			<input class="header__top-item pda"  style=" background: #f6d654;"
+			value='Поиск' name='searchnews' type="submit" />
+			<input class="header__top-item pda" style="width:200px; height:15px; border: 1px solid #cccccc;"
+		 name='searchnews' value='Введите слово'  />
+			</form>
+
+				<a class="header__top-item send-news" href="<?php echo $main_name; ?>/news/2018/06/19/1529407551/Vihodnie-dannie/" rel="nofollow">О газете</a>
+                <a class="icon-search js-search-show"></a>
+</div>
