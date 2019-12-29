@@ -21,9 +21,16 @@ switch($REQUEST_URI ){
 		break;
 	case '/experts/': $REQUEST_URI = '/topic/l-sidebar/50/';
 		$title_rub = 'Мнение экспертов по актуальным событиям в России и мире';
-		$description_rub = 'Мнение экспертов по актуальным событиям в России и мире';
+		$description_rub = 'Мнение экспертов по актуальным событиям в России и мире. 50 свежих новостей.';
 		$keys_rub = 'Мнение экспертов';
 		$url_og_rub = '/experts/';
+		$url_og_picture_rub = "/img/metro.jpg";
+		break;
+	case '/centralnews/': $REQUEST_URI = '/topic/toplist/50/';
+		$title_rub = 'Главные политические новости России и мира';
+		$description_rub = 'Основные политические новости России и мира. 50 свежих новостей.';
+		$keys_rub = 'Основные политические новости';
+		$url_og_rub = '/centralnews/';
 		$url_og_picture_rub = "/img/metro.jpg";
 		break;
 	case '/belnews/': $REQUEST_URI = '/pastnews/belnews/50/';

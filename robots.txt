@@ -3,7 +3,6 @@ Allow: /
 Disallow: /searchnews
 Disallow: /topic
 Disallow: /reklama_1546324.php
-Disallow: /news/2018-2
 Disallow: /pastnews
 Disallow: /email
 Disallow: /excel
