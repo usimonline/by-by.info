@@ -61,10 +61,10 @@
 	<div class="footer__topics">
 		<ul>
 			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/topweek/#perehod_1" >Статьи</a></li>
-			<li><a href="<?php echo $main_name; ?>/headernews/#perehod_1" >Аналитика</a></li>
-			<li><a href="<?php echo $main_name; ?>/centralnews/#perehod_1" >Центральные новости</a></li>
-			<li><a href="<?php echo $main_name; ?>/experts/#perehod_1" >Мнение экспертов</a></li>
+			<li><a href="<?php echo $main_name; ?>/topweek/#latestnews" >Статьи</a></li>
+			<li><a href="<?php echo $main_name; ?>/headernews/#latestnews" >Аналитика</a></li>
+			<li><a href="<?php echo $main_name; ?>/centralnews/#latestnews" >Центральные новости</a></li>
+			<li><a href="<?php echo $main_name; ?>/experts/#latestnews" >Мнение экспертов</a></li>
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >Холодная война</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >Юмор</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>

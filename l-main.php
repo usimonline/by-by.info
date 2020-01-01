@@ -1,4 +1,4 @@
-<div class="l-main" id="perehod_1">
+<div class="l-main" id="latestnews">
 <br>
     <h1 class="title">Политические новости (<?php if ($all_count != 0) echo ($nomer_url_2+1).'-'.$nomer_url.' всего '.$all_count; else echo 'Не обнаружено'; ?>)
 	<?php if ($keys_value != 'empty') echo '<br>Поиск по ключу: '.$keys_l_main?></h1>
