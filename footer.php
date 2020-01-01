@@ -23,17 +23,21 @@
 		<li><a href="<?php echo $main_name; ?>/pastnews/agent/50" rel="nofollow">Агенты Запада</a></li>
 		<li><a href="<?php echo $main_name; ?>/pastnews/nweapon/50" rel="nofollow">Ядерное оружие</a></li>
 		<li><a href="<?php echo $main_name; ?>/pastnews/CSTO/50" rel="nofollow">ОДКБ</a></li> -->
-			<li><a href="<?php echo $main_name; ?>/belnews/" >НОВОСТИ БЕЛАРУСИ</a></li>
-			<li><a href="<?php echo $main_name; ?>/coldwar/" >ХОЛОДНАЯ ВОЙНА</a></li>
-			<li><a href="<?php echo $main_name; ?>/polithumor/" >ПОЛИТИЧЕСКИЙ ЮМОР</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/belarus/50/" rel="nofollow">Беларусь</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/russia/50/" rel="nofollow">Россия</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/ancientukri/50/" rel="nofollow">Украина</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/west/50/" rel="nofollow">Запад</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/agents/50/" rel="nofollow">Агенты Запада</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/policy/50/" rel="nofollow">Политика</a></li>
+			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/topweek/#perehod_1" >Статьи</a></li>
+			<li><a href="<?php echo $main_name; ?>/headernews/#perehod_1" >Аналитика</a></li>
+			<li><a href="<?php echo $main_name; ?>/centralnews/#perehod_1" >Центральные новости</a></li>
+			<li><a href="<?php echo $main_name; ?>/experts/#perehod_1" >Мнение экспертов</a></li>
+			<li><a href="<?php echo $main_name; ?>/coldwar/" >Холодная война</a></li>
+			<li><a href="<?php echo $main_name; ?>/polithumor/" >Юмор</a></li>
 			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
-			<li><a href="<?php echo $main_name; ?>/pastnews/economy/50/" rel="nofollow">Экономика</a></li>
+			<li><a href="<?php echo $main_name; ?>/bestmemes/" >Мемы</a></li>
+			<li><a href="<?php echo $main_name; ?>/caricatures/" >Карикатуры</a></li>
+			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
+			<li><a href="<?php echo $main_name; ?>/belnews/" >Белоруссия</a></li>
+			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты влияния</a></li>
+			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
 		</ul>
 	</div>
 
@@ -122,7 +126,7 @@
 
 <div class="footer__bottom">
 	<div class="footer__copy">
-		<p>© 2018 <a href="<?php echo $main_name; ?>/news/2018/06/19/1529407551/Vihodnie-dannie/" rel="nofollow">О газете</a><br><br>
+		<p>© 2020 <a href="<?php echo $main_name; ?>/news/2018/06/19/1529407551/Vihodnie-dannie/" rel="nofollow">О газете</a><br><br>
 		При использовании материалов сайта ссылка на сайт "<?php echo $site_name; ?>" обязательна.<br>
 		Сайт "<?php echo $site_name; ?>": <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
 		</p>
