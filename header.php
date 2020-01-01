@@ -61,7 +61,7 @@
 	<div class="footer__topics">
 		<ul>
 			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/topweek/" >События недели</a></li>
+			<li><a href="<?php echo $main_name; ?>/topweek/#perehod_1" >События недели</a></li>
 			<li><a href="<?php echo $main_name; ?>/headernews/" >Аналитика</a></li>
 			<li><a href="<?php echo $main_name; ?>/centralnews/" >Центральные новости</a></li>
 			<li><a href="<?php echo $main_name; ?>/experts/" >Мнение экспертов</a></li>
