@@ -45,7 +45,7 @@
 								<li><a class="icon-rss" href="<?php //echo $main_name; ?>/rss.xml">RSS</a></li>-->
 							</ul>
 
-							 <ul>
+							<!-- <ul>
 								<li>
 
 									<script  src="//vk.com/js/api/openapi.js?154"></script>
@@ -57,7 +57,7 @@
 									</script>
 									
 								</li>
-							</ul> 
+							</ul> -->
 							<!--
 
                                                         <ul>
