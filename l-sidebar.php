@@ -34,8 +34,7 @@
 								<li>
 								</li>
 							</ul>
-
-							<h3 class="title">Соцсети</h3>
+							
 							<ul>
 								<!--<li><a class="icon-facebook-1" href="https://www.facebook.com/bybyinform/" rel="nofollow" target="_blank">Facebook</a></li>-->
 								<!--<li><a class="icon-video" href="https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg" rel="nofollow" target="_blank">Youtube</a></li>-->
@@ -130,14 +129,13 @@
 							</li>
 						</ul>
 
-					<h3 class="title">Соцсети</h3>
 					<ul>
 						<!--<li><a class="icon-facebook-1" href="https://www.facebook.com/bybyinform/" rel="nofollow" target="_blank">Facebook</a></li>-->
 						<!--<li><a class="icon-video" href="https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg" rel="nofollow" target="_blank">Youtube</a></li>-->
-                        <li><a class="icon-twitter" href="https://twitter.com/byby_info" rel="nofollow" target="_blank">Twitter</a></li>
-                        <li><a class="icon-vk" href="https://vk.com/bybyinfo" rel="nofollow" target="_blank">Vkontakte</a></li>
-                        <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/" rel="nofollow" target="_blank">Instagram</a></li>
-						<!--<li><a class="icon-gplus" href="https://ru.pinterest.com/byby_info/" rel="nofollow" target="_blank">Pinterest</a></li>-->
+						<!--< <li><a class="icon-twitter" href="https://twitter.com/byby_info" rel="nofollow" target="_blank">Twitter</a></li>
+                         <li><a class="icon-vk" href="https://vk.com/bybyinfo" rel="nofollow" target="_blank">Vkontakte</a></li> -->
+                         <li><a class="icon-gplus" href="https://www.instagram.com/byby_info/" rel="nofollow" target="_blank">Instagram</a></li>
+                         <!--<li><a class="icon-gplus" href="https://ru.pinterest.com/byby_info/" rel="nofollow" target="_blank">Pinterest</a></li>-->
 							<li><a class="icon-rss" href="<?php echo $main_name; ?>/rss.xml">RSS</a></li>
 					</ul>
 					
