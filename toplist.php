@@ -18,7 +18,7 @@
 		
 		<div class="toplist js-tabs">
 		    <ul class="toplist__nav js-tab">
-			    <li class="is-active"><a href="<?php echo $main_name; ?>/centralnews/#latestnews">Центральные новости</a></li>
+			    <li class="is-active">Основные темы</li>
 			</ul>
 			<div class="toplist__wrap js-tabcontent">
 			    <div class="news">
