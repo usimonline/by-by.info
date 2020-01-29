@@ -1,6 +1,10 @@
 <div class="l-sidebar">
 			<div class="">
-			    
+			    <div style="margin: 0 0 10px 0;">
+					<div class="b weather">
+
+					</div>
+				</div>
 				<div class="b opinion">
 				    <h3 class="title"><a href="<?php echo $main_name; ?>/experts/#latestnews">Мнение экспертов</a></h3>
 
