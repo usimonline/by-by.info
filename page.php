@@ -1,5 +1,5 @@
 <div class="l-main">
-   <article class="article" style="margin-top:0px;">
+   <article class="article" style="margin-top:0px; margin-left:0px;">
 		<header class="article__header">
 			<h1><?php echo $page['teme']; ?></h1>
 			<a href="<?php echo $main_name; ?><?php echo $page['url']; ?>" class="news__counter"><?php //echo $page['comments']; ?></a>
@@ -8,7 +8,7 @@
 <li><span class="news__views"><?php echo rand(50, 3650);?><i class="icon-eye"></i></span></li>
 			</ul>
 		</header>
-		<figure class="article__left article__photo">
+		<figure class="article__left article__photo" style="margin-left:0px;">
 			<img src="<?php echo str_replace($rubrika_izmenenie, 'pictures', $page['url']); ?>/img_1.jpg" width="360"
 				 alt="<?php echo str_replace('"','',$page['teme']); ?>"/>
 		</figure>
