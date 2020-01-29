@@ -18,7 +18,7 @@
 		
 		<div class="toplist js-tabs">
 		    <ul class="toplist__nav js-tab">
-			    <li class="is-active">Основные темы</li>
+			    <li class="is-active"><a href="">Основные темы</a></li>
 			</ul>
 			<div class="toplist__wrap js-tabcontent">
 			    <div class="news">
