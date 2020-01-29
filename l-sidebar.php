@@ -6,7 +6,7 @@
 					</div>
 				</div>
 				<div class="b opinion">
-				    <h3 class="title"><a href="<?php echo $main_name; ?>/experts/#latestnews">Рекомендуемые статьи</a></h3>
+				    <h3 class="title"><a href="<?php echo $main_name; ?>/experts/#latestnews" rel="nofollow">Рекомендуемые статьи</a></h3>
 
 
 
