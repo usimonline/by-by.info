@@ -1,24 +1,6 @@
 <footer>
 
-<div class="wrapper-sponsors">
-    <div class="sponsors owl-carousel owl-theme" style="opacity: 1; display: block;">
 
-		
-        <div class="owl-controls clickable">
-	        <div class="owl-pagination">
-	            <div class="owl-page active">
-				    <span class=""></span>
-				</div>
-	            <div class="owl-page">
-				    <span class=""></span>
-				</div>
-	            <div class="owl-page">
-				    <span class=""></span>
-				</div>
-	        </div>
-	    </div>
-	</div>
-</div>
 
 <div class="footer__bottom">
 	<div class="footer__copy">
