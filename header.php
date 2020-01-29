@@ -71,5 +71,6 @@
 			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты влияния</a></li>
 			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
+			<li><a href="<?php echo $main_name; ?>/splitmind/" >Шизофрения</a></li>
 		</ul>
 	</div>

@@ -16,6 +16,7 @@ Redirect 301 /pastnews/economy/50/ https://by-by.info/economy/
 Redirect 301 /pastnews/agents/50/ https://by-by.info/agents/
 Redirect 301 /pastnews/eaes/50/ https://by-by.info/eaes/
 Redirect 301 /pastnews/SovetskijSojuz/50/ https://by-by.info/SovetskijSojuz/
+Redirect 301 /pastnews/splitmind/50/ https://by-by.info/splitmind/
 Redirect 301 /topic/l-sidebar/50/ https://by-by.info/experts/
 Redirect 301 /topic/toplist/50/ https://by-by.info/centralnews/
 Redirect 301 /topic/header/50/ https://by-by.info/headernews/
