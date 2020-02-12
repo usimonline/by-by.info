@@ -1,14 +1,14 @@
 ﻿<?php
 if (!empty($_POST['article'])) {
     $text = $_POST['article'];
-    $separator = '\n\r';
+    $separator = '\n';
 
     $mass = explode($separator, $text);
 
 
 
     $final_mass = $mass; //array();
-    $final_text = implode ('!', $final_mass); // объединение с разделителем !
+    $final_text = implode('!', $final_mass); // объединение с разделителем !
     echo $final_text;
 }
 
