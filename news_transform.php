@@ -8,7 +8,7 @@ if (!empty($_POST['article'])) {
 
     $mass = explode($separator, $text);
 
-    $print_r($mass);
+    print_r($mass);
 
 
 
