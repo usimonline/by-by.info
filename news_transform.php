@@ -1,9 +1,11 @@
 ﻿<?php
 if (!empty($_POST['article'])) {
     $text = $_POST['article'];
-    $separator = 'PHP_EOL';
+    //$separator = 'PHP_EOL';
 
-    $mass = explode($separator, $text);
+    //$mass = explode($separator, $text);
+    $mass = preg_replace('~[\\n\\r]+?~', ' ', $text);
+
 
 
 
