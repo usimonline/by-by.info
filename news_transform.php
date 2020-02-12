@@ -1,12 +1,12 @@
 ﻿<?php
 if (!empty($_POST['article'])) {
     $text = $_POST['article'];
-    //$separator = 'PHP_EOL';
 
-    //$mass = explode($separator, $text);
-    $mass = preg_replace('~[\\n\\r]+?~', ' ', $text);
+    $text = preg_replace('~[\\n\\r]+?~', '!!!!', $text);
 
+    $separator = '!!!!';
 
+    $mass = explode($separator, $text);
 
 
     $final_mass = $mass; //array();
