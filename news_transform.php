@@ -9,6 +9,7 @@ if (!empty($_POST['article'])) {
 
     $final_mass = $mass; //array();
     $final_text = implode ('!', $final_mass); // объединение с разделителем !
+    echo $final_text;
 }
 
 ?>
