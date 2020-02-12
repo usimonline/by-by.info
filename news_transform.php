@@ -1,7 +1,7 @@
 ﻿<?php
 if (!empty($_POST['article'])) {
     $text = $_POST['article'];
-    $separator = '<br />\r\n<br />';
+    $separator = 'PHP_EOL';
 
     $mass = explode($separator, $text);
 
