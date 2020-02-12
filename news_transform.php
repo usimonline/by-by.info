@@ -16,7 +16,7 @@ if (!empty($_POST['article'])) {
     //$final_text = implode('!!', $final_mass); // объединение с разделителем !
     //$final_text = str_replace('!!!!','</p><p>',$final_text);
 
-    echo $final_text;
+    //echo $final_text;
 }
 
 ?>
