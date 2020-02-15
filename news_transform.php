@@ -21,10 +21,14 @@ if (!empty($_POST['article'])) {
     $final_text = str_replace('</h5>','</h5><p></p>',$final_text);
     $final_text = str_replace('</h6>','</h6><p></p>',$final_text);
 
+    $separator_2 = '</p>';
+
+    $mass_2 = explode($separator_2, $text);
 
 
+    print_r($mass_2);
 
-    //нужно заменить </h3> и h2 на </h3><p></p>, чтобы разделить текст по </p>
+
     // потом проигнорировать все те элементы, где есть </h2>, </h3>, </ul>, </figure>
 
     echo $final_text;
