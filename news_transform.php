@@ -23,7 +23,7 @@ if (!empty($_POST['article'])) {
 
     $separator_2 = '</p>';
 
-    $mass_2 = explode($separator_2, $text);
+    $mass_2 = explode($separator_2, $final_text);
 
 
     print_r($mass_2);
