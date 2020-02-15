@@ -34,12 +34,15 @@ if (!empty($_POST['article'])) {
                     $value = explode($separator_3, $value);
                     $value[0] = '<strong>'.$value[0].'</strong>';
                     $value = implode($separator_3, $value);
+                    $value = '<p>'.$value.'</p>';
                 } else {
-                        $value = '</p><ul class="spiski" ><li><em>'.$value.'</em></li></ul><p></p><p>';
+                        $value = '<ul class="spiski" ><li><em>'.$value.'</em></li></ul><p></p>';
                 }
                 $i++;
+            } else {
+                $value = '<p></p>';
             }
-            $value = '<p>'.$value.'</p>';
+
         }
     }
 
