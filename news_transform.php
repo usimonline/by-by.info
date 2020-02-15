@@ -37,10 +37,10 @@ if (!empty($_POST['article'])) {
                 } else {
                         $value = '</p><ul class="spiski" ><li><em>'.$value.'</em></li></ul><p></p><p>';
                 }
+                $i++;
             }
             $value = '<p>'.$value.'</p>';
         }
-        $i++;
     }
 
 
