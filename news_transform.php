@@ -9,7 +9,7 @@ if (!empty($_POST['article'])) {
     $mass = explode($separator, $text);
 
     //print_r($mass);
-    
+
     $final_mass = $mass; //array();
     $final_text = implode('!!', $final_mass); // объединение с разделителем !
     $final_text = str_replace('!!!!','</p><p>',$final_text);
@@ -22,6 +22,26 @@ if (!empty($_POST['article'])) {
     $separator_2 = '</p>';
 
     $mass_2 = explode($separator_2, $final_text);
+
+    $i = 0;
+
+    foreach ($mass_2 as &$value) {
+        $value = str_replace('<p>','', $value);
+        if(!strpos($value, '</ul>') or !strpos($value, '</h2>') or !strpos($value, '</h3>') or !strpos($value, '</h4>') or !strpos($value, '</figure>')){
+            $separator_3 = '. ';
+            if ($value != ''){
+                if ($i % 2 == 0) {
+                    $value = explode($separator_3, $value);
+                    $value[0] = '<strong>'.$value[0].'</strong>';
+                    $value = implode($separator_3, $value);
+                } else {
+                        $value = '</p><ul class="spiski" ><li><em>'.$value.'</em></li></ul><p></p><p>';
+                }
+            }
+            $value = '<p>'.$value.'</p>';
+        }
+        $i++;
+    }
 
 
     print_r($mass_2);
