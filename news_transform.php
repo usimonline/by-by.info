@@ -28,8 +28,8 @@ if (!empty($_POST['article'])) {
     foreach ($mass_2 as &$value) {
         if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
             $separator_3 = '. ';
+            $value = str_replace('<p>','', $value); // тут удалить первых три символа
             if ($value != ''){
-                $value = substr($value,3); // тут удалить первых три символа
                 if ($i % 2 == 0) {
                     $value = explode($separator_3, $value);
                     $value[0] = '<strong>'.$value[0].'</strong>';
