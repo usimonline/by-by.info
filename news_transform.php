@@ -31,7 +31,7 @@ if (!empty($_POST['article'])) {
 
     // потом проигнорировать все те элементы, где есть </h2>, </h3>, </ul>, </figure>
 
-    echo $final_text;
+    //echo $final_text;
 }
 
 ?>
