@@ -43,6 +43,8 @@ if (!empty($_POST['article'])) {
                 $value = '<p></p>';
             }
 
+        } else {
+            $value = $value.'</p>';
         }
     }
 
