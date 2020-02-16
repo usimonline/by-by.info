@@ -52,7 +52,7 @@ if (!empty($_POST['article'])) {
 
     $final_text_2 = implode($separator_4, $mass_2);
     $final_text_2 = substr($final_text_2, 3);
-    $final_text_2 = substr($final_text_2,0,-3);
+    $final_text_2 = substr($final_text_2,0,-4);
 
 
     //print_r($mass_2);
