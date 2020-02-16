@@ -49,14 +49,14 @@ if (!empty($_POST['article'])) {
     }
     $separator_4 = '';
 
-    $mass_2 = implode($separator_4, $mass_2);
+    $final_text_2 = implode($separator_4, $mass_2);
 
 
     //print_r($mass_2);
 
 
 
-    //echo $final_text;
+    echo $final_text_2;
 }
 
 ?>
