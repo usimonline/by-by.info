@@ -47,12 +47,14 @@ if (!empty($_POST['article'])) {
             $value = $value.'</p>';
         }
     }
+    $separator_4 = '';
+
+    $mass_2 = implode($separator_4, $mass_2);
 
 
-    print_r($mass_2);
+    //print_r($mass_2);
 
 
-    // потом проигнорировать все те элементы, где есть </h2>, </h3>, </ul>, </figure>
 
     //echo $final_text;
 }
