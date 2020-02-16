@@ -37,7 +37,7 @@ if (!empty($_POST['article'])) {
                     $count = 0;
                     $count_2 = 0;
                     $count_mass = count($value)-1;
-                    echo $count_mass;
+                    echo $count_mass.'  ';
                     $value[0] = '<strong>'.$value[0].'</strong>';
                     $j = rand(100, 400);
                     foreach ($value as &$value_2) {
