@@ -47,11 +47,11 @@ if (!empty($_POST['article'])) {
             $value = $value.'</p>';
         }
     }
-    $final_text_2 = substr($final_text_2, 3);
 
     $separator_4 = '';
 
     $final_text_2 = implode($separator_4, $mass_2);
+    $final_text_2 = substr($final_text_2, 3);
 
 
     //print_r($mass_2);
