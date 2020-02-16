@@ -30,9 +30,27 @@ if (!empty($_POST['article'])) {
             $separator_3 = '. ';
             $value = str_replace('<p>','', $value); // тут удалить первых три символа
             if ($value != ''){
+
                 if ($i % 2 == 0) {
-                    $value = explode($separator_3, $value);
+                    $value = explode($separator_3, $value);// разбил на предложения
+                    $value_temp = '';
+                    $count = 0;
+                    $count_2 = 0;
+                    $count_mass = count($value);
                     $value[0] = '<strong>'.$value[0].'</strong>';
+                    $j = rand(100, 400);
+                    foreach ($value as &$value_2) {
+                        $value_temp = $value_temp.$value_2;
+                        if(strlen($value_temp) > $j and $count > 1 and $count_2 != $count_mass){
+                            $value_2 = '</p><p><strong>'.$value_2.'</strong>';
+                            $value_temp = '';
+                            $count = 0;
+                            $j = rand(100, 400);
+                        }
+                        $count++;
+                        $count_2++;
+                    }
+                    //$value[0] = '<strong>'.$value[0].'</strong>';
                     $value = implode($separator_3, $value);
                     $value = '<p>'.$value.'</p>';
                 } else {
