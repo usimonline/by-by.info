@@ -25,11 +25,14 @@ if (!empty($_POST['article'])) {
 
     $i = 0;
 
+    $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е.');
+    $zamena_2 = array('т.д.','т.п.','тыс.', 'т.е.');
+
     foreach ($mass_2 as &$value) {
-        //$value = trim($value);
+        $value = trim($value);
+        $value = str_replace($zamena_1, $zamena_2,$value);
         if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
             $separator_3 = '. ';// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
-
             // можно заменить короткие тире на длинные (только с пробелами после и до пробела!)
             $value = str_replace('<p>','', $value); // тут удалить первых три символа
             if ($value != ''){
