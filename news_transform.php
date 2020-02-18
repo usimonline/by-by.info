@@ -26,8 +26,11 @@ if (!empty($_POST['article'])) {
     $i = 0;
 
     foreach ($mass_2 as &$value) {
+        $value = trim($value);
         if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
-            $separator_3 = '. ';
+            $separator_3 = '. ';// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
+
+            // можно заменить короткие тире на длинные (только с пробелами после и до пробела!)
             $value = str_replace('<p>','', $value); // тут удалить первых три символа
             if ($value != ''){
 
@@ -37,7 +40,7 @@ if (!empty($_POST['article'])) {
                     $count = 0;
                     $count_2 = 0;
                     $count_mass = count($value)-1;
-                    echo $count_mass.'  ';
+                    //echo $count_mass.'  ';
                     $value[0] = '<strong>'.$value[0].'</strong>';
                     $j = rand(100, 400);
                     foreach ($value as &$value_2) {
