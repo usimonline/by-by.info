@@ -25,8 +25,8 @@ if (!empty($_POST['article'])) {
 
     $i = 0;
 
-    $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е. ');
-    $zamena_2 = array('т.д.','т.п.','тыс.', 'т.е.');
+    $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е. ','Т. е. ');
+    $zamena_2 = array('т.д.','т.п.','тыс.', 'т.е.','Т.е.');
 
     foreach ($mass_2 as &$value) {
         $value = trim($value);
