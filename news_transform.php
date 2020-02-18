@@ -25,15 +25,15 @@ if (!empty($_POST['article'])) {
 
     $i = 0;
 
-    $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е. ','Т. е. ');// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
-    $zamena_2 = array('т.д.','т.п.','тыс.', 'т.е.','Т.е.');
+    $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е. ','Т. е. ','А. ','Б. ','В. ','Г. ','Д. ','Е. ','Ё. ','Ж. ','З. ','И. ','Й. ','К. ','Л. ','М. ','Н. ','О. ','П. ','Р. ','С. ','Т. ','У. ','Ф. ','Х. ','Ц. ','Ч. ','Ш. ','Щ. ','Ъ. ','Ы. ','Ь. ','Э. ','Ю. ','Я. ');// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
+    $zamena_2 = array('т.д.','т.п.','тыс.', 'т.е.','Т.е.','А.','Б.','В.','Г.','Д.','Е.','Ё.','Ж.','З.','И.','Й.','К.','Л.','М.','Н.','О.','П.','Р.','С.','Т.','У.','Ф.','Х.','Ц.','Ч.','Ш.','Щ.','Ъ.','Ы.','Ь.','Э.','Ю.','Я.');
 
     foreach ($mass_2 as &$value) {
         $value = trim($value);
         $value = str_replace($zamena_1, $zamena_2,$value);
         if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
-            $separator_3 = '. ';
-            // можно заменить короткие тире на длинные (только с пробелами после и до пробела!)
+            $separator_3 = '. '; // а как быть с фамилиями?
+
             $value = str_replace('<p>','', $value); // тут удалить первых три символа
             if ($value != ''){
 
@@ -81,9 +81,9 @@ if (!empty($_POST['article'])) {
 
     $final_text_2 = str_replace($zamena_2, $zamena_1, $final_text_2);
 
-    $final_text_2 = str_replace('– ', '— ', $final_text_2);
+    $final_text_2 = str_replace('– ', '— ', $final_text_2);// можно заменить короткие тире на длинные (только с пробелами после и до пробела!)
 
-    $final_text_2 = str_replace('- ', '— ', $final_text_2);
+    $final_text_2 = str_replace('- ', '— ', $final_text_2);// можно заменить короткие тире на длинные (только с пробелами после и до пробела!)
 
     //print_r($mass_2);
 
@@ -95,7 +95,7 @@ if (!empty($_POST['article'])) {
 ?>
 
 <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/news_transform.php">
-<textarea style="width:600px; height:25px; border: 1px solid #cccccc;" name="article" type="text" >Текст</textarea><br>
+<textarea style="width:800px; height:700px; border: 1px solid #cccccc;" name="article" type="text" >Текст</textarea><br>
 
     <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить статью"/>
     <br><br>
