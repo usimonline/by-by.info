@@ -25,14 +25,14 @@ if (!empty($_POST['article'])) {
 
     $i = 0;
 
-    $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е. ','Т. е. ');
+    $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е. ','Т. е. ');// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
     $zamena_2 = array('т.д.','т.п.','тыс.', 'т.е.','Т.е.');
 
     foreach ($mass_2 as &$value) {
         $value = trim($value);
         $value = str_replace($zamena_1, $zamena_2,$value);
         if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
-            $separator_3 = '. ';// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
+            $separator_3 = '. ';
             // можно заменить короткие тире на длинные (только с пробелами после и до пробела!)
             $value = str_replace('<p>','', $value); // тут удалить первых три символа
             if ($value != ''){
@@ -80,6 +80,10 @@ if (!empty($_POST['article'])) {
     $final_text_2 = substr($final_text_2,0,-4);
 
     $final_text_2 = str_replace($zamena_2, $zamena_1, $final_text_2);
+
+    $final_text_2 = str_replace('– ', '— ', $final_text_2);
+
+    $final_text_2 = str_replace('- ', '— ', $final_text_2);
 
     //print_r($mass_2);
 
