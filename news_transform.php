@@ -27,6 +27,7 @@ if (!empty($_POST['article'])) {
 
     $zamena_1 = array('т. д.','т. п.','тыс. ', 'т. е. ','Т. е. ','А. ','Б. ','В. ','Г. ','Д. ','Е. ','Ё. ','Ж. ','З. ','И. ','Й. ','К. ','Л. ','М. ','Н. ','О. ','П. ','Р. ','С. ','Т. ','У. ','Ф. ','Х. ','Ц. ','Ч. ','Ш. ','Щ. ','Ъ. ','Ы. ','Ь. ','Э. ','Ю. ','Я. ');// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
     $zamena_2 = array('т.д.','т.п.','тыс.', 'т.е.','Т.е.','А.','Б.','В.','Г.','Д.','Е.','Ё.','Ж.','З.','И.','Й.','К.','Л.','М.','Н.','О.','П.','Р.','С.','Т.','У.','Ф.','Х.','Ц.','Ч.','Ш.','Щ.','Ъ.','Ы.','Ь.','Э.','Ю.','Я.');
+    $komm = array('</p><ul class="spiski" ><li><em>','</em></li></ul><p></p><p>');
 
     foreach ($mass_2 as &$value) {
         $value = trim($value);
@@ -43,7 +44,7 @@ if (!empty($_POST['article'])) {
                     $count = 0;
                     $count_2 = 0;
                     $count_mass = count($value)-1;
-                    //echo $count_mass.'  ';
+
                     $value[0] = '<strong>'.$value[0].'</strong>';
                     $j = rand(120, 500);
                     foreach ($value as &$value_2) {
@@ -52,12 +53,12 @@ if (!empty($_POST['article'])) {
                             $value_2 = '</p><p><strong>'.$value_2.'</strong>';
                             $value_temp = '';
                             $count = 0;
-                            $j = rand(100, 400);
+                            $j = rand(120, 500);
                         }
                         $count++;
                         $count_2++;
                     }
-                    //$value[0] = '<strong>'.$value[0].'</strong>';
+
                     $value = implode($separator_3, $value);
                     $value = '<p>'.$value.'</p>';
                 } else {
@@ -73,9 +74,31 @@ if (!empty($_POST['article'])) {
         }
         //внутри цикла, перед выходом
         if(strpos($value, '</ul>') !== FALSE and strpos($value, '</em>') !== FALSE ){
+            $value = trim($value);
+            $value = str_replace($komm,'', $value);
+            $value = explode($separator_3, $value);// разбил на предложения
+            $value_temp = '';
+            $count = 0;
+            $count_2 = 0;
+            $count_mass = count($value)-1;
 
+            //$value[0] = '<strong>'.$value[0].'</strong>';
+            $j = rand(150, 550);
+            foreach ($value as &$value_3) {
+                $value_temp = $value_temp.$value_3;
+                if(strlen($value_temp) > $j and $count > 1 and $count_2 != $count_mass){
+                    $value_3 = '</em></li></ul><p></p><ul class="spiski" ><li><em><strong>'.$value_3.'</strong>';
+                    $value_temp = '';
+                    $count = 0;
+                    $j = rand(150, 550);
+                }
+                $count++;
+                $count_2++;
+            }
+
+            $value = implode($separator_3, $value);
+            $value = '</p><ul class="spiski" ><li><em>'.$value.'</em></li></ul><p></p><p>';
         }
-
     }
 
     $separator_4 = '';
