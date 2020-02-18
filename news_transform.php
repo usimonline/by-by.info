@@ -79,6 +79,7 @@ if (!empty($_POST['article'])) {
     $final_text_2 = substr($final_text_2, 3);
     $final_text_2 = substr($final_text_2,0,-4);
 
+    $final_text_2 = str_replace($zamena_2, $zamena_1, $final_text_2);
 
     //print_r($mass_2);
 
