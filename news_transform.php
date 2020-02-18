@@ -34,6 +34,8 @@ if (!empty($_POST['article'])) {
         $value = str_replace($zamena_1, $zamena_2,$value);
         if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
             $separator_3 = '. '; // а как быть с фамилиями?
+            // что осталось сделать: 1) ссылки на различные статьи 2) если в абзаце есть символы </ul> и </em>, ниже я уже это проверяю,
+            // то нужно сделать переключатель $i равным 0
 
             $value = str_replace('<p>','', $value); // тут удалить первых три символа
             if ($value != ''){
@@ -98,6 +100,7 @@ if (!empty($_POST['article'])) {
 
             $value = implode($separator_3, $value);
             $value = '<ul class="spiski" ><li><em>'.$value.'</em></li></ul><p></p>';
+            $i = 0; // чтобы за ручным комментом не шел автоматический коммент
         }
     }
 
