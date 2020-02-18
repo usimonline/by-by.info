@@ -45,7 +45,7 @@ if (!empty($_POST['article'])) {
                     $count_mass = count($value)-1;
                     //echo $count_mass.'  ';
                     $value[0] = '<strong>'.$value[0].'</strong>';
-                    $j = rand(100, 400);
+                    $j = rand(120, 500);
                     foreach ($value as &$value_2) {
                         $value_temp = $value_temp.$value_2;
                         if(strlen($value_temp) > $j and $count > 1 and $count_2 != $count_mass){
@@ -71,6 +71,11 @@ if (!empty($_POST['article'])) {
         } else {
             $value = $value.'</p>';
         }
+        //внутри цикла, перед выходом
+        if(strpos($value, '</ul>') !== FALSE and strpos($value, '</em>') !== FALSE ){
+
+        }
+
     }
 
     $separator_4 = '';
@@ -95,7 +100,7 @@ if (!empty($_POST['article'])) {
 ?>
 
 <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/news_transform.php">
-<textarea style="width:800px; height:700px; border: 1px solid #cccccc;" name="article" type="text" >Текст</textarea><br>
+<textarea style="width:800px; height:600px; border: 1px solid #cccccc;" name="article" type="text" >Текст</textarea><br>
 
     <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить статью"/>
     <br><br>
