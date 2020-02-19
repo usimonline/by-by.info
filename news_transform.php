@@ -52,10 +52,10 @@ if (!empty($_POST['article'])) {
                     $count_2 = 0;
                     $count_mass = count($value)-1;
 
-                    $value[0] = '<strong>'.$value[0].'</strong>';
+
                     //$lenvalue = strlen($value[0]); // вроде бы не нужна
                     $value_temp_2 = substr($value[0], 50);
-                    echo $value_temp_2;
+                    echo $value_temp_2.'<br />';
                     if ($value_temp_2 !== false){
                         $lenvalue_2 = strlen($value_temp_2);
                         if ($lenvalue_2 > 30) {
@@ -72,6 +72,7 @@ if (!empty($_POST['article'])) {
 
                         }
                     }
+                    $value[0] = '<strong>'.$value[0].'</strong>';
                     $j = rand(110, 490);
                     foreach ($value as &$value_2) {
                         $value_temp = $value_temp.$value_2;
