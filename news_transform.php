@@ -28,16 +28,18 @@ if (!empty($_POST['article'])) {
     $mass_2 = explode($separator_2, $final_text);
 
     $i = 0;
+    $k = 0;
 
     $zamena_1 = array('т. д','т. п','тыс. ', 'т. е. ','Т. е. ','А. ','Б. ','В. ','Г. ','Д. ','Е. ','Ё. ','Ж. ','З. ','И. ','Й. ','К. ','Л. ','М. ','Н. ','О. ','П. ','Р. ','С. ','Т. ','У. ','Ф. ','Х. ','Ц. ','Ч. ','Ш. ','Щ. ','Ъ. ','Ы. ','Ь. ','Э. ','Ю. ','Я. ');// а что делать с т. д. и т. п., т. е., руб. тыс. - их нужно предварительно заменять в тексте!
     $zamena_2 = array('т.д','т.п','тыс.', 'т.е.','Т.е.','А.','Б.','В.','Г.','Д.','Е.','Ё.','Ж.','З.','И.','Й.','К.','Л.','М.','Н.','О.','П.','Р.','С.','Т.','У.','Ф.','Х.','Ц.','Ч.','Ш.','Щ.','Ъ.','Ы.','Ь.','Э.','Ю.','Я.');
     $komm = array('<ul class="spiski" ><li><em>','</em></li></ul><p></p>');
+    $separator_3 = '. ';
 
     foreach ($mass_2 as &$value) {
         $value = trim($value);
         $value = str_replace($zamena_1, $zamena_2,$value);
         if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
-            $separator_3 = '. ';
+
             // что осталось сделать: 1) ссылки на различные статьи
 
             $value = str_replace('<p>','', $value); // тут удалить первых три символа
@@ -91,8 +93,18 @@ if (!empty($_POST['article'])) {
             $j = rand(150, 550);
             foreach ($value as &$value_3) {
                 $value_temp = $value_temp.$value_3;
+                if ($k % 2 == 0){
+                    $stili_1 = '</em></li></ul><p></p><ul class="spiski" ><li><em><strong>';
+                    $stili_3 = '<ul class="spiski" ><li><em>';
+                    $stili_4 = '</em></li></ul><p></p>';
+                } else {
+                    $stili_1 = '</blockquote><blockquote><strong>';
+                    $stili_3 = '<blockquote>';
+                    $stili_4 = '</blockquote>';
+                }
+
                 if(strlen($value_temp) > $j and $count > 1 and $count_2 != $count_mass){
-                    $value_3 = '</em></li></ul><p></p><ul class="spiski" ><li><em><strong>'.$value_3.'</strong>';
+                    $value_3 = $stili_1.$value_3.'</strong>';
                     $value_temp = '';
                     $count = 0;
                     $j = rand(150, 550);
@@ -102,8 +114,9 @@ if (!empty($_POST['article'])) {
             }
 
             $value = implode($separator_3, $value);
-            $value = '<ul class="spiski" ><li><em>'.$value.'</em></li></ul><p></p>';
+            $value = $stili_3.$value.$stili_4;
             $i = 0; // чтобы за ручным комментом не шел автоматический коммент
+            $k++; //в зависимости от k мы добавляем разные стили комментов
         }
     }
 
