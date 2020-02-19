@@ -53,6 +53,23 @@ if (!empty($_POST['article'])) {
                     $count_mass = count($value)-1;
 
                     $value[0] = '<strong>'.$value[0].'</strong>';
+                    $lenvalue = strlen($value[0]);
+                    $value_temp_2 = substr($value[0], 35);
+                    if ($value_temp_2 !== false){
+                        $lenvalue_2 = strlen($value_temp_2);
+                        if ($lenvalue_2 > 30) {
+                            if (strpos($value_temp_2, ',') !== false){
+                                $value_temp_3 = strstr($value_temp_2,',');
+                                if ($value_temp_3 !== false) {
+                                    $lenvalue_3 = strlen($value_temp_3);
+                                    if ($lenvalue_3 > 27) {
+                                        $value_2 = str_replace($value_temp_3,'<span style="color: #005EA4;">'.$value_temp_3.'</span>',$value[0]);
+                                    }
+                                }
+                            }
+
+                        }
+                    }
                     $j = rand(110, 490);
                     foreach ($value as &$value_2) {
                         $value_temp = $value_temp.$value_2;
