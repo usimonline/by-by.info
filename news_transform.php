@@ -53,8 +53,8 @@ if (!empty($_POST['article'])) {
                     $count_mass = count($value)-1;
 
                     $value[0] = '<strong>'.$value[0].'</strong>';
-                    $lenvalue = strlen($value[0]);
-                    $value_temp_2 = substr($value[0], 35);
+                    //$lenvalue = strlen($value[0]); // вроде бы не нужна
+                    $value_temp_2 = substr($value[0], 50);
                     if ($value_temp_2 !== false){
                         $lenvalue_2 = strlen($value_temp_2);
                         if ($lenvalue_2 > 30) {
@@ -75,8 +75,8 @@ if (!empty($_POST['article'])) {
                     foreach ($value as &$value_2) {
                         $value_temp = $value_temp.$value_2;
                         if(strlen($value_temp) > $j and $count > 1 and $count_2 != $count_mass){
-                            $lenvalue = strlen($value_2);
-                            $value_temp_2 = substr($value_2, 35);
+                            //$lenvalue = strlen($value_2);
+                            $value_temp_2 = substr($value_2, 50);
                             if ($value_temp_2 !== false){
                                 $lenvalue_2 = strlen($value_temp_2);
                                 if ($lenvalue_2 > 30) {
