@@ -63,7 +63,8 @@ if (!empty($_POST['article'])) {
                                 if ($value_temp_3 !== false) {
                                     $lenvalue_3 = strlen($value_temp_3);
                                     if ($lenvalue_3 > 27) {
-                                        $value_2 = str_replace($value_temp_3,'<span style="color: #005EA4;">'.$value_temp_3.'</span>',$value[0]);
+                                        $value[0] = str_replace($value_temp_3,'<span style="color: #005EA4;">'.$value_temp_3.'</span>',$value[0]);
+                                        $value[0] = str_replace('<span style="color: #005EA4;">,',',<span style="color: #005EA4;">',$value[0]);
                                     }
                                 }
                             }
@@ -85,6 +86,7 @@ if (!empty($_POST['article'])) {
                                             $lenvalue_3 = strlen($value_temp_3);
                                             if ($lenvalue_3 > 27) {
                                                 $value_2 = str_replace($value_temp_3,'<span style="color: #005EA4;">'.$value_temp_3.'</span>',$value_2);
+                                                $value_2 = str_replace('<span style="color: #005EA4;">,',',<span style="color: #005EA4;">',$value_2);
                                             }
                                         }
                                     }
