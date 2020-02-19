@@ -2,9 +2,11 @@
 if (!empty($_POST['article'])) {
     $text = $_POST['article'];
 
+    $text = str_replace('!','???',$text );
+
     $text = preg_replace('~[\\n\\r]+?~', '!!!!', $text);
 
-    $text = str_replace('!','???',$text );
+
 
     $separator = '!!!!';
 
@@ -119,7 +121,7 @@ if (!empty($_POST['article'])) {
 
     //print_r($mass_2);
 
-    $final_text_2 = str_replace('???','!',$final_text_2);
+    $final_text_2 = str_replace('???','!',$final_text_2);// восклицательный знак неправильно обрабатывался, поэтому пришлось заменить
 
 
 
