@@ -55,7 +55,7 @@ if (!empty($_POST['article'])) {
 
                     //$lenvalue = strlen($value[0]); // вроде бы не нужна
                     $value_temp_2 = substr($value[0], 50);
-                    echo $value_temp_2.'<br />';
+                    //echo $value_temp_2.'<br />';
                     if ($value_temp_2 !== false){
                         $lenvalue_2 = strlen($value_temp_2);
                         if ($lenvalue_2 > 30) {
