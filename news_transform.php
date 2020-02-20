@@ -24,12 +24,14 @@ if (!empty($_POST['article'])) {
     $spis_slov = array('США','Вьетнам', 'американский','американские','Соединенные Штаты');
     $odna_tema = 'политика';
     $poiasnenie = 'Преступления США во Вьетнаме, убийство мирных детей, женщин и стариков';
-    $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/',$odna_tema, $poiasnenie);
+    $url = '/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/';
+    $slova_ssilki[] = array($spis_slov,$url,$odna_tema, $poiasnenie);
 
     $spis_slov = array('политика','Украина','украинский','бандеровцы','украинские');
-    $odna_tema = 'экоомика';
-    $poiasnenie = 'Преступления Украины во времеа ВОВ, убийство мирный детей, женщин и стариков';
-    $slova_ssilki[] = array($spis_slov,'/agents/2020/01/23/1579761438/prestuplenija-ukrainskih-nacistov-v-godi-vojni/',$odna_tema, $poiasnenie);
+    $odna_tema = 'экономика';
+    $poiasnenie = 'Преступления Украины во времеа ВОВ, убийство мирных детей, женщин и стариков';
+    $url = '/agents/2020/01/23/1579761438/prestuplenija-ukrainskih-nacistov-v-godi-vojni/';
+    $slova_ssilki[] = array($spis_slov,$url,$odna_tema, $poiasnenie);
 
 
 
