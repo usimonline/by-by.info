@@ -35,10 +35,25 @@ if (!empty($_POST['article'])) {
     $komm = array('<ul class="spiski" ><li><em>','</em></li></ul><p></p>');
     $separator_3 = '. ';
 
+    $slova__ssilki = array(); // далее добавляю ссылки в текст
+
+    $slova__ssilki[] = array('США','/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
+    $slova__ssilki[] = array('вьетнам','/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
+
+    $kol_abzacev = count($mass_2);
+
+    $kol_ab_polovina = (int)($kol_abzacev / 2);
+
+    $l = 0; // счетчик абзацев
+
+    $m = 0; // счетчик замен ссылок
+
+    $temp_rep = 1; // количество замен в одном абзаце, см. код внизу
+
     foreach ($mass_2 as &$value) {
         $value = trim($value);
         $value = str_replace($zamena_1, $zamena_2,$value);
-        if(!strpos($value, '</ul>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
+        if(!strpos($value, '</ul>') and !strpos($value, '</strong>') and !strpos($value, '</h2>') and !strpos($value, '</h3>') and !strpos($value, '</h4>') and !strpos($value, '</figure>')){
 
             // что осталось сделать: 1) ссылки на различные статьи
 
@@ -156,6 +171,19 @@ if (!empty($_POST['article'])) {
             $i = 0; // чтобы за ручным комментом не шел автоматический коммент
             $k++; //в зависимости от k мы добавляем разные стили комментов
         }
+        if($l >= $kol_ab_polovina and $m < 3){
+            // тут вставляем ссылки
+            // $slova__ssilki = array();
+            foreach ($slova__ssilki as &$value_sl) {
+                if (strpos($value, $value_sl[0]) !== false){
+                    $value = str_replace($value_sl[0], '<a target="_blank" href="'.$value_sl[1].'">'.$value_sl[0].'</a>', $value, $temp_rep);
+                    $m++;
+                    $value_sl[0] = 'портим ссылку 12323472836428468723467234';
+                    break;
+                }
+            }
+        }
+        $l++;
     }
 
     $separator_4 = '';
@@ -173,7 +201,6 @@ if (!empty($_POST['article'])) {
     //print_r($mass_2);
 
     $final_text_2 = str_replace('???','!',$final_text_2);// восклицательный знак неправильно обрабатывался, поэтому пришлось заменить
-
 
 
     echo $final_text_2;
