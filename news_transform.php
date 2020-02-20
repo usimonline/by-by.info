@@ -18,7 +18,7 @@ if (!empty($_POST['article'])) {
         $odna_tema = $spis_slov[0];
         $slova_ssilki[] = array($spis_slov,$toplist_url,$odna_tema, $toplist_tema);
         if ($t < 5) {
-            echo $slova_ssilki[$t].'<br />';
+            print_r ($slova_ssilki[$t]);
         }
         $t++;
    }
