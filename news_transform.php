@@ -186,7 +186,7 @@ if (!empty($_POST['article'])) {
             foreach ($slova__ssilki as &$value_sl) {
                 $temp_value_sl = ' '.$value_sl[0].' ';
                 if (strpos($value, $temp_value_sl) !== false){
-                    $value = str_replace($temp_value_sl, '<a target="_blank" href="'.$value_sl[1].'">'.$value_sl[0].'</a>', $value, $temp_rep);
+                    $value = str_replace($temp_value_sl, ' <a target="_blank" href="'.$value_sl[1].'">'.$value_sl[0].'</a> ', $value, $temp_rep);
                     $m++;
                     $value_sl[0] = 'портим ссылку 12323472836428468723467234';
                     break;
