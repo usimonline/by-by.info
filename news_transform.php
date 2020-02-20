@@ -6,17 +6,20 @@
 
 if (!empty($_POST['article'])) {
 
-    //$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'toplist' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 4";
-    //$select = 0;
-    //$res = mysqli_query($link, $select);
+    $select = "SELECT * FROM $Name_database.$table WHERE datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 300";
+    $res = mysqli_query($link, $select);
 
-    //$t = 0;
-   // while($row = mysqli_fetch_array($res))
-    //{
-    //    $toplist[$t]['teme'] = $row['teme'];
-    //    $toplist[$t]['keys'] = $row['keys'];
-    //    $toplist[$t++]['url'] = $row['url'];
-   // }
+    $t = 0;
+    while($row = mysqli_fetch_array($res))
+    {
+        $toplist[$t]['teme'] = $row['teme'];
+        $toplist[$t]['keys'] = $row['keys'];
+        $toplist[$t]['url'] = $row['url'];
+        $odna_tema = $toplist[$t]['keys'][0];
+        $spis_slov = $toplist[$t]['keys'];
+        $slova_ssilki[] = array($spis_slov,$toplist[$t]['url'],$odna_tema, $toplist[$t]['teme']);
+        $t++;
+   }
 
     $slova__ssilki = array(); // далее добавляю ссылки в текст
 
