@@ -27,7 +27,7 @@ if (!empty($_POST['article'])) {
     $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/',$odna_tema, $poiasnenie);
 
     $spis_slov = array('политика','Украина','украинский','бандеровцы','украинские');
-    $odna_tema = 'политика';
+    $odna_tema = 'экоомика';
     $poiasnenie = 'Преступления Украины во времеа ВОВ, убийство мирный детей, женщин и стариков';
     $slova_ssilki[] = array($spis_slov,'/agents/2020/01/23/1579761438/prestuplenija-ukrainskih-nacistov-v-godi-vojni/',$odna_tema, $poiasnenie);
 
