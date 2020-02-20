@@ -226,7 +226,7 @@ if (!empty($_POST['article'])) {
                         break;
                     }
                     if (strpos($value, $value_sl_strok) !== false){
-                        $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$url_prov.'">'.$value_sl_strok.' (читайте «'.'$poiasnen'.'»)</a> ', $value, $temp_rep);
+                        $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$url_prov.'">'.$value_sl_strok.' (читайте «'.$poiasnen.'»)</a> ', $value, $temp_rep);
                         $m++;
                         $value_sl[0] = 'портим ссылку 12323472836428468723467234';
                         break 2;
