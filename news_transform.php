@@ -49,6 +49,13 @@ if (!empty($_POST['article'])) {
 
     $m = 0; // счетчик замен ссылок
 
+    if ($kol_ab_polovina > 6) {
+        $m_ogr = (int)($kol_ab_polovina / 2);
+    } else {
+        $m_ogr = 3;
+    }
+
+
     $temp_rep = 1; // количество замен в одном абзаце, см. код внизу
 
     foreach ($mass_2 as &$value) {
@@ -172,7 +179,7 @@ if (!empty($_POST['article'])) {
             $i = 0; // чтобы за ручным комментом не шел автоматический коммент
             $k++; //в зависимости от k мы добавляем разные стили комментов
         }
-        if($l >= $kol_ab_polovina and $m < 3 and strpos($value, '</a>') === false){
+        if($l >= $kol_ab_polovina and $m < $m_ogr and strpos($value, '</a>') === false){
             // тут вставляем ссылки
             // $slova__ssilki = array();
             // не должно быть копирования части слов нужно добавить пробел
