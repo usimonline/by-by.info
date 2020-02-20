@@ -10,16 +10,17 @@ if (!empty($_POST['article'])) {
     $res = mysqli_query($link, $select);
 
     $t = 0;
+    $separator_first = ',';
     while($row = mysqli_fetch_array($res))
     {
         $toplist_tema = $row['teme'];
-        $spis_slov = $row['keys'];
+        $spis_slov = explode($separator_first, $row['keys']);
         $toplist_url = $row['url'];
         $odna_tema = $spis_slov[0];
         $slova_ssilki[] = array($spis_slov,$toplist_url,$odna_tema, $toplist_tema);
-        if ($t < 5) {
-            print_r ($slova_ssilki[$t]);
-        }
+        //if ($t < 5) {
+        //    print_r ($slova_ssilki[$t]);
+        //}
         $t++;
    }
 
@@ -223,9 +224,9 @@ if (!empty($_POST['article'])) {
             // $slova_ssilki = array();
             // не должно быть копирования части слов нужно добавить пробел
             foreach ($slova_ssilki as &$value_sl) {
-                $temp_value_sl = $value_sl[0];
+                $temp_value_sl = trim($value_sl[0]);
                 $url_prov = $value_sl[1];
-                $tema_prov = $value_sl[2];
+                $tema_prov = trim($value_sl[2]);
                 $poiasnen = $value_sl[3];
                 foreach ($temp_value_sl as &$value_sl_strok){
                     $value_sl_strok = ' '.$value_sl_strok.' ';
