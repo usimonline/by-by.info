@@ -39,7 +39,7 @@ if (!empty($_POST['article'])) {
 
     // не должно быть копирование части слов
     $slova__ssilki[] = array('США','/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
-    $slova__ssilki[] = array('Вьетнам','/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
+    $slova__ssilki[] = array('вьетнам','/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
 
     $kol_abzacev = count($mass_2);
 
