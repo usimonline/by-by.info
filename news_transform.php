@@ -8,8 +8,7 @@ require_once("head.php");
 ?>
 </head>
 <body>
-<div class="l-main">
-    <article class="article" style="margin-top:0px; margin-left:0px;">
+
 <?php
 
 if (!empty($_POST['article'])) {
@@ -285,8 +284,6 @@ if (!empty($_POST['article'])) {
 </form>
 
 
-     </article>
 
-</div>
 </body>
 
