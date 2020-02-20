@@ -18,9 +18,9 @@ if (!empty($_POST['article'])) {
         $toplist_url = $row['url'];
         $odna_tema = $spis_slov[0];
         $slova_ssilki[] = array($spis_slov,$toplist_url,$odna_tema, $toplist_tema);
-        //if ($t < 5) {
-        //    print_r ($slova_ssilki[$t]);
-        //}
+        if ($t < 5) {
+            print_r ($slova_ssilki[$t]);
+        }
         $t++;
    }
 
