@@ -171,7 +171,7 @@ if (!empty($_POST['article'])) {
             $i = 0; // чтобы за ручным комментом не шел автоматический коммент
             $k++; //в зависимости от k мы добавляем разные стили комментов
         }
-        if($l >= $kol_ab_polovina and $m < 3){
+        if($l >= $kol_ab_polovina and $m < 3 and strpos($value, '</a>') === false){
             // тут вставляем ссылки
             // $slova__ssilki = array();
             foreach ($slova__ssilki as &$value_sl) {
