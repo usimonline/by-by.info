@@ -38,8 +38,8 @@ if (!empty($_POST['article'])) {
     $slova__ssilki = array(); // далее добавляю ссылки в текст
 
     // не должно быть копирование части слов
-    $slova__ssilki[] = array('США','/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
-    $slova__ssilki[] = array('вьетнам','/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
+    $spis_slov = array('США','вьетнам');
+    $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
 
     $kol_abzacev = count($mass_2);
 
@@ -181,15 +181,18 @@ if (!empty($_POST['article'])) {
         }
         if($l >= $kol_ab_polovina and $m < $m_ogr and strpos($value, '</a>') === false){
             // тут вставляем ссылки
-            // $slova__ssilki = array();
+            // $slova_ssilki = array();
             // не должно быть копирования части слов нужно добавить пробел
-            foreach ($slova__ssilki as &$value_sl) {
-                $temp_value_sl = ' '.$value_sl[0].' ';
-                if (strpos($value, $temp_value_sl) !== false){
-                    $value = str_replace($temp_value_sl, ' <a target="_blank" href="'.$value_sl[1].'">'.$value_sl[0].'</a> ', $value, $temp_rep);
-                    $m++;
-                    $value_sl[0] = 'портим ссылку 12323472836428468723467234';
-                    break;
+            foreach ($slova_ssilki as &$value_sl) {
+                $temp_value_sl = $value_sl[0];
+                foreach ($temp_value_sl as &$value_sl_strok){
+                    $value_sl_strok = ' '.$value_sl_strok.' ';
+                    if (strpos($value, $value_sl_strok) !== false){
+                        $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$value_sl[1].'">'.$value_sl_strok.'</a> ', $value, $temp_rep);
+                        $m++;
+                        $value_sl[0] = 'портим ссылку 12323472836428468723467234';
+                        break;
+                    }
                 }
             }
         }
