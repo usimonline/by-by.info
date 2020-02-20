@@ -1,8 +1,14 @@
 ﻿<?php
 require_once("requisites.php");
 require_once("base.php");
-
-
+?>
+<head>
+<?php
+require_once("head.php");
+?>
+</head>
+<body>
+<?php
 
 if (!empty($_POST['article'])) {
 
@@ -276,5 +282,5 @@ if (!empty($_POST['article'])) {
     <br><br>
 </form>
 
-
+</body>
 
