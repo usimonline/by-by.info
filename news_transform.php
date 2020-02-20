@@ -191,7 +191,7 @@ if (!empty($_POST['article'])) {
                         $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$value_sl[1].'">'.$value_sl_strok.'</a> ', $value, $temp_rep);
                         $m++;
                         $value_sl[0] = 'портим ссылку 12323472836428468723467234';
-                        break;
+                        break 2;
                     }
                 }
             }
