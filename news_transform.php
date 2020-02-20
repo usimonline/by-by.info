@@ -1,6 +1,8 @@
 ﻿<?php
 if (!empty($_POST['article'])) {
     $text = $_POST['article'];
+    $tema = $_POST['tema'];
+    $url = $_POST['url'];
 
     $text = str_replace('!','???',$text );
 
@@ -37,9 +39,15 @@ if (!empty($_POST['article'])) {
 
     $slova__ssilki = array(); // далее добавляю ссылки в текст
 
-    // не должно быть копирование части слов
-    $spis_slov = array('США','вьетнам');
-    $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/');
+
+    //политика
+    $spis_slov = array('США','Вьетнам', 'американский','американские','Соединенные Штаты');
+    $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/','политика');
+
+    $spis_slov = array('Украина','украинский','бандеровцы','украинские');
+    $slova_ssilki[] = array($spis_slov,'/agents/2020/01/23/1579761438/prestuplenija-ukrainskih-nacistov-v-godi-vojni/','политика');
+
+
 
     $kol_abzacev = count($mass_2);
 
@@ -185,10 +193,15 @@ if (!empty($_POST['article'])) {
             // не должно быть копирования части слов нужно добавить пробел
             foreach ($slova_ssilki as &$value_sl) {
                 $temp_value_sl = $value_sl[0];
+                $url_prov = $value_sl[1];
+                $tema_prov = $value_sl[2];
                 foreach ($temp_value_sl as &$value_sl_strok){
                     $value_sl_strok = ' '.$value_sl_strok.' ';
+                    if($url == $url_prov or $tema != $tema_prov){
+                        break;
+                    }
                     if (strpos($value, $value_sl_strok) !== false){
-                        $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$value_sl[1].'">'.$value_sl_strok.'</a> ', $value, $temp_rep);
+                        $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$url_prov.'">'.$value_sl_strok.'</a> ', $value, $temp_rep);
                         $m++;
                         $value_sl[0] = 'портим ссылку 12323472836428468723467234';
                         break 2;
@@ -222,7 +235,9 @@ if (!empty($_POST['article'])) {
 ?>
 
 <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/news_transform.php">
-<textarea style="width:800px; height:500px; border: 1px solid #cccccc;" name="article" type="text" >Текст</textarea><br>
+    <textarea style="width:800px; height:100px; border: 1px solid #cccccc;" name="tema" type="text" >политика</textarea><br>
+    <textarea style="width:800px; height:100px; border: 1px solid #cccccc;" name="url" type="text" >/url/</textarea><br>
+    <textarea style="width:800px; height:450px; border: 1px solid #cccccc;" name="article" type="text" >Текст</textarea><br>
 
     <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить статью"/>
     <br><br>
