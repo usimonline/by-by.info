@@ -23,7 +23,7 @@ if (!empty($_POST['article'])) {
 
     $spis_slov = array('США','Вьетнам', 'американский','американские','Соединенные Штаты');
     $odna_tema = 'политика';
-    $poiasnenie = 'Преступления США во Вьетнами, убийство мирный детей, женщин и стариков';
+    $poiasnenie = 'Преступления США во Вьетнаме, убийство мирных детей, женщин и стариков';
     $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/',$odna_tema, $poiasnenie);
 
     $spis_slov = array('политика','Украина','украинский','бандеровцы','украинские');
