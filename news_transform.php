@@ -1,5 +1,39 @@
 ﻿<?php
+//require_once("requisites.php");
+//require_once("base.php");
+
+
+
 if (!empty($_POST['article'])) {
+
+    //$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'toplist' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 4";
+    //$select = 0;
+    //$res = mysqli_query($link, $select);
+
+    //$t = 0;
+   // while($row = mysqli_fetch_array($res))
+    //{
+    //    $toplist[$t]['teme'] = $row['teme'];
+    //    $toplist[$t]['keys'] = $row['keys'];
+    //    $toplist[$t++]['url'] = $row['url'];
+   // }
+
+    $slova__ssilki = array(); // далее добавляю ссылки в текст
+
+
+    $spis_slov = array('США','Вьетнам', 'американский','американские','Соединенные Штаты');
+    $odna_tema = 'политика';
+    $poiasnenie = 'Преступления США во Вьетнами, убийство мирный детей, женщин и стариков';
+    $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/',$odna_tema, $poiasnenie);
+
+    $spis_slov = array('политика','Украина','украинский','бандеровцы','украинские');
+    $odna_tema = 'политика';
+    $poiasnenie = 'Преступления Украины во времеа ВОВ, убийство мирный детей, женщин и стариков';
+    $slova_ssilki[] = array($spis_slov,'/agents/2020/01/23/1579761438/prestuplenija-ukrainskih-nacistov-v-godi-vojni/',$odna_tema, $poiasnenie);
+
+
+
+
     $text = $_POST['article'];
     $tema = $_POST['tema'];
     $url = $_POST['url'];
@@ -36,16 +70,6 @@ if (!empty($_POST['article'])) {
     $zamena_2 = array('т.д','т.п','тыс.', 'т.е.','Т.е.','А.','Б.','В.','Г.','Д.','Е.','Ё.','Ж.','З.','И.','Й.','К.','Л.','М.','Н.','О.','П.','Р.','С.','Т.','У.','Ф.','Х.','Ц.','Ч.','Ш.','Щ.','Ъ.','Ы.','Ь.','Э.','Ю.','Я.');
     $komm = array('<ul class="spiski" ><li><em>','</em></li></ul><p></p>');
     $separator_3 = '. ';
-
-    $slova__ssilki = array(); // далее добавляю ссылки в текст
-
-
-    //политика
-    $spis_slov = array('США','Вьетнам', 'американский','американские','Соединенные Штаты');
-    $slova_ssilki[] = array($spis_slov,'/coldwar/2020/01/25/1579957048/Kak-armija-SShA-povtorila-zverstva-fashistov-nad-mirnim-naseleniem-i-detmi-vo-Vetname/','политика');
-
-    $spis_slov = array('Украина','украинский','бандеровцы','украинские');
-    $slova_ssilki[] = array($spis_slov,'/agents/2020/01/23/1579761438/prestuplenija-ukrainskih-nacistov-v-godi-vojni/','политика');
 
 
 
@@ -195,13 +219,14 @@ if (!empty($_POST['article'])) {
                 $temp_value_sl = $value_sl[0];
                 $url_prov = $value_sl[1];
                 $tema_prov = $value_sl[2];
+                $poiasnen = $value_sl[3];
                 foreach ($temp_value_sl as &$value_sl_strok){
                     $value_sl_strok = ' '.$value_sl_strok.' ';
-                    if($url == $url_prov or $tema != $tema_prov){
+                    if($url == $url_prov or stripos($tema, $tema_prov) === false){
                         break;
                     }
                     if (strpos($value, $value_sl_strok) !== false){
-                        $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$url_prov.'">'.$value_sl_strok.'</a> ', $value, $temp_rep);
+                        $value = str_replace($value_sl_strok, ' <a target="_blank" href="'.$url_prov.'">'.$value_sl_strok.' (читайте «'.'$poiasnen'.'»)</a> ', $value, $temp_rep);
                         $m++;
                         $value_sl[0] = 'портим ссылку 12323472836428468723467234';
                         break 2;
@@ -235,8 +260,8 @@ if (!empty($_POST['article'])) {
 ?>
 
 <form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/news_transform.php">
-    <textarea style="width:800px; height:100px; border: 1px solid #cccccc;" name="tema" type="text" >политика</textarea><br>
-    <textarea style="width:800px; height:100px; border: 1px solid #cccccc;" name="url" type="text" >/url/</textarea><br>
+    <textarea style="width:800px; height:50px; border: 1px solid #cccccc;" name="tema" type="text" >политика</textarea><br>
+    <textarea style="width:800px; height:50px; border: 1px solid #cccccc;" name="url" type="text" >/url/</textarea><br>
     <textarea style="width:800px; height:450px; border: 1px solid #cccccc;" name="article" type="text" >Текст</textarea><br>
 
     <input style="width:200px; height:50px; border: 1px solid #cccccc;" type="submit" value="Отправить статью"/>
