@@ -12,12 +12,11 @@ if (!empty($_POST['article'])) {
     $t = 0;
     while($row = mysqli_fetch_array($res))
     {
-        $toplist[$t]['teme'] = $row['teme'];
-        $toplist[$t]['keys'] = $row['keys'];
-        $toplist[$t]['url'] = $row['url'];
-        $odna_tema = $toplist[$t]['keys'][0];
-        $spis_slov = $toplist[$t]['keys'];
-        $slova_ssilki[] = array($spis_slov,$toplist[$t]['url'],$odna_tema, $toplist[$t]['teme']);
+        $toplist_tema = $row['teme'];
+        $spis_slov = $row['keys'];
+        $toplist_url = $row['url'];
+        $odna_tema = $spis_slov[0];
+        $slova_ssilki[] = array($spis_slov,$toplist_url,$odna_tema, $toplist_tema);
         $t++;
    }
 
