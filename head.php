@@ -2,6 +2,7 @@
 $datetime_site_schema_format = DateTime::createFromFormat('Y-m-d H:i:s', $datetime_site)->format(DateTime::ATOM);
 
 if ($route) {//Переключатель заголовков
+    $datetime_page_schema_format = $datetime_site_schema_format;
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
     else $head_nomer_url_mass = ($head_nomer_url_mass-49).'-'.$head_nomer_url_mass;
     if (empty($title_rub)) {
@@ -25,6 +26,7 @@ if ($route) {//Переключатель заголовков
     else $description = htmlspecialchars($page['metadesc']);
     $url_og = $page['url'];
     $url_og_picture = str_replace('news', 'pictures', transform_img_prost($page['url']))."img_1.jpg";
+    $datetime_page_schema_format = DateTime::createFromFormat('Y-m-d H:i:s', $page['datetime'])->format(DateTime::ATOM);
 }
 if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noindex" />';
 ?>
@@ -101,8 +103,8 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
    "image":[
       "<?php echo $main_name; ?><?php echo $url_og_picture; ?>"
    ],
-   "datePublished":"<?php echo $datetime_site_schema_format; ?>",
-   "dateModified":"2020-02-21T07:53:38+00:00"
+   "datePublished":"<?php echo $datetime_page_schema_format; ?>",
+   "dateModified":"<?php echo $datetime_site_schema_format; ?>"
 }
 </script>
 
