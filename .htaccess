@@ -5,6 +5,7 @@ RewriteCond %{REQUEST_URI} !\.(php|css|js|htc|png|gif|jpeg|jpg|ico)$
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*[^/])$ $1/ [L,R=301]
 Redirect 301 /pastnews/empty/50/ https://by-by.info
+Redirect 301 /news/ https://by-by.info
 Redirect 301 /pastnews/history/50/ https://by-by.info/history/
 Redirect 301 /pastnews/belnews/50/ https://by-by.info/belnews/
 Redirect 301 /pastnews/coldwar/50/ https://by-by.info/coldwar/
