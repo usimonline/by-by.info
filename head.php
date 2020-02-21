@@ -1,4 +1,6 @@
 <?php
+$datetime_site_schema_format = DateTime::createFromFormat('Y-m-d H:i:s', $datetime_site)->format(DateTime::ATOM);
+
 if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
     else $head_nomer_url_mass = ($head_nomer_url_mass-49).'-'.$head_nomer_url_mass;
@@ -75,20 +77,32 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <script  src="<?php echo $main_name; ?>/index_files/watch.js"></script>
 <script  src="<?php echo $main_name; ?>/index_files/www-embed-player.js"></script>
 <!-- <script src="https://vk.com/js/api/openapi.js?153"></script> -->
+
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
-  "@type" : "Organization",
-  "name" : "by-by.info",
-  "url" : "https://by-by.info",
-  "sameAs" : [
-    "https://www.facebook.com/Olgausim-519372818804183",
-	"https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg",
-	"https://twitter.com/byby_info",
-	"https://vk.com/bybyinfo",
-	"https://www.instagram.com/byby_info",
-	"https://ru.pinterest.com/byby_info"
-  ]
+  "@type" : "NewsArticle",
+    "url" : "<?php echo $main_name; ?><?php echo $url_og; ?>",
+  "publisher":{
+      "@type":"Organization",
+      "name":"By-by.info",
+      "logo":{"@type":"ImageObject","url":"https://by-by.info/img/metro.jpg"
+      }
+   },
+   "author":{
+      "@type":"Organization",
+      "name":"By-by.info",
+      "logo":{"@type":"ImageObject","url":"https://by-by.info/img/metro.jpg"
+      }
+   },
+   "headline": "<?php echo $title; ?>",
+   "mainEntityOfPage": "<?php echo $main_name; ?><?php echo $url_og; ?>",
+   "articleBody": "<?php echo $description ?>",
+   "image":[
+      "<?php echo $main_name; ?><?php echo $url_og_picture; ?>"
+   ],
+   "datePublished":"<?php echo $datetime_site_schema_format; ?>",
+   "dateModified":"2020-02-21T07:53:38+00:00"
 }
 </script>
 

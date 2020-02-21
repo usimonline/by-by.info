@@ -105,3 +105,24 @@
 <!-- Тут удалил элемент span с датой, сохранил в файле код вставляет комменты -->
 
 <span class="header__date"><?php echo date("Y-m-d H:i:s"); ?></span>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "by-by.info",
+  "url" : "https://by-by.info",
+  "sameAs" : [
+    "https://www.facebook.com/Olgausim-519372818804183",
+	"https://www.youtube.com/channel/UCym0E-X-17EmnBoccHjX1Jg",
+	"https://twitter.com/byby_info",
+	"https://vk.com/bybyinfo",
+	"https://www.instagram.com/byby_info",
+	"https://ru.pinterest.com/byby_info"
+  ]
+}
+</script>
