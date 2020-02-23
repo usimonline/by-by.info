@@ -202,7 +202,7 @@ if (!empty($_POST['article'])) {
             $i = 0; // чтобы за ручным комментом не шел автоматический коммент
             $k++; //в зависимости от k мы добавляем разные стили комментов
         }
-        if($l >= $kol_ab_polovina and $m < $m_ogr and strpos($value, '</a>') === false){
+        if($l >= $kol_ab_polovina and $m < $m_ogr and strpos($value, '</a>') === false and strpos($value, '</h2>') === false and strpos($value, '</h3>') === false and strpos($value, '</h4>') === false and strpos($value, '</figure>') === false){
             // тут вставляем ссылки
             // $slova_ssilki = array();
             // не должно быть копирования части слов нужно добавить пробел
@@ -213,7 +213,7 @@ if (!empty($_POST['article'])) {
                 $poiasnen = $value_sl[3];
                 foreach ($temp_value_sl as &$value_sl_strok){
                     $value_sl_strok = ' '.trim($value_sl_strok).' ';
-                    if($url == $url_prov or stripos($tema, $tema_prov) === false){
+                    if($url == $url_prov or stripos($tema, $tema_prov) === false){ // эта функция не работает с кирилицей, поэтому учитывает регистр!! изменить
                         break;
                     }
                     if (strpos($value, $value_sl_strok) !== false){
