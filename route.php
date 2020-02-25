@@ -165,7 +165,7 @@ $perikluch_page = false;
 if (empty($row)) {
 	$route = true;
 } else {
-	$page['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
+	$page['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);// тут определяю дату по номеру новости специальой функцией
 	$page['teme'] = $row['teme'];
 	$page['description'] = $row['description'];
 	$page['comments'] = $row['comments'];
@@ -355,7 +355,7 @@ $res = mysqli_query($link, $select);
 $i = 0;
 while($row = mysqli_fetch_array($res))
 {
-	$toplist[$i]['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
+	$toplist[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
 	$toplist[$i]['teme'] = $row['teme'];
 	$toplist[$i]['comments'] = $row['comments'];
 	$toplist[$i++]['url'] = $row['url'];
@@ -367,7 +367,7 @@ $res = mysqli_query($link, $select);
 $i = 0;
 while($row = mysqli_fetch_array($res))
 {
-	$topnews[$i]['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
+	$topnews[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
 	$topnews[$i]['teme'] = $row['teme'];
 	$topnews[$i]['description'] = $row['description'];
 	$topnews[$i]['comments'] = $row['comments'];
@@ -474,7 +474,7 @@ if ($route){
 				$page['url_int'] = '/news/2018/04/04/1522848137/sayt-by-byinfo-i-ego-rol-v-mirovom-processe/';
 				$page['teme_int'] = 'Международная инициатива «Центр защиты национальных меньшинств»';
 			} else {
-				$page['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
+				$page['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
 				$page['teme'] = $row['teme'];
 				$page['description'] = $row['description'];
 				$page['comments'] = $row['comments'];
@@ -511,7 +511,7 @@ $keys_value = translate_into_english($keys_value);
 $i = 0;
 while($row = mysqli_fetch_array($res))
 {
-	$news_latest[$i]['datetime'] = beer_data($row['nomer_novosti'], $all_count_nomer);
+	$news_latest[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
 	$news_latest[$i]['teme'] = $row['teme'];
 	$news_latest[$i]['razdel'] = $row['razdel'];
 	$news_latest[$i]['description'] = $row['description'];
