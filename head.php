@@ -83,7 +83,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
-  "@type" : "NewsArticle",
+  "@type" : "Article",
     "url" : "<?php echo $main_name; ?><?php echo $url_og; ?>",
   "publisher":{
       "@type":"Organization",
