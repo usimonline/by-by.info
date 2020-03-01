@@ -349,30 +349,36 @@ $nomer_url_3 = $nomer_url + $number_of_pages;
 
 // вставка из base началась
 
-$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'toplist' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 4";
-$res = mysqli_query($link, $select);
+if($perikluch_page === false) {
 
-$i = 0;
-while($row = mysqli_fetch_array($res))
-{
-	$toplist[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
-	$toplist[$i]['teme'] = $row['teme'];
-	$toplist[$i]['comments'] = $row['comments'];
-	$toplist[$i++]['url'] = $row['url'];
+// $toplist не будет нужен
+	$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'toplist' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 4";
+	$res = mysqli_query($link, $select);
+
+	$i = 0;
+	while($row = mysqli_fetch_array($res))
+	{
+		$toplist[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
+		$toplist[$i]['teme'] = $row['teme'];
+		$toplist[$i]['comments'] = $row['comments'];
+		$toplist[$i++]['url'] = $row['url'];
+	}
+
+// $topnews не будет нужен
+	$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'topnews' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 1";
+	$res = mysqli_query($link, $select);
+
+	$i = 0;
+	while($row = mysqli_fetch_array($res))
+	{
+		$topnews[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
+		$topnews[$i]['teme'] = $row['teme'];
+		$topnews[$i]['description'] = $row['description'];
+		$topnews[$i]['comments'] = $row['comments'];
+		$topnews[$i++]['url'] = $row['url'];
+	}
 }
 
-$select = "SELECT * FROM $Name_database.$table WHERE razdel = 'topnews' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 1";
-$res = mysqli_query($link, $select);
-
-$i = 0;
-while($row = mysqli_fetch_array($res))
-{
-	$topnews[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
-	$topnews[$i]['teme'] = $row['teme'];
-	$topnews[$i]['description'] = $row['description'];
-	$topnews[$i]['comments'] = $row['comments'];
-	$topnews[$i++]['url'] = $row['url'];
-}
 
 $select = "SELECT * FROM $Name_database.$table WHERE razdel = 'header' AND datetime < '$datetime_site' AND `$keys_name_rubrika` LIKE '%$keys_rubrika%' ORDER BY datetime DESC LIMIT 3";
 $res = mysqli_query($link, $select);
@@ -496,46 +502,48 @@ if ($route){
 	}
 }
 
+if($perikluch_page === false) {
 
-if ($admin) $select = "SELECT * FROM $Name_database.$table WHERE `$keys_name` LIKE '%$keys%' ORDER BY datetime DESC LIMIT $nomer_url_2, $nomer";
-else $select = "SELECT * FROM $Name_database.$table WHERE datetime > '2017-01-25 20:12:53' AND datetime < '$datetime_site' AND `$keys_name` LIKE '%$keys%' ORDER BY datetime DESC LIMIT $nomer_url_2, $nomer";
-$res = mysqli_query($link, $select);
+	if ($admin) $select = "SELECT * FROM $Name_database.$table WHERE `$keys_name` LIKE '%$keys%' ORDER BY datetime DESC LIMIT $nomer_url_2, $nomer";
+	else $select = "SELECT * FROM $Name_database.$table WHERE datetime > '2017-01-25 20:12:53' AND datetime < '$datetime_site' AND `$keys_name` LIKE '%$keys%' ORDER BY datetime DESC LIMIT $nomer_url_2, $nomer";
+	$res = mysqli_query($link, $select);
 
 //if ($nomer_url_2 == 0) $nomer_url_2 = 1;
-if ($nomer_url > $all_count) $nomer_url = $all_count;
+	if ($nomer_url > $all_count) $nomer_url = $all_count;
 
-$keys_l_main = $keys;
+	$keys_l_main = $keys;
 
-$keys_value = translate_into_english($keys_value);
+	$keys_value = translate_into_english($keys_value);
 
-$i = 0;
-while($row = mysqli_fetch_array($res))
-{
-	$news_latest[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
-	$news_latest[$i]['teme'] = $row['teme'];
-	$news_latest[$i]['razdel'] = $row['razdel'];
-	$news_latest[$i]['description'] = $row['description'];
-	$news_latest[$i]['comments'] = $row['comments'];
-	$news_latest[$i]['nomer_novosti'] = $row['nomer_novosti'];
-	$news_latest[$i]['url_ext'] = $row['url_ext'];
-	$news_latest[$i++]['url'] = $row['url'];
-}
-$total = $i;
+	$i = 0;
+	while($row = mysqli_fetch_array($res))
+	{
+		$news_latest[$i]['datetime'] = $row['datetime'];//beer_data($row['nomer_novosti'], $all_count_nomer);
+		$news_latest[$i]['teme'] = $row['teme'];
+		$news_latest[$i]['razdel'] = $row['razdel'];
+		$news_latest[$i]['description'] = $row['description'];
+		$news_latest[$i]['comments'] = $row['comments'];
+		$news_latest[$i]['nomer_novosti'] = $row['nomer_novosti'];
+		$news_latest[$i]['url_ext'] = $row['url_ext'];
+		$news_latest[$i++]['url'] = $row['url'];
+	}
+	$total = $i;
 
-if($rss == 1) {
-	require("rss.php");
-	header('Location: '.$main_name.'/rss.xml');
-	//require("rss.xml");
-	//echo $rss_file;
-	exit;
-}
+	if($rss == 1) {
+		require("rss.php");
+		header('Location: '.$main_name.'/rss.xml');
+		//require("rss.xml");
+		//echo $rss_file;
+		exit;
+	}
 
-if($sitemap == 1) {
-	require("sitemap.php");
-	header('Location: '.$main_name.'/sitemap.xml');
-	//require("rss.xml");
-	//echo $rss_file;
-	exit;
+	if($sitemap == 1) {
+		require("sitemap.php");
+		header('Location: '.$main_name.'/sitemap.xml');
+		//require("rss.xml");
+		//echo $rss_file;
+		exit;
+	}
 }
 
 
