@@ -6,14 +6,13 @@ if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
     else $head_nomer_url_mass = ($head_nomer_url_mass-49).'-'.$head_nomer_url_mass;
     if (empty($title_rub)) {
-        $title = 'Политические новости России и мира без русофобии, политический юмор и честная история (страницы ' . $head_nomer_url_mass . ')';
-        $description = 'Политические новости противостояния России и Запада, политический юмор и честная история. 
-        Предлагаем вам лучшие новости и юмор, читать страницы ' . $head_nomer_url_mass . '.';
-        $keys = 'Политические новости, политический юмор';
+        $title = 'Россия и Запад: история противостояния без русофобии';
+        $description = 'Противостояние России и Запада, политический юмор и честная история, страницы ' . $head_nomer_url_mass . '.';
+        $keys = 'Политика и история России';
         $url_og = '';
         $url_og_picture = "/img/metro.jpg";
     } else {
-        $title = $title_rub.' (страницы ' . $head_nomer_url_mass . ')';
+        $title = $title_rub;
         $description = $description_rub.$head_nomer_url_mass . '.';
         $keys = $keys_rub;
         $url_og = $url_og_rub;

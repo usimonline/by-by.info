@@ -60,17 +60,13 @@
 
 	<div class="footer__topics">
 		<ul>
-			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/coldwar/" >Холодная война</a></li>
-			<li><a href="<?php echo $main_name; ?>/polithumor/" >Юмор</a></li>
-			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
-			<li><a href="<?php echo $main_name; ?>/bestmemes/" >Мемы</a></li>
-			<li><a href="<?php echo $main_name; ?>/caricatures/" >Карикатуры</a></li>
-			<li><a href="<?php echo $main_name; ?>/ancientukri/" >Украина</a></li>
-			<li><a href="<?php echo $main_name; ?>/belnews/" >Белоруссия</a></li>
-			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты влияния</a></li>
-			<li><a href="<?php echo $main_name; ?>/economy/" >Экономика</a></li>
-			<li><a href="<?php echo $main_name; ?>/splitmind/" >Шизофрения</a></li>
+			<li><a href="<?php echo $main_name; ?>/eaes/" alt="Евразийский Союз">Евразийский Союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/coldwar/" alt="Россия и Запад">Россия и Запад</a></li>
+			<li><a href="<?php echo $main_name; ?>/polithumor/" alt="Политический юмор">Политический юмор</a></li>
+			<li><a href="<?php echo $main_name; ?>/history/" alt="История">История</a></li>
+			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" alt="Советский союз">Советский Союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/agents/" alt="Агенты влияния">Агенты влияния</a></li>
+			<li><a href="<?php echo $main_name; ?>/economy/" alt="Экономика">Экономика</a></li>
+			<li><a href="<?php echo $main_name; ?>/splitmind/" alt="Шизофрения">Шизофрения</a></li>
 		</ul>
 	</div>
