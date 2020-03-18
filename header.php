@@ -66,7 +66,6 @@
 			<li><a href="<?php echo $main_name; ?>/history/" alt="История">История</a></li>
 			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" alt="Советский союз">Советский Союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/agents/" alt="Агенты влияния">Агенты влияния</a></li>
-			<li><a href="<?php echo $main_name; ?>/economy/" alt="Экономика">Экономика</a></li>
 			<li><a href="<?php echo $main_name; ?>/splitmind/" alt="Шизофрения">Шизофрения</a></li>
 		</ul>
 	</div>

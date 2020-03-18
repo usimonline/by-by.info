@@ -11,8 +11,8 @@ switch($REQUEST_URI ){
 		$url_og_picture_rub = "/img/metro.jpg";
 		break;
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
-		$title_rub = 'История';
-		$description_rub = 'Истории России, Российской империи и Советского Союза, страницы ';
+		$title_rub = 'История без русофобии';
+		$description_rub = 'Истории России без русофобии, Российской империи и Советского Союза, страницы ';
 		$keys_rub = 'История';
 		$url_og_rub = '/history/';
 		$url_og_picture_rub = "/img/metro.jpg";
@@ -26,7 +26,7 @@ switch($REQUEST_URI ){
 	//	break;
 	case '/coldwar/': $REQUEST_URI = '/pastnews/coldwar/50/';
 		$title_rub = 'Россия и Запад';
-		$description_rub = 'Противостояние России и Запада в Белоруссии и Украине, страницы ';
+		$description_rub = 'Противостояние России и Запада в Белоруссии и на Украине, страницы ';
 		$keys_rub = 'Холодная война';
 		$url_og_rub = '/coldwar/';
 		$url_og_picture_rub = "/img/metro.jpg";
@@ -259,7 +259,7 @@ switch($rubrika){
 		$keys_rubrika = $keys_value;
 	}
 	$keys = translate_into_russian_pastnews($keys);
-	$keys_rubrika = translate_into_russian_pastnews($keys_rubrika);
+	$keys_rubrika = translate_into_russian_pastnews($keys_rubrika); // это я определяю рубрику, по которой сортировать данные
 	break;
 	
 	case 'searchnews':
