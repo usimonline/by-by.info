@@ -11,8 +11,8 @@ switch($REQUEST_URI ){
 		$url_og_picture_rub = "/img/metro.jpg";
 		break;
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
-		$title_rub = 'История без русофобии';
-		$description_rub = 'Истории России без русофобии, Российской империи и Советского Союза, страницы ';
+		$title_rub = 'История';
+		$description_rub = 'Истории России без русофобии, страницы ';
 		$keys_rub = 'История';
 		$url_og_rub = '/history/';
 		$url_og_picture_rub = "/img/metro.jpg";
