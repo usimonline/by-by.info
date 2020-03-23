@@ -12,7 +12,7 @@ switch($REQUEST_URI ){
 		break;
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
 		$title_rub = 'История';
-		$description_rub = 'Истории России, Украины и Белоруссии без русофобии, страницы ';
+		$description_rub = 'Истории России, Украины и Белоруссии (Беларуси) без русофобии, страницы ';
 		$keys_rub = 'История';
 		$url_og_rub = '/history/';
 		$url_og_picture_rub = "/img/metro.jpg";
@@ -26,7 +26,7 @@ switch($REQUEST_URI ){
 	//	break;
 	case '/coldwar/': $REQUEST_URI = '/pastnews/coldwar/50/';
 		$title_rub = 'Россия и Запад';
-		$description_rub = 'Противостояние России и Запада в Белоруссии и на Украине, страницы ';
+		$description_rub = 'Противостояние России и Запада в Белоруссии (Беларуси) и на Украине, страницы ';
 		$keys_rub = 'Холодная война';
 		$url_og_rub = '/coldwar/';
 		$url_og_picture_rub = "/img/metro.jpg";
