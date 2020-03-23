@@ -12,7 +12,7 @@ switch($REQUEST_URI ){
 		break;
 	case '/history/': $REQUEST_URI = '/pastnews/history/50/';
 		$title_rub = 'История';
-		$description_rub = 'Истории России без русофобии, страницы ';
+		$description_rub = 'Истории России, Украины и Белоруссии без русофобии, страницы ';
 		$keys_rub = 'История';
 		$url_og_rub = '/history/';
 		$url_og_picture_rub = "/img/metro.jpg";
