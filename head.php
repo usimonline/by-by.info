@@ -6,7 +6,7 @@ if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
     else $head_nomer_url_mass = ($head_nomer_url_mass-49).'-'.$head_nomer_url_mass;
     if (empty($title_rub)) {
-        $title = 'Политика и история России, помощь больным шизофренией';
+        $title = 'Политика и история России, а также помощь больным шизофренией';
         $description = 'Геополитика и история России. Статьи для больных шизофренией и их родственников, страницы ' . $head_nomer_url_mass . '.';
         $keys = 'Политика и история России';
         $url_og = '';
