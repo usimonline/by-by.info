@@ -173,7 +173,7 @@ else $news_year_2 = 0;
 $keys_name = 'keys';
 $keys_name_rubrika = 'keys';
 $keys_rubrika = '';
-if ($perikluch_page and $temp_rubrika_temp != 'news'){//срабатывает только для page
+if ($perikluch_page){//срабатывает только для page
 	//$keys_rubrika = translate_into_russian_pastnews($temp_rubrika_temp); // тут нужно вставлять рубрику не с помощью функции, а из базы данных
 	$keys_rubrika = $temp_rubrika_temp_sup;
 }
