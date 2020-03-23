@@ -6,8 +6,8 @@ if ($route) {//Переключатель заголовков
     if(empty($head_nomer_url_mass)) $head_nomer_url_mass = '1-50';
     else $head_nomer_url_mass = ($head_nomer_url_mass-49).'-'.$head_nomer_url_mass;
     if (empty($title_rub)) {
-        $title = 'Россия и Запад: история противостояния без русофобии';
-        $description = 'Противостояние России и Запада, политический юмор и честная история, страницы ' . $head_nomer_url_mass . '.';
+        $title = 'Политика и история России, помощь больным шизофренией';
+        $description = 'Геополитика и история России. Статьи для больных шизофренией и их родственников, страницы ' . $head_nomer_url_mass . '.';
         $keys = 'Политика и история России';
         $url_og = '';
         $url_og_picture = "/img/metro.jpg";
