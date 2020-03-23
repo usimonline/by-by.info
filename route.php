@@ -138,7 +138,7 @@ if (empty($row)) {
 	$page['keys'] = $row['keys'];
 	$temp_rubrika_temp_sup = $page['keys'];
 	//$temp_rubrika_temp_sup = $temp_rubrika_temp_sup[0];
-	echo $temp_rubrika_temp_sup;
+	print_r($temp_rubrika_temp_sup);
 	$page['id'] = $row['id'];
 	$page['title'] = $row['title'];
 	$page['metadesc'] = $row['metadesc'];
