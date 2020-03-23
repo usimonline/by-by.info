@@ -23,7 +23,7 @@ if (!empty($_POST['article'])) {
         $odna_tema = $spis_slov[0];
         $slova_ssilki[] = array($spis_slov,$toplist_url,$odna_tema, $toplist_tema);
    }
-
+    shuffle($slova_ssilki); //сортирует в случайном порядке
 
     $text = $_POST['article'];
     $tema = $_POST['tema'];
