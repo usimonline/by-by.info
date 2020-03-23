@@ -103,7 +103,7 @@ switch($REQUEST_URI ){
 
 $nomer_url_mass = explode ( '/', $REQUEST_URI);
 
-$temp_rubrika_temp = $nomer_url_mass[1];
+$temp_rubrika_temp = $nomer_url_mass[1];// задаю рубрику с поощью url
 
 if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'
 	or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'agents'
@@ -136,6 +136,8 @@ if (empty($row)) {
 	$page['url'] = $row['url'];
 	$page['text'] = $row['text'];
 	$page['keys'] = $row['keys'];
+	$temp_rubrika_temp_sup = $page['keys'];
+	$temp_rubrika_temp_sup = $temp_rubrika_temp_sup[0];
 	$page['id'] = $row['id'];
 	$page['title'] = $row['title'];
 	$page['metadesc'] = $row['metadesc'];
@@ -148,7 +150,7 @@ if ($row['url_int'] == NULL) $page['url_int'] = '/news';
 else $page['url_int'] = $row['url_int'];
 if ($row['teme_int'] == NULL) $page['teme_int'] = 'Смотрите другие новости по этой теме.';
 else $page['teme_int'] = $row['teme_int'];
-	//echo $temp_rubrika_temp;
+
 	$perikluch_page = true;
 }
 
@@ -171,7 +173,8 @@ $keys_name = 'keys';
 $keys_name_rubrika = 'keys';
 $keys_rubrika = '';
 if ($perikluch_page and $temp_rubrika_temp != 'news'){//срабатывает только для page
-	$keys_rubrika = translate_into_russian_pastnews($temp_rubrika_temp);
+	//$keys_rubrika = translate_into_russian_pastnews($temp_rubrika_temp); // тут нужно вставлять рубрику не с помощью функции, а из базы данных
+	$keys_rubrika = $temp_rubrika_temp_sup;
 }
 
 
@@ -206,7 +209,7 @@ switch($rubrika){
 	case 'rss': header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found', true, 404);
 		$rss = 1;
 		// //создаем файл rss.xml
-		$nomer = 2*$number_of_pages;
+		$nomer = 2*$number_of_pages;// тут можно увеличить число страниц в sitemap
 		$rubrika = 'news';
 		$keys_value = 'empty';
 		$keys = '';
