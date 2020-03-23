@@ -137,8 +137,9 @@ if (empty($row)) {
 	$page['text'] = $row['text'];
 	$page['keys'] = $row['keys'];
 	$temp_rubrika_temp_sup = $page['keys'];
+	$temp_rubrika_temp_sup = explode(',', $temp_rubrika_temp_sup);
 	$temp_rubrika_temp_sup = $temp_rubrika_temp_sup[0];
-	print_r($temp_rubrika_temp_sup);
+	echo $temp_rubrika_temp_sup;
 	$page['id'] = $row['id'];
 	$page['title'] = $row['title'];
 	$page['metadesc'] = $row['metadesc'];
