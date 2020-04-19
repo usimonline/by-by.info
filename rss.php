@@ -22,7 +22,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $teme_int_234 = $news_latest[$i]["teme_int"];
             $text_123 = $news_latest[$i]["text"];
             $n_l_u = $news_latest[$i]['url'];
-            $url_frame_123 = $news_latest[$i]['url_frame'];
+            $url_frame_123 = '<p><iframe width="100%" height="360" src="' . $news_latest[$i]['url_frame']. '" style="border: 0" allowfullscreen></iframe></p>';
            // $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
             //$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
             //$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
