@@ -22,7 +22,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $teme_int_234 = $news_latest[$i]["teme_int"];
             $text_123 = $news_latest[$i]["text"];
             $n_l_u = $news_latest[$i]['url'];
-$url_frame_123 = $news_latest[$i]['url_frame'];
+            $url_frame_123 = $news_latest[$i]['url_frame'];
            // $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
             //$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
             //$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
@@ -33,9 +33,9 @@ $url_frame_123 = $news_latest[$i]['url_frame'];
             $n_l_u_mass = explode( '/', $n_l_u);
             $autor_123 = $news_latest[$i]["author"];
             if (empty($autor_123)) $autor_123 = autor_rand($n_l_u);
-$soderg_123 = '';
-$text_123 = $news_latest[$i]['text'];
-$colichestvo_h2_per = colichestvo_h2($text_123);
+            $soderg_123 = '';
+            $text_123 = $news_latest[$i]['text'];
+            $colichestvo_h2_per = colichestvo_h2($text_123);
 
 if ($colichestvo_h2_per > 1){$soderg_123 = '<!--<noindex>--><ul class="spiski" ><li><strong>Содержание</strong></li>';
 
