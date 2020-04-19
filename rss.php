@@ -51,7 +51,6 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
                 $autor_123 = str_replace('</strong>','',$autor_123);
             }
             $soderg_123 = '';
-            $text_123 = $news_latest[$i]['text'];
             $colichestvo_h2_per = colichestvo_h2($text_123);
 
 if ($colichestvo_h2_per > 1){$soderg_123 = '<!--<noindex>--><ul class="spiski" ><li><strong>Содержание</strong></li>';
