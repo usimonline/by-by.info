@@ -18,8 +18,8 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
 
         for($i = 0; $i < $total; $i++) {
             $n_l_t =  $news_latest[$i]['teme'];
-            $url_int_234 = $news_latest[$i]["url_int"];
-            $teme_int_234 = $news_latest[$i]["teme_int"];
+            $url_int_234 = ''; //$news_latest[$i]["url_int"];
+            $teme_int_234 = ''; //$news_latest[$i]["teme_int"];
             $text_123 = ''; // $news_latest[$i]["text"];
             $n_l_u = $news_latest[$i]['url'];
             $url_frame_123 = $news_latest[$i]['url_frame'];
@@ -31,7 +31,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $n_l_date = DateTime::createFromFormat('Y-m-d H:i:s', $news_latest[$i]['datetime'])->format(DateTime::RSS);
             $n_l_des = $news_latest[$i]['description'];
             $n_l_u_mass = explode( '/', $n_l_u);
-            $autor_123 = $news_latest[$i]["author"];
+            $autor_123 = ''; //$news_latest[$i]["author"];
             if (empty($autor_123)) $autor_123 = autor_rand($n_l_u);
             $soderg_123 = '';
             $text_123 = $news_latest[$i]['text'];
