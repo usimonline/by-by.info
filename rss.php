@@ -20,7 +20,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $n_l_t =  $news_latest[$i]['teme'];
             $url_int_234 = $news_latest[$i]["url_int"];
             $teme_int_234 = $news_latest[$i]["teme_int"];
-            $text_123 = $news_latest[$i]["text"];
+            $text_123 = ''; $news_latest[$i]["text"];
             $n_l_u = $news_latest[$i]['url'];
             $url_frame_123 = $news_latest[$i]['url_frame'];
            // $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
