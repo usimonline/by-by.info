@@ -27,6 +27,19 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             //$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
             //$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
            // $n_l_u_pict = str_replace('news','pictures',$url_pic_news_latest).'img_1.jpg';
+
+            $nomer_url_mass = explode ( '/', $n_l_u);
+
+            if ($nomer_url_mass[1] == 'coldwar' or $nomer_url_mass[1] == 'belnews' or $nomer_url_mass[1] == 'polithumor'
+                or $nomer_url_mass[1] == 'ancientukri' or $nomer_url_mass[1] == 'economy' or $nomer_url_mass[1] == 'agents'
+                or $nomer_url_mass[1] == 'history' or $nomer_url_mass[1] == 'bestmemes' or $nomer_url_mass[1] == 'caricatures'
+                or $nomer_url_mass[1] == 'helpstud' or $nomer_url_mass[1] == 'eaes' or $nomer_url_mass[1] == 'SovetskijSojuz'
+                or $nomer_url_mass[1] == 'splitmind' or $nomer_url_mass[1] == 'copywriting' or $nomer_url_mass[1] == 'creativestudio' ){
+                $rubrika_izmenenie = $nomer_url_mass[1];
+                $nomer_url_mass[1] = 'news';
+            } else $rubrika_izmenenie = 'news';
+            
+
             $n_l_u_pict = str_replace($rubrika_izmenenie, 'pictures', $n_l_u).'img_1.jpg';
             $n_l_date = DateTime::createFromFormat('Y-m-d H:i:s', $news_latest[$i]['datetime'])->format(DateTime::RSS);
             $n_l_des = $news_latest[$i]['description'];
