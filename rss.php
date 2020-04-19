@@ -64,7 +64,7 @@ if($news_year_2 == 0) {
             <turbo:source></turbo:source>
             <turbo:topic>' . $n_l_t . '</turbo:topic>
             <pubDate>' . $n_l_date . '</pubDate>
-            <author>By-by.info</author>
+            <author>'.$autor_123.'</author>
             <yandex:related>
             <link url="'.$main_name .$url_int_234.'" >'.$teme_int_234.'</link>
             </yandex:related>
