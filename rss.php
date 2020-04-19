@@ -23,9 +23,9 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $text_123 = $news_latest[$i]["text"];
             $n_l_u = $news_latest[$i]['url'];
 $url_frame_123 = $news_latest[$i]['url_frame'];
-            $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
-            $url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
-            $url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
+           // $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
+            //$url_pic_news_latest = str_replace('belnews', 'pictures', $url_pic_news_latest);
+            //$url_pic_news_latest = str_replace('polithumor', 'pictures', $url_pic_news_latest);
            // $n_l_u_pict = str_replace('news','pictures',$url_pic_news_latest).'img_1.jpg';
             $n_l_u_pict = str_replace($rubrika_izmenenie, 'pictures', $n_l_u).'img_1.jpg';
             $n_l_date = DateTime::createFromFormat('Y-m-d H:i:s', $news_latest[$i]['datetime'])->format(DateTime::RSS);
@@ -66,7 +66,7 @@ if($news_year_2 == 0) {
             <pubDate>' . $n_l_date . '</pubDate>
             <author>By-by.info</author>
             <yandex:related>
-            <link url="'.$url_int_234.'" >'.$teme_int_234.'</link>
+            <link url="'.$main_name .$url_int_234.'" >'.$teme_int_234.'</link>
             </yandex:related>
             <turbo:content>
                 <![CDATA[ 
