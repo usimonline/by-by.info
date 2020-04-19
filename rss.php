@@ -33,6 +33,10 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $n_l_u_mass = explode( '/', $n_l_u);
             $autor_123 = $news_latest[$i]["author"];
             if (empty($autor_123)) $autor_123 = autor_rand($n_l_u);
+            else {
+                $autor_123 = str_replace('<strong>','',$autor_123);
+                $autor_123 = str_replace('</strong>','',$autor_123);
+            }
             $soderg_123 = '';
             $text_123 = $news_latest[$i]['text'];
             $colichestvo_h2_per = colichestvo_h2($text_123);
