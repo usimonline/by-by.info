@@ -491,7 +491,7 @@ if($perikluch_page === false) {
 		$news_latest[$i]['author'] = $row['author'];
 		$news_latest[$i]['url_int'] = $row['url_int'];
 		$news_latest[$i]['teme_int'] = $row['teme_int'];
-		//$news_latest[$i]['text'] = $row['text'];
+		$news_latest[$i]['text'] = $row['text'];
 		$news_latest[$i]['url_frame'] = $row['url_frame'];
 		$news_latest[$i]['razdel'] = $row['razdel'];
 		$news_latest[$i]['description'] = $row['description'];

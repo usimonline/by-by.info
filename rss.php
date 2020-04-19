@@ -74,7 +74,7 @@ if($news_year_2 == 0) {
 
 } else $text_123 = podstanovka_kh2($text_123, $colichestvo_h2_per).'<p></p>'.$url_frame_123;
 
-            if($n_l_u_mass[2] == '2020' or $n_l_u_mass[2] == '2019' ) {
+            if($n_l_u_mass[2] == '2020' or $n_l_u_mass[2] == '2019' or $n_l_u_mass[2] == '2018') {
                 $rss_file = $rss_file . '
 <item turbo="true">
             <link>' . $main_name . $n_l_u . '</link>
