@@ -20,7 +20,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $n_l_t =  $news_latest[$i]['teme'];
             $url_int_234 = $news_latest[$i]["url_int"];
             $teme_int_234 = $news_latest[$i]["teme_int"];
-            $text_123 = $news_latest[$i]["text"];
+            $text_123 = ''; //$news_latest[$i]["text"];
             $n_l_u = $news_latest[$i]['url'];
             $url_frame_123 = '<p><iframe width="100%" height="360" src="' . $news_latest[$i]['url_frame']. '" style="border: 0" allowfullscreen></iframe></p>';
            // $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
@@ -38,7 +38,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
                 $rubrika_izmenenie = $nomer_url_mass[1];
                 $nomer_url_mass[1] = 'news';
             } else $rubrika_izmenenie = 'news';
-            
+
 
             $n_l_u_pict = str_replace($rubrika_izmenenie, 'pictures', $n_l_u).'img_1.jpg';
             $n_l_date = DateTime::createFromFormat('Y-m-d H:i:s', $news_latest[$i]['datetime'])->format(DateTime::RSS);
