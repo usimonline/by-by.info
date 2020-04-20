@@ -65,7 +65,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             }
 
 
-/* if($news_year_2 == 0) {
+ if($news_year_2 == 0) {
     $string_page_temp = nl2br($text_123);
     $string_page_temp = podstanovka_kh2($string_page_temp , $colichestvo_h2_per);
     $string_page_temp = '<p>'.str_replace("<br />\r\n<br />", '</p><p>', $string_page_temp).'</p>';
@@ -73,7 +73,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
     $string_page_temp = str_replace("</figcaption><br />", '</figcaption><p></p>', $string_page_temp);
     $text_123 = $string_page_temp.$url_frame_123;
 
-} else $text_123 = podstanovka_kh2($text_123, $colichestvo_h2_per).'<p></p>'; */
+} else $text_123 = podstanovka_kh2($text_123, $colichestvo_h2_per).'<p></p>'; 
 
             if($n_l_u_mass[2] == '2020' or $n_l_u_mass[2] == '2019' or $n_l_u_mass[2] == '2018') {
                 $rss_file = $rss_file . '
