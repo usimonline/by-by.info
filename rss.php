@@ -21,6 +21,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $url_int_234 = $news_latest[$i]["url_int"];
             $teme_int_234 = $news_latest[$i]["teme_int"];
             $text_123 = $news_latest[$i]["text"];
+            $url_ext_123 = $news_latest[$i]["url_ext"];
             $n_l_u = $news_latest[$i]['url'];
             $url_frame_123 = '<p><iframe width="100%" height="360" src="' . $news_latest[$i]['url_frame']. '" style="border: 0" allowfullscreen></iframe></p>';
            // $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
@@ -49,6 +50,9 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             else {
                 $autor_123 = str_replace('<strong>','',$autor_123);
                 $autor_123 = str_replace('</strong>','',$autor_123);
+            }
+            if ($url_ext_123 != 'https://by-by.info/news'){
+                $autor_123 = '<a target="_blank" href="'.$url_ext_123.' ?>">Источник</a>';
             }
             $soderg_123 = '';
 
