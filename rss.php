@@ -75,7 +75,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
     $string_page_temp = '<p>'.str_replace("<br />\r\n<br />", '</p><p>', $string_page_temp).'</p>';
     $string_page_temp = str_replace("<br />\n\r<br />", '</p><p>', $string_page_temp);
     $string_page_temp = str_replace("</figcaption><br />", '</figcaption><p></p>', $string_page_temp);
-    $text_123 = $string_page_temp.$url_frame_123;
+    $text_123 = $string_page_temp;
 
 } else $text_123 = podstanovka_kh2($text_123, $colichestvo_h2_per).'<p></p>';
 
