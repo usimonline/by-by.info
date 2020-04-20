@@ -109,7 +109,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
         </menu>
     </header>
     <!-- Контентная часть -->
-    <p>'.$autor_123.'</p>'.$soderg_123.$text_123.$url_frame_123.'
+    <p>Автор '.$autor_123.'</p>'.$soderg_123.$text_123.$url_frame_123.'
                 ]]>
             </turbo:content>
         </item>';
