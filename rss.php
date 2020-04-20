@@ -55,17 +55,25 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
 
             // тут я обрабатываю переменную text_123
             $colichestvo_h2_per = colichestvo_h2($text_123);
-if ($colichestvo_h2_per > 1){$soderg_123 = '<!--<noindex>--><ul class="spiski" ><li><strong>Содержание</strong></li>';
+            if ($colichestvo_h2_per > 1){
+                $soderg_123 = '<!--<noindex>--><ul class="spiski" ><li><strong>Содержание</strong></li>';
+                //$massiv_h2 = virezat_h2($text_123);
+                //for($i = 0; $i < $colichestvo_h2_per; $i++){
+                //    $soderg_123 = $soderg_123.'<li><a href="#my_page_'.$i.'">'.($i+1).'. '.$massiv_h2[$i].'</a></li>';
+                //}
+                $soderg_123 = $soderg_123.'</ul><!--</noindex>--><p></p>';
+            }
 
-        $massiv_h2 = virezat_h2($text_123);
-        for($i = 0; $i < $colichestvo_h2_per; $i++){
-            $soderg_123 = $soderg_123.'<li><a href="#my_page_'.$i.'">'.($i+1).'. '.$massiv_h2[$i].'</a></li>';
-        }
-    $soderg_123 = $soderg_123.'</ul><!--</noindex>--><p></p>';
-}
 
+/* if($news_year_2 == 0) {
+    $string_page_temp = nl2br($text_123);
+    $string_page_temp = podstanovka_kh2($string_page_temp , $colichestvo_h2_per);
+    $string_page_temp = '<p>'.str_replace("<br />\r\n<br />", '</p><p>', $string_page_temp).'</p>';
+    $string_page_temp = str_replace("<br />\n\r<br />", '</p><p>', $string_page_temp);
+    $string_page_temp = str_replace("</figcaption><br />", '</figcaption><p></p>', $string_page_temp);
+    $text_123 = $string_page_temp.$url_frame_123;
 
-
+} else $text_123 = podstanovka_kh2($text_123, $colichestvo_h2_per).'<p></p>'; */
 
             if($n_l_u_mass[2] == '2020' or $n_l_u_mass[2] == '2019' or $n_l_u_mass[2] == '2018') {
                 $rss_file = $rss_file . '
