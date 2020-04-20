@@ -85,7 +85,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
         </menu>
     </header>
     <!-- Контентная часть -->
-    '.$soderg_123.$text_123.'
+    '.$soderg_123.$text_123.$url_frame_123.'
                 ]]>
             </turbo:content>
         </item>';
