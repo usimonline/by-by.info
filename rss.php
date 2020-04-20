@@ -20,7 +20,7 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $n_l_t =  $news_latest[$i]['teme'];
             $url_int_234 = $news_latest[$i]["url_int"];
             $teme_int_234 = $news_latest[$i]["teme_int"];
-            $text_123 = ''; //$news_latest[$i]["text"];
+            $text_123 = $news_latest[$i]["text"];
             $n_l_u = $news_latest[$i]['url'];
             $url_frame_123 = '<p><iframe width="100%" height="360" src="' . $news_latest[$i]['url_frame']. '" style="border: 0" allowfullscreen></iframe></p>';
            // $url_pic_news_latest = str_replace('coldwar', 'pictures', $n_l_u);
@@ -51,27 +51,9 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
                 $autor_123 = str_replace('</strong>','',$autor_123);
             }
             $soderg_123 = '';
-            $colichestvo_h2_per = colichestvo_h2($text_123);
-
-if ($colichestvo_h2_per > 1){$soderg_123 = '<!--<noindex>--><ul class="spiski" ><li><strong>Содержание</strong></li>';
-
-        $massiv_h2 = virezat_h2($text_123);
-        for($i = 0; $i < $colichestvo_h2_per; $i++){
-            $soderg_123 = $soderg_123.'<li><a href="#my_page_'.$i.'">'.($i+1).'. '.$massiv_h2[$i].'</a></li>';
-        }
-    $soderg_123 = $soderg_123.'</ul><!--</noindex>--><p></p>';
-}
 
 
-if($news_year_2 == 0) {
-    $string_page_temp = nl2br($text_123);
-    $string_page_temp = podstanovka_kh2($string_page_temp , $colichestvo_h2_per);
-    $string_page_temp = '<p>'.str_replace("<br />\r\n<br />", '</p><p>', $string_page_temp).'</p>';
-    $string_page_temp = str_replace("<br />\n\r<br />", '</p><p>', $string_page_temp);
-    $string_page_temp = str_replace("</figcaption><br />", '</figcaption><p></p>', $string_page_temp);
-    $text_123 = $string_page_temp.$url_frame_123;
 
-} else $text_123 = podstanovka_kh2($text_123, $colichestvo_h2_per).'<p></p>'.$url_frame_123;
 
             if($n_l_u_mass[2] == '2020' or $n_l_u_mass[2] == '2019' or $n_l_u_mass[2] == '2018') {
                 $rss_file = $rss_file . '
@@ -103,7 +85,7 @@ if($news_year_2 == 0) {
         </menu>
     </header>
     <!-- Контентная часть -->
-    <p>Автор '.$autor_123.'</p><p></p>'.$soderg_123.$text_123.'
+    '.$soderg_123.$text_123.'
                 ]]>
             </turbo:content>
         </item>';
