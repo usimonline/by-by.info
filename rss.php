@@ -53,6 +53,18 @@ $rss_file = '<?xml version="1.0" encoding="UTF-8"?>
             $soderg_123 = '';
 
 
+            // тут я обрабатываю переменную text_123
+            $colichestvo_h2_per = colichestvo_h2($text_123);
+if ($colichestvo_h2_per > 1){$soderg_123 = '<!--<noindex>--><ul class="spiski" ><li><strong>Содержание</strong></li>';
+
+        $massiv_h2 = virezat_h2($text_123);
+        for($i = 0; $i < $colichestvo_h2_per; $i++){
+            $soderg_123 = $soderg_123.'<li><a href="#my_page_'.$i.'">'.($i+1).'. '.$massiv_h2[$i].'</a></li>';
+        }
+    $soderg_123 = $soderg_123.'</ul><!--</noindex>--><p></p>';
+}
+
+
 
 
             if($n_l_u_mass[2] == '2020' or $n_l_u_mass[2] == '2019' or $n_l_u_mass[2] == '2018') {
