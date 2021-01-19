@@ -12,7 +12,7 @@ require_once("base.php");
 if (!empty($_POST['article'])) {
 
     $select = "SELECT * FROM $Name_database.$table WHERE datetime < '$datetime_site' ORDER BY datetime DESC LIMIT 300";
-    $res = mysqli_query($link, $select); //
+    $res = mysqli_query($link, $select); 
 
     $separator_first = ',';
     while($row = mysqli_fetch_array($res))
