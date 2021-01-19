@@ -20,7 +20,7 @@
 								 alt="<?php echo str_replace('"','',$lsidebar[$count]['teme']); ?>" width="120" height="76" />
 						</div>
 						<div class="opinion__content"><strong class="news__title"><?php echo $lsidebar[$count]['teme']; ?></strong>
-						    <span class="opinion__author"><?php echo $lsidebar[$count]['description']; ?></span>
+						    <!-- <span class="opinion__author"><?php //echo $lsidebar[$count]['description']; ?></span> -->
 						</div>
 					</a>
 						<?php endif; ?>
@@ -114,7 +114,7 @@
 									 alt="<?php echo str_replace('"','',$lsidebar[$count]['teme']); ?>" width="120" height="76" />
 							</div>
 							<div class="opinion__content"><strong class="news__title"><?php echo $lsidebar[$count]['teme']; ?></strong>
-								<span class="opinion__author"><?php echo $lsidebar[$count]['description']; ?></span>
+								<!-- <span class="opinion__author"><?php //echo $lsidebar[$count]['description']; ?></span> -->
 							</div>
 						</a>
 						<?php endif; ?>
@@ -153,7 +153,7 @@
 									 alt="<?php echo str_replace('"','',$lsidebar[$count]['teme']); ?>" width="120" height="76" />
 							</div>
 							<div class="opinion__content"><strong class="news__title"><?php echo $lsidebar[$count]['teme']; ?></strong>
-								<span class="opinion__author"><?php echo $lsidebar[$count]['description']; ?></span>
+								<!-- <span class="opinion__author"><?php //echo $lsidebar[$count]['description']; ?></span> -->
 							</div>
 						</a>
 						<?php endif; ?>

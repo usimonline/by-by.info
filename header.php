@@ -1,29 +1,14 @@
 <!-- Yandex.Metrika counter -->
 <script>
-	(function (d, w, c) {
-		(w[c] = w[c] || []).push(function() {
-			try {
-				w.yaCounter48457331 = new Ya.Metrika({
-					id:48457331,
-					clickmap:true,
-					trackLinks:true,
-					accurateTrackBounce:true,
-					webvisor:true
-				});
-			} catch(e) { }
-		});
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-		var n = d.getElementsByTagName("script")[0],
-			s = d.createElement("script"),
-			f = function () { n.parentNode.insertBefore(s, n); };
-		s.type = "text/javascript";
-		s.async = true;
-		s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-		if (w.opera == "[object Opera]") {
-			d.addEventListener("DOMContentLoaded", f, false);
-		} else { f(); }
-	})(document, window, "yandex_metrika_callbacks");
+	ym(48457331, "init", {
+		clickmap:true,
+		trackLinks:true,
+		accurateTrackBounce:true
+	});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/48457331" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
@@ -60,12 +45,12 @@
 
 	<div class="footer__topics">
 		<ul>
-			<li><a href="<?php echo $main_name; ?>/eaes/" alt="Евразийский Союз">Евразийский Союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/coldwar/" alt="Россия и Запад">Россия и Запад</a></li>
-			<li><a href="<?php echo $main_name; ?>/polithumor/" alt="Политический юмор">Политический юмор</a></li>
-			<li><a href="<?php echo $main_name; ?>/history/" alt="История">История</a></li>
-			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" alt="Советский союз">Советский Союз</a></li>
-			<li><a href="<?php echo $main_name; ?>/agents/" alt="Агенты влияния">Агенты влияния</a></li>
-			<li><a href="<?php echo $main_name; ?>/splitmind/" alt="Шизофрения">Шизофрения</a></li>
+			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/coldwar/" >Россия и Запад</a></li>
+			<li><a href="<?php echo $main_name; ?>/polithumor/" >Политический юмор</a></li>
+			<li><a href="<?php echo $main_name; ?>/history/" >История</a></li>
+			<li><a href="<?php echo $main_name; ?>/SovetskijSojuz/" >Советский Союз</a></li>
+			<li><a href="<?php echo $main_name; ?>/agents/" >Агенты влияния</a></li>
+			<li><a href="<?php echo $main_name; ?>/splitmind/" >Шизофрения</a></li>
 		</ul>
 	</div>

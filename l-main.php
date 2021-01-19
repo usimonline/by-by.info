@@ -23,7 +23,7 @@
 					<span class="news__time"><?php echo $news_latest[$count]['datetime']; ?></span>
 					<strong class="news__title"><?php echo $news_latest[$count]['teme']; ?></strong>
 			    </a>
-				<p><?php echo $news_latest[$count]['description']; ?></p>
+				<!-- <p><?php //echo $news_latest[$count]['description']; ?></p> -->
 				<?php if ($admin): ?>	
 			<form method="POST" enctype="multipart/form-data" action="<?php echo $main_name; ?>/admin/<?php echo $keys_value; ?>/<?php echo ($nomer_url - $nomer_url%50); ?>/">
                 <textarea style="visibility: hidden;" name="datetime_re" 
