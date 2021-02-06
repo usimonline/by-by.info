@@ -32,10 +32,10 @@ require_once("head.php");
 	    <?php
 		if ($route) require_once("toplist.php");
 		
-		//require_once("l-sidebar.php");
+		require_once("l-sidebar.php");
 		
 		if ($route) require_once("l-main.php");
-		else require_once("page.php");
+		//else require_once("page.php");
 		?>
 	</div>
     <?php
