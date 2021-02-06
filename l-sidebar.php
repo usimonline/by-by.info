@@ -30,7 +30,10 @@
 				
 						
 						<div class="b subscription">
-							
+							<ul>
+								<li>
+								</li>
+							</ul>
 
 							<ul>
 								<!--<li><a class="icon-facebook-1" href="https://www.facebook.com/bybyinform/" rel="nofollow" target="_blank">Facebook</a></li>-->
