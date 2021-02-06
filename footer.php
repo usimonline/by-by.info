@@ -5,7 +5,7 @@
 	<div class="footer__copy">
 		<p>© 2020 <a href="<?php echo $main_name; ?>/news/2018/06/19/1529407551/Vihodnie-dannie/" rel="nofollow">О газете</a><br><br>
 		При использовании материалов сайта ссылка на сайт "<?php echo $site_name; ?>" обязательна.<br>
-		Сайт "<?php echo $site_name; ?>": <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+		Сайт "<?php echo $site_name; ?>": <?php echo $email; ?>
 		</p>
 		<!--LiveInternet counter--><script>
 			document.write("<a href='//www.liveinternet.ru/click' rel='nofollow'"+

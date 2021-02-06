@@ -38,7 +38,7 @@ if ($head_nomer_url_mass_2 == '2018-2') echo '<meta name="robots" content="noind
 <meta name="openstat-verification" content="a5a261c45ddbf7e768027bbeaec01fed57dff2d1" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118296803-1"></script>
-<script>
+<script> // что это такое?
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
