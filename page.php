@@ -60,7 +60,7 @@
 			} else echo podstanovka_kh2($page['text'], $colichestvo_h2_per);
 			?>
 <p></p>
-<?php echo $page['url_frame']; ?>
+<?php //echo $page['url_frame']; ?>
 
 		<p style="text-align: center;"><a target="_blank" href="<?php echo $main_name; ?><?php echo $page['url_int']; ?>"><?php echo $page['teme_int']; ?></a></p>
 
