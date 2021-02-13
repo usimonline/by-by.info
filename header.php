@@ -21,25 +21,25 @@
 
 			<!-- Тут удалил элемент span с датой, сохранил в файле код вставляет комменты -->
 		</div>
-		<div class="header__main">
+		<!-- <div class="header__main"> -->
 			<!-- Тут удалил элемент поиска и ссылку на выходные данные все в файле код вставляет комменты -->
 
+<!--
 
-
-			<ul class="header__topnews">
-			    <?php for($count = 0 ; $count <3; $count++): ?>
+			 <ul class="header__topnews">
+			    <?php //for($count = 0 ; $count <3; $count++): ?>
         			<li class="header__topnews_multiline header__topnews_mid">
-                        <a href="<?php echo $main_name; ?><?php echo $header[$count]['url']; ?>">
+                        <a href="<?php //echo $main_name; ?><?php //echo $header[$count]['url']; ?>">
                             <img src="<?php
-							$url_pic_news_latest = transform_img_prost($header[$count]['url']);
-							echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg" width="228" height="76"
-								 alt="<?php echo str_replace('"','',$header[$count]['teme']); ?>" />
-							<span><?php echo $header[$count]['teme']; ?></span>
+						//	$url_pic_news_latest = transform_img_prost($header[$count]['url']);
+						//	echo str_replace('news', 'pictures', $url_pic_news_latest); ?>/img_1_2.jpg" width="228" height="76"
+								 alt="<?php // echo str_replace('"','',$header[$count]['teme']); ?>" />
+							<span><?php // echo $header[$count]['teme']; ?></span>
                         </a>
                     </li>
-				<?php   endfor ?>	
+				<?php   // endfor ?>	
 			</ul>
-		</div>
+		</div> -->
 	</header>
 	<!-- END header -->
 

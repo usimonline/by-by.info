@@ -32,7 +32,7 @@ require_once("head.php");
 	    <?php
 		if ($route) require_once("toplist.php");
 		
-		require_once("l-sidebar.php");
+		//require_once("l-sidebar.php"); // это удалил 13022021
 		
 		if ($route) require_once("l-main.php");
 		else require_once("page.php");
