@@ -45,7 +45,7 @@
 
 	<div class="footer__topics">
 		<ul>
-			<li><a href="<?php echo $main_name; ?>" ><strong>BY-BY.INFO</strong></a></li>
+			<li><a href="<?php echo $main_name; ?>/" ><strong>BY-BY.INFO</strong></a></li>
 			<li><a href="<?php echo $main_name; ?>/eaes/" >Евразийский Союз</a></li>
 			<li><a href="<?php echo $main_name; ?>/coldwar/" >Россия и Запад</a></li>
 			<li><a href="<?php echo $main_name; ?>/polithumor/" >Политический юмор</a></li>
