@@ -17,7 +17,7 @@
 	<!-- BEGIN header -->
 	<header class="header">
 		<div class="header__right">
-			<a class="logo" href="<?php echo $main_name; ?>"><?php echo $site_name; ?></a>
+			<!-- <a class="logo" href="<?php //echo $main_name; ?>"><?php //echo $site_name; ?></a> -->
 
 			<!-- Тут удалил элемент span с датой, сохранил в файле код вставляет комменты -->
 		</div>
